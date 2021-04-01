@@ -1,0 +1,87 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"Description": null,
+			"AppraisalRules":
+				{
+					"AppraisalWeight": 1,
+					"Rules": [
+						{
+							"EventName": "Event(*, *, Speak(*, *, *, Aggression([x])), *)",
+							"Conditions":
+								{
+									"Set": ["[x] > 0", "[x] < 4"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -2,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Praiseworthiness",
+											"Value": -5,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(*, *, Speak(*, *, *, Aggression([x])), *)",
+							"Conditions":
+								{
+									"Set": ["[x] >= 4", "[x] < 7"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -3,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Praiseworthiness",
+											"Value": -6,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(*, *, Speak(*, *, *, Aggression([x])), *)",
+							"Conditions":
+								{
+									"Set": ["[x] >= 7"]
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Desirability",
+											"Value": -3,
+											"Target": "-"
+										}, 
+										{
+											"Name": "Praiseworthiness",
+											"Value": -10,
+											"Target": "-"
+										}]
+								}
+						}]
+				},
+			"EmotionDispositions": [
+				{
+					"Emotion": "*",
+					"Decay": 1,
+					"Threshold": 1
+				}],
+			"Goals": []
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "EmotionalAppraisal.EmotionalAppraisalAsset, EmotionalAppraisal, Version=1.4.1.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}
