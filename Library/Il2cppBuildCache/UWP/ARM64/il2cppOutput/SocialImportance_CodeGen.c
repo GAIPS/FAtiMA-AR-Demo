@@ -1,0 +1,136 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 WellFormedNames.Name SocialImportance.AttributionRule::get_Target()
+extern void AttributionRule_get_Target_m673DABC132A0F33539EE108A8CF50A207B1619E3 (void);
+// 0x00000002 WellFormedNames.Name SocialImportance.AttributionRule::get_Value()
+extern void AttributionRule_get_Value_mE769CD5A84DC261E165245AF5639801AE79C97E8 (void);
+// 0x00000003 Conditions.ConditionSet SocialImportance.AttributionRule::get_Conditions()
+extern void AttributionRule_get_Conditions_m38A23DF705707CBBAF0C76579D8FA86807CA046F (void);
+// 0x00000004 System.Void SocialImportance.AttributionRule::.ctor()
+extern void AttributionRule__ctor_m44D00BDD9B8F72A82E90794C33FC7AF677249A80 (void);
+// 0x00000005 System.Void SocialImportance.SocialImportanceAsset::.ctor()
+extern void SocialImportanceAsset__ctor_m2D9D057D06C0DEF623FE4CD52E09FECC2A37E1FE (void);
+// 0x00000006 System.Void SocialImportance.SocialImportanceAsset::RegisterKnowledgeBase(KnowledgeBase.KB)
+extern void SocialImportanceAsset_RegisterKnowledgeBase_mF4F574F7D9FE32DD11A746BAFAFF245F1BC142DC (void);
+// 0x00000007 System.Void SocialImportance.SocialImportanceAsset::BindToRegistry(KnowledgeBase.IDynamicPropertiesRegistry)
+extern void SocialImportanceAsset_BindToRegistry_mFEF907BFDFD5C1FE0017E0C6C3C78EF89BA4C02C (void);
+// 0x00000008 System.Void SocialImportance.SocialImportanceAsset::UnbindToRegistry(KnowledgeBase.IDynamicPropertiesRegistry)
+extern void SocialImportanceAsset_UnbindToRegistry_m952A0639E60656FB9D36AEF35D810F1B9AC2DC68 (void);
+// 0x00000009 System.Single SocialImportance.SocialImportanceAsset::internal_GetSocialImportance(WellFormedNames.Name,WellFormedNames.Name)
+extern void SocialImportanceAsset_internal_GetSocialImportance_m766E39825C38AB5238AF6A6C72EFCC3438009FFB (void);
+// 0x0000000A System.Void SocialImportance.SocialImportanceAsset::InvalidateCachedSI()
+extern void SocialImportanceAsset_InvalidateCachedSI_mE784BDF1DC9EDD60B86024A4015E1263D111A906 (void);
+// 0x0000000B System.UInt32 SocialImportance.SocialImportanceAsset::CalculateSI(WellFormedNames.Name,WellFormedNames.Name)
+extern void SocialImportanceAsset_CalculateSI_m5B685587F5F2AA27D1B9891481E60BAB14B440C7 (void);
+// 0x0000000C System.Collections.Generic.IEnumerable`1<KnowledgeBase.DynamicPropertyResult> SocialImportance.SocialImportanceAsset::SIPropertyCalculator(KnowledgeBase.IQueryContext,WellFormedNames.Name)
+extern void SocialImportanceAsset_SIPropertyCalculator_m2E533C224C36EB668AC22B67BF5FF7B692E01210 (void);
+// 0x0000000D System.Void SocialImportance.SocialImportanceAsset::.cctor()
+extern void SocialImportanceAsset__cctor_m00AFCC93A117FEED8192481554DF12B1765C5542 (void);
+// 0x0000000E System.Void SocialImportance.SocialImportanceAsset/<SIPropertyCalculator>d__19::.ctor(System.Int32)
+extern void U3CSIPropertyCalculatorU3Ed__19__ctor_m0E2648D672E637ED4381C857FC96D83C1B0A6F4F (void);
+// 0x0000000F System.Void SocialImportance.SocialImportanceAsset/<SIPropertyCalculator>d__19::System.IDisposable.Dispose()
+extern void U3CSIPropertyCalculatorU3Ed__19_System_IDisposable_Dispose_m3CD05BA8887500D5AE2B7CE5944B11DE7BFD3FF2 (void);
+// 0x00000010 System.Boolean SocialImportance.SocialImportanceAsset/<SIPropertyCalculator>d__19::MoveNext()
+extern void U3CSIPropertyCalculatorU3Ed__19_MoveNext_m1A5B7A87A0C8A67C31D4039B30F95F0B6BF13DD9 (void);
+// 0x00000011 System.Void SocialImportance.SocialImportanceAsset/<SIPropertyCalculator>d__19::<>m__Finally1()
+extern void U3CSIPropertyCalculatorU3Ed__19_U3CU3Em__Finally1_mBA0872A7D8D8244926E08F66AB45DFA22C9F971C (void);
+// 0x00000012 System.Void SocialImportance.SocialImportanceAsset/<SIPropertyCalculator>d__19::<>m__Finally2()
+extern void U3CSIPropertyCalculatorU3Ed__19_U3CU3Em__Finally2_mD1D8F124D97D09B944CBD3C396586B21A66741E2 (void);
+// 0x00000013 KnowledgeBase.DynamicPropertyResult SocialImportance.SocialImportanceAsset/<SIPropertyCalculator>d__19::System.Collections.Generic.IEnumerator<KnowledgeBase.DynamicPropertyResult>.get_Current()
+extern void U3CSIPropertyCalculatorU3Ed__19_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m9F5342EA4613DF9250207023B845B0FF6C36BF01 (void);
+// 0x00000014 System.Void SocialImportance.SocialImportanceAsset/<SIPropertyCalculator>d__19::System.Collections.IEnumerator.Reset()
+extern void U3CSIPropertyCalculatorU3Ed__19_System_Collections_IEnumerator_Reset_m748EE4BC6C0FF66E163EDBE6E9A2B4F569D88CF4 (void);
+// 0x00000015 System.Object SocialImportance.SocialImportanceAsset/<SIPropertyCalculator>d__19::System.Collections.IEnumerator.get_Current()
+extern void U3CSIPropertyCalculatorU3Ed__19_System_Collections_IEnumerator_get_Current_m86F51B3AA8E9AB13C0D65CC443FEBEB8B89750B5 (void);
+// 0x00000016 System.Collections.Generic.IEnumerator`1<KnowledgeBase.DynamicPropertyResult> SocialImportance.SocialImportanceAsset/<SIPropertyCalculator>d__19::System.Collections.Generic.IEnumerable<KnowledgeBase.DynamicPropertyResult>.GetEnumerator()
+extern void U3CSIPropertyCalculatorU3Ed__19_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_mAF8F1A797970AFDA7DB50E544DC319585BFDFB27 (void);
+// 0x00000017 System.Collections.IEnumerator SocialImportance.SocialImportanceAsset/<SIPropertyCalculator>d__19::System.Collections.IEnumerable.GetEnumerator()
+extern void U3CSIPropertyCalculatorU3Ed__19_System_Collections_IEnumerable_GetEnumerator_m1F86E3CD26819B7947DE8F148EE74178843F68FB (void);
+static Il2CppMethodPointer s_methodPointers[23] = 
+{
+	AttributionRule_get_Target_m673DABC132A0F33539EE108A8CF50A207B1619E3,
+	AttributionRule_get_Value_mE769CD5A84DC261E165245AF5639801AE79C97E8,
+	AttributionRule_get_Conditions_m38A23DF705707CBBAF0C76579D8FA86807CA046F,
+	AttributionRule__ctor_m44D00BDD9B8F72A82E90794C33FC7AF677249A80,
+	SocialImportanceAsset__ctor_m2D9D057D06C0DEF623FE4CD52E09FECC2A37E1FE,
+	SocialImportanceAsset_RegisterKnowledgeBase_mF4F574F7D9FE32DD11A746BAFAFF245F1BC142DC,
+	SocialImportanceAsset_BindToRegistry_mFEF907BFDFD5C1FE0017E0C6C3C78EF89BA4C02C,
+	SocialImportanceAsset_UnbindToRegistry_m952A0639E60656FB9D36AEF35D810F1B9AC2DC68,
+	SocialImportanceAsset_internal_GetSocialImportance_m766E39825C38AB5238AF6A6C72EFCC3438009FFB,
+	SocialImportanceAsset_InvalidateCachedSI_mE784BDF1DC9EDD60B86024A4015E1263D111A906,
+	SocialImportanceAsset_CalculateSI_m5B685587F5F2AA27D1B9891481E60BAB14B440C7,
+	SocialImportanceAsset_SIPropertyCalculator_m2E533C224C36EB668AC22B67BF5FF7B692E01210,
+	SocialImportanceAsset__cctor_m00AFCC93A117FEED8192481554DF12B1765C5542,
+	U3CSIPropertyCalculatorU3Ed__19__ctor_m0E2648D672E637ED4381C857FC96D83C1B0A6F4F,
+	U3CSIPropertyCalculatorU3Ed__19_System_IDisposable_Dispose_m3CD05BA8887500D5AE2B7CE5944B11DE7BFD3FF2,
+	U3CSIPropertyCalculatorU3Ed__19_MoveNext_m1A5B7A87A0C8A67C31D4039B30F95F0B6BF13DD9,
+	U3CSIPropertyCalculatorU3Ed__19_U3CU3Em__Finally1_mBA0872A7D8D8244926E08F66AB45DFA22C9F971C,
+	U3CSIPropertyCalculatorU3Ed__19_U3CU3Em__Finally2_mD1D8F124D97D09B944CBD3C396586B21A66741E2,
+	U3CSIPropertyCalculatorU3Ed__19_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m9F5342EA4613DF9250207023B845B0FF6C36BF01,
+	U3CSIPropertyCalculatorU3Ed__19_System_Collections_IEnumerator_Reset_m748EE4BC6C0FF66E163EDBE6E9A2B4F569D88CF4,
+	U3CSIPropertyCalculatorU3Ed__19_System_Collections_IEnumerator_get_Current_m86F51B3AA8E9AB13C0D65CC443FEBEB8B89750B5,
+	U3CSIPropertyCalculatorU3Ed__19_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_mAF8F1A797970AFDA7DB50E544DC319585BFDFB27,
+	U3CSIPropertyCalculatorU3Ed__19_System_Collections_IEnumerable_GetEnumerator_m1F86E3CD26819B7947DE8F148EE74178843F68FB,
+};
+static const int32_t s_InvokerIndices[23] = 
+{
+	5090,
+	5090,
+	5090,
+	5175,
+	5175,
+	4210,
+	4210,
+	4210,
+	1997,
+	5175,
+	1590,
+	1728,
+	7466,
+	4174,
+	5175,
+	5126,
+	5175,
+	5175,
+	4999,
+	5175,
+	5090,
+	5090,
+	5090,
+};
+extern const Il2CppDebuggerMetadataRegistration g_DebuggerMetadataRegistrationSocialImportance;
+extern const CustomAttributesCacheGenerator g_SocialImportance_AttributeGenerators[];
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_SocialImportance_CodeGenModule;
+const Il2CppCodeGenModule g_SocialImportance_CodeGenModule = 
+{
+	"SocialImportance.dll",
+	23,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	&g_DebuggerMetadataRegistrationSocialImportance,
+	g_SocialImportance_AttributeGenerators,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};
