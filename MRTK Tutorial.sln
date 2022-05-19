@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{138517E5-E3CB-B768-3F94-2B43E5EE5850}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.MixedReality.Toolkit.Demos.UX.Interactables", "Microsoft.MixedReality.Toolkit.Demos.UX.Interactables.csproj", "{9C184DBF-4FA9-7E2A-3C34-A81466E2720D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{138517E5-E3CB-B768-3F94-2B43E5EE5850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{138517E5-E3CB-B768-3F94-2B43E5EE5850}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{138517E5-E3CB-B768-3F94-2B43E5EE5850}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{138517E5-E3CB-B768-3F94-2B43E5EE5850}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C184DBF-4FA9-7E2A-3C34-A81466E2720D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C184DBF-4FA9-7E2A-3C34-A81466E2720D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C184DBF-4FA9-7E2A-3C34-A81466E2720D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C184DBF-4FA9-7E2A-3C34-A81466E2720D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
