@@ -17,28 +17,26 @@ using Assets.Scripts;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.Utilities;
 using System;
+using UnityEngine.SceneManagement;
 
 public class FAtiMAWebServerScenarioManager : MonoBehaviour
 {
 
     // Scenario Info
+    [HideInInspector]
     public string _scenarioName;
-    public List<string> _characters;
-    public List<string> _dialogues;
-    public string playerChar;
-    public string npcChar;
+    [HideInInspector] public List<string> _characters;
+    [HideInInspector] public List<string> _dialogues;
+    [HideInInspector] public string playerChar;
+    [HideInInspector] public string npcChar;
 
-    public List<string> playerDecisions;
-    public List<string> npcDecisions;
+    Dictionary<string, List<DialogueStateActionDTO>> characterToDecisions;
 
     [Header("Prefabs")]
     public GameObject DialogueButtonPrefab;
     public Transform dialogueContent;
 
     private UnityBodyImplement _npcController;
-
-    private bool _waitingForPlayer = false;
-
     private List<Interactable> _mButtonList = new List<Interactable>();
 
 
@@ -53,8 +51,6 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
 
     //Time given to each character's dialogue in case there is no text to speech
     public float dialogueTimer;
-    //Auxiliary variable
-    private float dialogueTimerAux;
 
     // If there is no text to speech leave at false
     public bool useTextToSpeech;
@@ -63,27 +59,62 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
     public bool introduceAgents;
 
     public TMPro.TextMeshProUGUI debugText;
+    public TMPro.TextMeshProUGUI dialogueText;
 
     private GameObject npc;
 
     private WebRequester WebRequester;
+    private SpawnerScript Spawner;
 
     // Progression Booleans
     bool _scenarioLoaded = false;
     bool _charactersLoaded = false;
     bool startedScenario = false;
+    [HideInInspector] public float emotionIntensity = 0.0f;
+    [HideInInspector] public string strongestEmotion = "";
+    [HideInInspector] public bool startScenario;
+    [HideInInspector] public string VoiceType;
 
-    void Start()
+    void Awake()
     {
         WebRequester = this.GetComponent<WebRequester>();
+        Spawner = this.GetComponent<SpawnerScript>();
         _scenarioName = "";
         _characters = new List<string>();
+        characterToDecisions = new Dictionary<string, List<DialogueStateActionDTO>>();
     }
 
     public void StartScenario()
     {
-        startedScenario = true;
-        WebRequester.GetScenarios();
+        //Start by Resetting the Scenario
+        if (_scenarioName == "")
+        {
+            if (npc == null)
+                Spawner.SpawnCharacter();
+            WebRequester.GetScenarios();
+            startedScenario = true;
+        }
+        else
+        {
+            RestartScenario();
+        }
+    }
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void RestartScenario()
+    {
+        ClearAllDialogButtons();
+        dialogueText.text = "";
+        WebRequester.ResetScenario(_scenarioName);
+    }
+
+    public void ResetedScenario()
+    {
+        //Assuming the NPC starts the conversation but it can be irrelevant
+        WebRequester.GetDecisions(_scenarioName, npcChar);
     }
 
     void FixedUpdate()
@@ -103,54 +134,11 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
             else return;
         }
 
+        UpdateEmotionalState();
 
-
-        /*
-        if (_waitingForPlayer)
-            return;
-
-
-
-        if (newDecision)
-        foreach (var rpc in _rpcList)
-        {
-
-            // From all the decisions the rpc wants to perform we want the first one (as it is ordered by priority)
-            var decision = rpc.Decide().FirstOrDefault();
-
-
-
-            if (_playerRpc.CharacterName == rpc.CharacterName)
-            {
-                HandlePlayerOptions(decision);
-                continue; ;
-
-            }
-
-            if (decision != null)
-            {
-
-                initiatorAgent = rpc.CharacterName.ToString();
-                finalDecision = decision;
-
-
-                //Write the decision on the canvas
-                debugText.text +=
-                    " " + initiatorAgent + " decided to " + decision.Name.ToString() + " towards " + decision.Target;
-                break;
-            }
-
-        }
-
-
-        if (finalDecision != null)
-
-        {
-           newDecision = false;
-           ChooseDialogue(finalDecision, (Name)initiatorAgent);
-        }
-        */
     }
+
+
 
     void HandlePlayerOptions(List<DialogueStateActionDTO> playerDialogs)
     {
@@ -162,31 +150,17 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
     {
         npc = GameObject.FindGameObjectWithTag("NPC");
         _npcController = npc.GetComponentInChildren<UnityBodyImplement>();
-        StartScenario();
     }
 
 
    
-    public void IncreaseNPCHeight()
-    {
-        if (npc != null)
-        {
-            npc.transform.position += new Vector3(0.0f, 0.2f, 0.0f);
-        }
-    }
-
-    public void DecreaseNPCHeight()
-    {
-        if (npc != null)
-        {
-            npc.transform.position -= new Vector3(0.0f, 0.2f, 0.0f);
-        }
-    }
-
+  
     void AddDialogueButtons(List<DialogueStateActionDTO> dialogs, string target)
     {
 
         var i = 0;
+
+       
         foreach (var d in dialogs)
         {
             var buttonGameObject = Instantiate(DialogueButtonPrefab);
@@ -223,27 +197,10 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
         _mButtonList.Clear();
     }
 
-    public void SetHappy()
-    {
-        npc.GetComponentInChildren<UnityBodyImplement>().SetExpression("Joy", 5);
-    }
-
-    public void SetAdmiration()
-    {
-        npc.GetComponentInChildren<UnityBodyImplement>().SetExpression("Admiration", 5);
-    }
-
-    public void SetAnger()
-    {
-        npc.GetComponentInChildren<UnityBodyImplement>().SetExpression("Anger", 5);
-    }
-
+  
     void Reply(Name initiator, Name target, DialogueStateActionDTO dialog)
 
     {
-        dialogueTimerAux = dialogueTimer;
-        // Retrieving the chosen dialog object
-
         var utterance = dialog.Utterance;
         var meaning = dialog.Meaning;
         var style = dialog.Style;
@@ -260,7 +217,7 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
         //Writing the dialog on the canvas
         Debug.Log(
             initiator + " says:  '" + utterance + "' ->towards " + target);
-        this.debugText.text += initiator + " says:  '" + utterance + "' ->towards " + target;
+        this.dialogueText.text = initiator + " says:  '" + utterance + "' ->towards " + target;
 
 
         // Getting the full action Name
@@ -274,20 +231,28 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
         string[] events = new string[1];
         events[0] = eventName.ToString();
 
-        if (this.initiator == npcChar)
-        {
+        // Handle Effects
 
-            //Handle Consequences
-            WebRequester.PostEvents(_scenarioName, target.ToString(), events);
-
-        }
-
-        else {
+        if (initiator.ToString() == playerChar)
             ClearAllDialogButtons();
 
-            WebRequester.PostEvents(_scenarioName, playerChar.ToString(), events);
-                }
+        WebRequester.PostEvents(_scenarioName, target.ToString(), events);
 
+    }
+
+    public void WorldChanged(string initiator)
+    {
+        characterToDecisions[npcChar] = null;
+        characterToDecisions[playerChar] = null;
+
+        WebRequester.GetEmotionalState(_scenarioName, npcChar);
+
+        if (initiator == npcChar)
+            WebRequester.GetDecisions(this._scenarioName, playerChar);
+        else
+        {
+            WebRequester.GetDecisions(this._scenarioName, npcChar);
+        }
     }
 
      // Method to play the audio file of the specific dialogue, aka what makes the agent talk
@@ -304,7 +269,7 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
         audioReady = false;
         this.initiator = initiator.ToString();
         // What is the type of of Voice of the agent
-        var voiceType = "Male";
+        var voiceType = this.VoiceType;
 
         // Each utterance has a unique Id so we can retrieve its audio file
         var utteranceID = dialog.UtteranceId;
@@ -329,10 +294,7 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
         StartCoroutine(GetAudioURL(audioUrl));
 
         Debug.Log("Tried to speak");
-        debugText.text = "Tried to Speak ";
-
-    
-
+        debugText.text = "Trying to Speak ";
 
     }
 
@@ -362,10 +324,12 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
         if(_characters.Count > 1)
         {
             npcChar = _characters[0];
-            playerChar = _characters[1];   
+            characterToDecisions[npcChar] = new List<DialogueStateActionDTO>();
+            playerChar = _characters[1];
+            characterToDecisions[playerChar] = new List<DialogueStateActionDTO>();
         }
 
-        WebRequester.GetDecisionsNPC(_scenarioName, npcChar);
+        WebRequester.GetDecisions(_scenarioName, npcChar);
 
     }
 
@@ -374,8 +338,19 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
         if (_decisions.Count() < 1)
         {
             Debug.Log("No decisions were found");
-            return;
+            characterToDecisions[initiator] = new List<DialogueStateActionDTO>();
+
+            if (initiator == npcChar && characterToDecisions[playerChar] == null)
+                WebRequester.GetDecisions(_scenarioName, playerChar);
+            else 
+                if(characterToDecisions[npcChar] == null)
+                    WebRequester.GetDecisions(_scenarioName, npcChar);
             
+
+            if ((characterToDecisions[playerChar] != null && characterToDecisions[playerChar].Count == 0) && (characterToDecisions[npcChar] != null && characterToDecisions[npcChar].Count() == 0))
+                dialogueText.text = "Scenario over. \n Please Restart Scene with Left Palm";
+
+            return;
         }
         var decisions = _decisions;
 
@@ -469,22 +444,24 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
 
     }
 
-
-    public List<DialogueStateActionDTO> GetDialogueActions(Name currentState, Name nextState, Name meaning, Name style)
+    public void UpdateEmotionalState()
     {
 
-        List<DialogueStateActionDTO> ret = new List<DialogueStateActionDTO>();
+        if (strongestEmotion == "[]" || this.emotionIntensity < 0.2f || strongestEmotion == "")
+            return;
 
-        return ret;
-
+        npc.GetComponentInChildren<UnityBodyImplement>().SetExpression(this.strongestEmotion, this.emotionIntensity);
+        if(this.emotionIntensity > 0)
+            this.emotionIntensity -= 0.02f;
     }
+
 
     #endregion
 
     #region AudioHandlers
     IEnumerator GetAudioURL(string path)
     {
-        debugText.text = "Getting Audio URL";
+        debugText.text += "Getting Audio URL";
         audio = UnityWebRequestMultimedia.GetAudioClip(path, AudioType.WAV);
 
         yield return audio.SendWebRequest();
@@ -494,7 +471,7 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
 
             if (audio.result == UnityWebRequest.Result.DataProcessingError || audio.result == UnityWebRequest.Result.ConnectionError || audio.result == UnityWebRequest.Result.ProtocolError)
             {
-                debugText.text = "Audio not found error: " + audio.error;
+                debugText.text += "Audio not found error: " + audio.error;
                 Debug.Log("Audio not found error: " + audio.error);
                 audioReady = true;
                 useTextToSpeech = false;
@@ -542,7 +519,6 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
 
         if (useTextToSpeech)
         {
-            debugText.text = "Speaking? ";
             var clip = DownloadHandlerAudioClip.GetContent(audio);
             // The Unity Body Implement script allows us to play sound clips
             var initiatorBodyController = _npcController;
@@ -559,5 +535,8 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
 
     }
     #endregion
+
+
+  
 
 }

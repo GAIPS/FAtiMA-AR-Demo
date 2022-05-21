@@ -10,16 +10,16 @@
 					"NextState": "End",
 					"Meaning": "-",
 					"Style": "-",
-					"Utterance": "Alright, goodbye",
-					"UtteranceId": "TTS-CCF7877090E49659FB15B89D80C365A7"
+					"Utterance": "If you want me to leave just say so...",
+					"UtteranceId": "TTS-67EE9AFFD7FD59DEA8521F33F216F235"
 				}, 
 				{
-					"CurrentState": "Greeting",
-					"NextState": "Order",
+					"CurrentState": "Start",
+					"NextState": "Greeting",
 					"Meaning": "-",
-					"Style": "Polite",
-					"Utterance": "How do you do?",
-					"UtteranceId": "TTS-E191BADF9DAD8B0EDC942E4A6DFC8D64"
+					"Style": "Rude",
+					"Utterance": "What up!?",
+					"UtteranceId": "TTS-430D5A134E03B82E5AE059D862056E96"
 				}, 
 				{
 					"CurrentState": "Order",
@@ -70,12 +70,12 @@
 					"UtteranceId": "TTS-7BFCD2BB00520EE1D81A920C718F72D9"
 				}, 
 				{
-					"CurrentState": "Start",
-					"NextState": "WhatUp",
+					"CurrentState": "No",
+					"NextState": "Leave",
 					"Meaning": "-",
-					"Style": "Rude",
-					"Utterance": "What up!?",
-					"UtteranceId": "TTS-430D5A134E03B82E5AE059D862056E96"
+					"Style": "-",
+					"Utterance": "Whyyyyyy do you do this to me, I love pizza",
+					"UtteranceId": "TTS-4A6D82798779BA5E0B3CA6D877684FAA"
 				}, 
 				{
 					"CurrentState": "OrderResponse",
@@ -86,14 +86,6 @@
 					"UtteranceId": "TTS-2120C5CAE7A1B7E1EE0DB95F74ACE8A8"
 				}, 
 				{
-					"CurrentState": "Yes",
-					"NextState": "Greeting",
-					"Meaning": "-",
-					"Style": "-",
-					"Utterance": "Yeeeeeees I love Pizzaaaa",
-					"UtteranceId": "TTS-D54879F3B8640DF807E7793AB5463835"
-				}, 
-				{
 					"CurrentState": "OrderResponse",
 					"NextState": "Yes",
 					"Meaning": "-",
@@ -102,20 +94,84 @@
 					"UtteranceId": "TTS-FEF767D4216DC5C7780C265C827C849F"
 				}, 
 				{
-					"CurrentState": "End",
-					"NextState": "Greeting",
+					"CurrentState": "BadLuck",
+					"NextState": "Leave",
 					"Meaning": "-",
 					"Style": "-",
-					"Utterance": "Restart",
-					"UtteranceId": "TTS-8A7EF1C3E82395341B7000B79C239EB4"
+					"Utterance": "Actually we don't have that here...",
+					"UtteranceId": "TTS-80837A9A6BB70EF7ABD89B4D68C49BD1"
 				}, 
 				{
-					"CurrentState": "No",
-					"NextState": "Greeting",
+					"CurrentState": "OrderBadDay",
+					"NextState": "Order",
 					"Meaning": "-",
 					"Style": "-",
-					"Utterance": "Whyyyyyy do you do this to me, I love pizza",
-					"UtteranceId": "TTS-4A6D82798779BA5E0B3CA6D877684FAA"
+					"Utterance": "No, but would you like to eat something?",
+					"UtteranceId": "TTS-D19ACBF4511C266E8AEB69D73256BB75"
+				}, 
+				{
+					"CurrentState": "End",
+					"NextState": "GameOver",
+					"Meaning": "-",
+					"Style": "Rude",
+					"Utterance": "I want you to leave!",
+					"UtteranceId": "TTS-BA13ECC9DC0395980F8740901D00789F"
+				}, 
+				{
+					"CurrentState": "LeaveGuess",
+					"NextState": "BadDay",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Sorry, it's a terrible day",
+					"UtteranceId": "TTS-B686890DBC9C99C0D759ADB5FD552F05"
+				}, 
+				{
+					"CurrentState": "BadDay",
+					"NextState": "OrderBadDay",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Sorry to hear that, do you want to talk about it?",
+					"UtteranceId": "TTS-79A49E49BEF96F8BABE71C4594133A91"
+				}, 
+				{
+					"CurrentState": "Leave",
+					"NextState": "LeaveGuess",
+					"Meaning": "Sad",
+					"Style": "Polite",
+					"Utterance": "What did you just say?",
+					"UtteranceId": "TTS-A7A19BB11D67766D7873BC2AA7F31F0A"
+				}, 
+				{
+					"CurrentState": "OrderBadDay",
+					"NextState": "Order",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Maybe after I get your food, what do you want?",
+					"UtteranceId": "TTS-BE6266956A46518454560A4805CE5305"
+				}, 
+				{
+					"CurrentState": "Start",
+					"NextState": "Greeting",
+					"Meaning": "-",
+					"Style": "Polite",
+					"Utterance": "How do you do?",
+					"UtteranceId": "TTS-E191BADF9DAD8B0EDC942E4A6DFC8D64"
+				}, 
+				{
+					"CurrentState": "End",
+					"NextState": "GameOver",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "It's hopeless, just leave",
+					"UtteranceId": "TTS-6D11B02B91BB59A053D4658ACD2D6FC6"
+				}, 
+				{
+					"CurrentState": "Yes",
+					"NextState": "BadLuck",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Yeeeeeees I love Pizzaaaa",
+					"UtteranceId": "TTS-D54879F3B8640DF807E7793AB5463835"
 				}],
 			"Characters": [
 				{
@@ -127,7 +183,8 @@
 									"SELF":
 										{
 											"Has(Floor)": "Charlie, 1",
-											"DialogueState(Player)": "Start, 1"
+											"DialogueState(Player)": "Start, 1",
+											"is(Charlie)": "True, 1"
 										}
 								}
 						},
@@ -173,7 +230,8 @@
 									"SELF":
 										{
 											"Has(Floor)": "Charlie, 1",
-											"DialogueState(Charlie)": "Start, 1"
+											"DialogueState(Charlie)": "Start, 1",
+											"is(Player)": "True, 1"
 										}
 								}
 						},

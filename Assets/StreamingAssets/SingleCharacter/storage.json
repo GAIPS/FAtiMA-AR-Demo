@@ -10,26 +10,10 @@
 					"AppraisalWeight": 1,
 					"Rules": [
 						{
-							"EventName": "Event(Action-End, *, Speak(*, *, *, Polite), SELF)",
+							"EventName": "Event(Action-End, *, Speak(*, *, *, *), *)",
 							"Conditions":
 								{
-									"Set": []
-								},
-							"AppraisalVariables":
-								{
-									"AppraisalVariables": [
-										{
-											"Name": "Desirability",
-											"Value": 5,
-											"Target": "SELF"
-										}]
-								}
-						}, 
-						{
-							"EventName": "Event(Action-End, *, Speak(*, *, *, Rude), SELF)",
-							"Conditions":
-								{
-									"Set": []
+									"Set": ["is(Charlie) = True"]
 								},
 							"AppraisalVariables":
 								{

@@ -10,15 +10,16 @@ using TMPro;
 using System.Text.RegularExpressions;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
+using System.IO;
 
 namespace Assets.Scripts
 {
     public class WebRequester : MonoBehaviour
     {
         public string Editor_IP;
-        public string RemoteDevice_IP;
         private string IP;
-             
+        private string keyboardText;
+        private string currentCharacter;
 
         string getResult = "";
         FAtiMAWebServerScenarioManager manager;
@@ -26,15 +27,21 @@ namespace Assets.Scripts
 
         void Awake()
         {
+            manager = this.GetComponent<FAtiMAWebServerScenarioManager>();
+
 #if UNITY_EDITOR
 
             IP = Editor_IP;
 #else
-            IP = RemoteDevice_IP;
+            var path = Path.Combine(Application.streamingAssetsPath, "IP.txt");
+            var ip = ReadString(path);
+            IP = ip;
+            manager.debugText.text += " path: " + path + "\n";
 #endif
-            Debug.Log("IP: " + IP);
-            manager = this.GetComponent<FAtiMAWebServerScenarioManager>();
-            manager.debugText.text += IP;
+
+
+            
+            manager.debugText.text += "IP: " + IP + "\n";
             inputIP.text += IP;
         }
 
@@ -47,12 +54,12 @@ namespace Assets.Scripts
             if (uwr.result == UnityWebRequest.Result.ConnectionError)
             {
                 Debug.Log("Error While Sending: " + uwr.error);
-                manager.debugText.text = "Error : " + uwr.error;
+                manager.debugText.text += "Error : " + uwr.error;
             }
             else
             {
                 Debug.Log("Received: " + uwr.downloadHandler.text);
-
+                manager.debugText.text += "Received: " + uwr.downloadHandler.text + "\n";
                 getResult = uwr.downloadHandler.text;
                 callback.Invoke();
             }
@@ -79,6 +86,27 @@ namespace Assets.Scripts
             else
             {
                 Debug.Log("Received: " + uwr.downloadHandler.text);
+                callback.Invoke();
+            }
+        }
+
+        IEnumerator resetRequest(string url, Action callback)
+        {
+            Debug.Log("Getting: " + url);
+
+            var uwr = new UnityWebRequest(url, "RESET");
+            yield return uwr.SendWebRequest();
+
+            if (uwr.result == UnityWebRequest.Result.ConnectionError)
+            {
+                Debug.Log("Error While Sending: " + uwr.error);
+                manager.debugText.text = "Error : " + uwr.error;
+            }
+            else
+            {
+                Debug.Log("Received: " + uwr.downloadHandler.text);
+                manager.debugText.text += "Received: " + uwr.downloadHandler.text + "\n";
+                getResult = uwr.downloadHandler.text;
                 callback.Invoke();
             }
         }
@@ -121,9 +149,22 @@ namespace Assets.Scripts
 
         }
 
+        public void ResetScenario(string scenarioName)
+        {
+            var url = IP + "/scenarios/" + scenarioName;
+            StartCoroutine(this.resetRequest(url, CompletedReset));
+        }
+
+        public void CompletedReset()
+        {
+            manager.ResetedScenario();
+        }
+
+
         public void GotScenarios()
         {
-            manager.SetScenarioName(CleanScenarioOutput(getResult)[0]);
+            if(getResult != null && getResult.Count()>0)
+                manager.SetScenarioName(CleanScenarioOutput(getResult)[0]);
         }
 
         public void GetAllCharacters(string scenarioName)
@@ -137,6 +178,9 @@ namespace Assets.Scripts
 
         public void GotAllCharacters()
         {
+            if (getResult == null || getResult.Count() == 0)
+                return;
+            
             var charList = CleanCharacterOutput(getResult);
             var characterNamesList = new List<string>();
             // Clean even further
@@ -152,50 +196,114 @@ namespace Assets.Scripts
 
         }
 
-        public void GetDecisionsNPC(string scenarioName, string character)
+        public void GetDecisions(string scenarioName, string character)
         {
             var url = IP + "/scenarios/" + scenarioName + "/instances/1/Characters/" + character + "/decisions";
 
-            StartCoroutine(getRequest(url, GotDecisionNPC));
+            currentCharacter = character;
+
+            StartCoroutine(getRequest(url, GotDecisions));
         }
 
-        public void GotDecisionNPC()
+        public void GotDecisions()
         {
-            StopAllCoroutines();
+            manager.DecisionHandler(CleanCharacterOutput(getResult), currentCharacter);
+        }
 
-            manager.DecisionHandler(CleanCharacterOutput(getResult), manager.npcChar);
+        public void GetEmotionalState(string scenarioName, string character)
+        {
+            var url = IP + "/scenarios/" + scenarioName + "/instances/1/Characters/" + character + "/emotions";
+
+            currentCharacter = character;
+
+            StartCoroutine(getRequest(url, GotEmotions));
+        }
+
+        public void GotEmotions()
+        {
+            HandleEmotionalOutput();
+        }
+
+        public void HandleEmotionalOutput()
+        {
+            var internalState = CleanCharacterOutput(getResult)[0];
+
+            var emotionInformation = manager.Between(internalState, "Emotions:", "");
+
+            var strongestEmotion = manager.Between(emotionInformation, "Type:", ",Int");
+
+            var intensityAux = manager.Between(emotionInformation, "Intensity:", ",Target:").Split('.')[0];
+
+
+            int intensity = Int32.Parse(intensityAux);
+
+            manager.strongestEmotion = strongestEmotion;
+            manager.emotionIntensity = intensity;
+        }
+
+
+        public void PostConsequences()
+        {
+            manager.WorldChanged(currentCharacter);
         }
 
         public void PostEvents(string scenarioName, string character, string[] events)
         {
             var url = IP + "/scenarios/" + scenarioName + "/instances/1/worldmodel";
-
-            StartCoroutine(postRequest(url, events, GetDecisionsPlayer));
-        }
-
-
-        public void GetDecisionsPlayer()
-        {
-            var url = IP + "/scenarios/" + manager._scenarioName + "/instances/1/Characters/" + manager.playerChar + "/decisions";
-
-            StartCoroutine(getRequest(url, GotDecisionPlayer));
-
-        }
-
-        public void GotDecisionPlayer()
-        {
-            var decisions = getResult.Split('\n');
-
-            manager.DecisionHandler(CleanCharacterOutput(getResult), manager.playerChar);
-
-            StopAllCoroutines();
+            currentCharacter = character;
+            StartCoroutine(postRequest(url, events, PostConsequences));
         }
 
         #endregion
 
-        public void ResetConnection()
-        {
+    
 
+        public string ReadString(string path)
+        {
+            //Read the text from directly from the test.txt file
+            StreamReader reader = new StreamReader(path);
+            var ret = reader.ReadLine();
+            reader.Close();
+            return ret;
         }
+
+        public void WriteString(string path, string text)
+        {
+            //Read the text from directly from the test.txt file
+            StreamWriter writer = new StreamWriter(path);
+            writer.WriteLine(text);
+            writer.Close();
+        }
+
+        #region Keyboard
+        public TouchScreenKeyboard keyboard;
+
+        public void OpenSystemKeyboard()
+        {
+            keyboard = TouchScreenKeyboard.Open(inputIP.text, TouchScreenKeyboardType.Default, false, false, false, false);
+        }
+
+        void Update()
+        {
+            if(keyboard != null)
+            {
+                inputIP.text = keyboard.text;
+            }
+        }
+
+        public void SetIP()
+        {
+            IP = keyboardText;
+
+            var path = Path.Combine(Application.streamingAssetsPath, "IP.txt");
+            WriteString(path, IP);
+            
+            Debug.Log("Set IP " + IP);
+        }
+
+
+        #endregion
+
+
     }
 }

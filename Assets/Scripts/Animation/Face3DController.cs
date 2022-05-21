@@ -50,7 +50,9 @@ namespace Assets.Scripts.Animation
 		{
 			var facial = _facialExpressions.FirstOrDefault(e => e.ExpressionName == name);
 			if (facial == null)
-				throw new Exception(string.Format("No facial expression found for \"{0}\"", name));
+					facial = _facialExpressions.FirstOrDefault(e => e.ExpressionName == "Admiration");
+			//	throw new Exception(string.Format("No facial expression found for \"{0}\"", name));
+
 
 			return new FacialController(_faceMeshRenderer,facial);
 		}

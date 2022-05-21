@@ -339,11 +339,11 @@ MonoBehaviour:
   - _expressionName: E_phoneme
     _blends:
     - BlendShapeId: 30
-      Weight: 18
+      Weight: 50
   - _expressionName: U_phoneme
     _blends:
     - BlendShapeId: 16
-      Weight: 25
+      Weight: 50
   - _expressionName: O_phoneme
     _blends:
     - BlendShapeId: 21
@@ -372,3 +372,17 @@ MonoBehaviour:
     _blends:
     - BlendShapeId: 15
       Weight: 50
+  - _expressionName: Distress
+    _blends:
+    - BlendShapeId: 7
+      Weight: 10
+  - _expressionName: Reproach
+    _blends:
+    - BlendShapeId: 62
+      Weight: 52.9
+    - BlendShapeId: 40
+      Weight: 35.9
+    - BlendShapeId: 86
+      Weight: 32.9
+    - BlendShapeId: 105
+      Weight: 63.6
