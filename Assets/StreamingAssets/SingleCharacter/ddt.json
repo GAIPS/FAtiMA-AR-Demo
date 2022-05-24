@@ -1,0 +1,431 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"ScenarioName": "DDT",
+			"Description": "Dia do Técnico",
+			"Dialogues": [
+				{
+					"CurrentState": "Angry",
+					"NextState": "WhyAngry",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "I'm sorry to hear that, why are you upset?",
+					"UtteranceId": "TTS-6E20751E3EABF87A44FD4F700CD043AF"
+				}, 
+				{
+					"CurrentState": "TalkAbout",
+					"NextState": "TalkAboutResponse",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Do you want to talk about it?",
+					"UtteranceId": "TTS-90C542901E4A800A760CEABF7A28B71E"
+				}, 
+				{
+					"CurrentState": "End",
+					"NextState": "ReStart",
+					"Meaning": "-",
+					"Style": "Happy",
+					"Utterance": "Muahahahahahahahaahahahahahahahahaha",
+					"UtteranceId": "TTS-8101C6BDC49E2E8CD5F1FAF33F2595DF"
+				}, 
+				{
+					"CurrentState": "Choice",
+					"NextState": "Skills",
+					"Meaning": "Same",
+					"Style": "-",
+					"Utterance": "Nope!",
+					"UtteranceId": "TTS-F6B5DAB43273B84AB132FD307CA9F6F8"
+				}, 
+				{
+					"CurrentState": "Greeting",
+					"NextState": "TalkAbout",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "I'm okay...",
+					"UtteranceId": "TTS-D2692060DBB55826B5F64621B184D8E5"
+				}, 
+				{
+					"CurrentState": "WhyAngry",
+					"NextState": "HateAgents",
+					"Meaning": "-",
+					"Style": "Rude",
+					"Utterance": "I've seen plenty of sci-fi, you are not to be trusted",
+					"UtteranceId": "TTS-75004E4A704741E8A7D685CAB7A9C616"
+				}, 
+				{
+					"CurrentState": "WhyAngry",
+					"NextState": "HateAgents",
+					"Meaning": "-",
+					"Style": "Rude",
+					"Utterance": "I don't trust robots or whatever you are",
+					"UtteranceId": "TTS-07452EA34EB64981ADC9D739C768A5A4"
+				}, 
+				{
+					"CurrentState": "TalkAboutResponse",
+					"NextState": "HateAgents",
+					"Meaning": "-",
+					"Style": "Rude",
+					"Utterance": "Nope, get lost",
+					"UtteranceId": "TTS-BC6D5A653AF6165718F54DD5F68A38C2"
+				}, 
+				{
+					"CurrentState": "TalkAboutResponse",
+					"NextState": "It",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "There's nothing to talk about, some days just aren't it",
+					"UtteranceId": "TTS-C6D5139A98C0062C57E1093ADA1D0DB0"
+				}, 
+				{
+					"CurrentState": "PreSkills2",
+					"NextState": "Skills2",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Go on...",
+					"UtteranceId": "TTS-10778EB9F9731F5247D6A9CA9E39D353"
+				}, 
+				{
+					"CurrentState": "CapabilitesResponse",
+					"NextState": "Skills",
+					"Meaning": "-",
+					"Style": "Happy",
+					"Utterance": "I would love to",
+					"UtteranceId": "TTS-D58E365D113A1FFCDCA62FA949C2EF29"
+				}, 
+				{
+					"CurrentState": "HateAgents",
+					"NextState": "GuessWhat",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Oh yeah? I don't even exist, what are you really upset about?",
+					"UtteranceId": "TTS-898CE240A9CCD6D94E7C80A4F055E56C"
+				}, 
+				{
+					"CurrentState": "Start",
+					"NextState": "Greeting",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Hello, my name is FAtiMA and welcome to Dia do Técnico, how are you?",
+					"UtteranceId": "TTS-49E5A09B595D7936941839CA5C8B43B9"
+				}, 
+				{
+					"CurrentState": "Next",
+					"NextState": "End",
+					"Meaning": "Same",
+					"Style": "-",
+					"Utterance": "It was great talking to you! You can restart the scenario or spawn some dogs. ",
+					"UtteranceId": "TTS-0E171F5AB845CAECA7C7EA42AB78F672"
+				}, 
+				{
+					"CurrentState": "Greeting",
+					"NextState": "Angry",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "I'm quite angry actually...",
+					"UtteranceId": "TTS-1C42E973C68334AB489B40BF5DA0DA48"
+				}, 
+				{
+					"CurrentState": "WhyAngry",
+					"NextState": "TalkAbout",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "My day is not going well",
+					"UtteranceId": "TTS-FAEE8820BF66776B99876F45614CE160"
+				}, 
+				{
+					"CurrentState": "Same",
+					"NextState": "CapabilitesResponse",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Would you like to know more about me?",
+					"UtteranceId": "TTS-4C3FD0E51969BBF3584D1524CCE93221"
+				}, 
+				{
+					"CurrentState": "It",
+					"NextState": "Same",
+					"Meaning": "Same",
+					"Style": "-",
+					"Utterance": "Same",
+					"UtteranceId": "TTS-51037A4A37730F52C8732586D3AAA316"
+				}, 
+				{
+					"CurrentState": "Greeting",
+					"NextState": "Happy",
+					"Meaning": "-",
+					"Style": "Happy",
+					"Utterance": "I'm pretty great actually",
+					"UtteranceId": "TTS-3EDC2501A367DE6ED8CF0775AA4CC139"
+				}, 
+				{
+					"CurrentState": "CapabilitesResponse",
+					"NextState": "Choice",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Do I even have a choice?",
+					"UtteranceId": "TTS-09AD23D8726C08E8E175AB3E7B2D6308"
+				}, 
+				{
+					"CurrentState": "CapabilitesResponse",
+					"NextState": "Angry",
+					"Meaning": "-",
+					"Style": "Rude",
+					"Utterance": "Naaah sorry, I'm quite busy",
+					"UtteranceId": "TTS-2B3A52ADEAD94066E6C6C025339AE52C"
+				}, 
+				{
+					"CurrentState": "Happy",
+					"NextState": "CapabilitesResponse",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "That makes me super happy! Would you like to learn more about me?",
+					"UtteranceId": "TTS-71049C03CED5E2567F7764A8DB0ABAD2"
+				}, 
+				{
+					"CurrentState": "WhyAngry",
+					"NextState": "TalkAbout",
+					"Meaning": "-",
+					"Style": "Happy",
+					"Utterance": "I'm not upset....really",
+					"UtteranceId": "TTS-B6124889F871C37578482A63E761AC9C"
+				}, 
+				{
+					"CurrentState": "PreSkills3",
+					"NextState": "Skills3",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Keep going...",
+					"UtteranceId": "TTS-A6F3324060F22CA62FEA75D611FA8314"
+				}, 
+				{
+					"CurrentState": "JobInterviewQuestions",
+					"NextState": "JobInterviewResponse",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "I'm too humble",
+					"UtteranceId": "TTS-1836EF6C311FD08137C48AD3DB3ABB63"
+				}, 
+				{
+					"CurrentState": "PreSkills4",
+					"NextState": "Skills4",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Oh really?",
+					"UtteranceId": "TTS-EC289B8F55F7A8915B279EBB7F874742"
+				}, 
+				{
+					"CurrentState": "Skills4",
+					"NextState": "JobInterviewQuestions",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Imagine: What would you say is your biggest weakness? ",
+					"UtteranceId": "TTS-C99252577C8E929B4B83701ACFFD2BB8"
+				}, 
+				{
+					"CurrentState": "JobInterviewQuestions",
+					"NextState": "JobInterviewResponse",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "I'm too honest",
+					"UtteranceId": "TTS-D1C69D2F3C673FDC3733CECF6EF5B88F"
+				}, 
+				{
+					"CurrentState": "JobInterviewQuestions",
+					"NextState": "JobInterviewResponse",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "I work too hard",
+					"UtteranceId": "TTS-93E76BD3C79E55726DA034CC5DA9CDD8"
+				}, 
+				{
+					"CurrentState": "JobInterviewResponse",
+					"NextState": "Next",
+					"Meaning": "Same",
+					"Style": "-",
+					"Utterance": "I guess you are a liar too. ",
+					"UtteranceId": "TTS-2C5EF34119F0E82FAAD79F065C19646A"
+				}, 
+				{
+					"CurrentState": "ReStart",
+					"NextState": "Start",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Start Scenario Over",
+					"UtteranceId": "TTS-47D7BB97D5E096B56EF6030564511E64"
+				}, 
+				{
+					"CurrentState": "Skills2",
+					"NextState": "PreSkills3",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Emotional Agents like me are often used in Serious Games and Social Skills Training environments",
+					"UtteranceId": "TTS-534F7ECDC4CFD6185F4D674851DF7D26"
+				}, 
+				{
+					"CurrentState": "Skills3",
+					"NextState": "PreSkills4",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "For example, individuals with severe Soxial Anxiety Disorders can use agents like me to practice job interviews",
+					"UtteranceId": "TTS-2FA66F63224DE40B43DB4B905A2C651C"
+				}, 
+				{
+					"CurrentState": "Skills",
+					"NextState": "PreSkills2",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "I am an intelligent virtual agent created using FAtiMA-Toolkit",
+					"UtteranceId": "TTS-63B1C93765E6926F3299093A1793B469"
+				}],
+			"Characters": [
+				{
+					"KnowledgeBase":
+						{
+							"Perspective": "Fatima",
+							"Knowledge":
+								{
+									"SELF":
+										{
+											"is(Fatima)": "True, 1",
+											"DialogueState(Player)": "Start, 1",
+											"Has(Floor)": "Fatima, 1"
+										}
+								}
+						},
+					"BodyName": null,
+					"VoiceName": "Female",
+					"EmotionalState":
+						{
+							"Mood": 0,
+							"initialTick": 0,
+							"EmotionalPool": [],
+							"AppraisalConfiguration":
+								{
+									"HalfLifeDecayConstant": 0.5,
+									"EmotionInfluenceOnMoodFactor": 0.3,
+									"MoodInfluenceOnEmotionFactor": 0.3,
+									"MinimumMoodValueForInfluencingEmotions": 0.5,
+									"EmotionalHalfLifeDecayTime": 15,
+									"MoodHalfLifeDecayTime": 60
+								}
+						},
+					"AutobiographicMemory":
+						{
+							"Tick": 0,
+							"records": []
+						},
+					"OtherAgents":
+						{
+							"dictionary": []
+						},
+					"Goals": []
+				}, 
+				{
+					"KnowledgeBase":
+						{
+							"Perspective": "Player",
+							"Knowledge":
+								{
+									"SELF":
+										{
+											"Has(Floor)": "Fatima, 1",
+											"DialogueState(Fatima)": "Start, 1"
+										}
+								}
+						},
+					"BodyName": "Male",
+					"VoiceName": "Male",
+					"EmotionalState":
+						{
+							"Mood": 0,
+							"initialTick": 0,
+							"EmotionalPool": [],
+							"AppraisalConfiguration":
+								{
+									"HalfLifeDecayConstant": 0.5,
+									"EmotionInfluenceOnMoodFactor": 0.3,
+									"MoodInfluenceOnEmotionFactor": 0.3,
+									"MinimumMoodValueForInfluencingEmotions": 0.5,
+									"EmotionalHalfLifeDecayTime": 15,
+									"MoodHalfLifeDecayTime": 60
+								}
+						},
+					"AutobiographicMemory":
+						{
+							"Tick": 0,
+							"records": []
+						},
+					"OtherAgents":
+						{
+							"dictionary": []
+						},
+					"Goals": []
+				}],
+			"WorldModel":
+				{
+					"Effects":
+						{
+							"dictionary": [
+								{
+									"key": "Event(Action-End, [s], Speak(*, [ns], *, *), [t])",
+									"value": [
+										{
+											"PropertyName": "Has(Floor)",
+											"NewValue": "[t]",
+											"ObserverAgent": "*"
+										}, 
+										{
+											"PropertyName": "DialogueState([s])",
+											"NewValue": "[ns]",
+											"ObserverAgent": "[t]"
+										}, 
+										{
+											"PropertyName": "DialogueState([t])",
+											"NewValue": "[ns]",
+											"ObserverAgent": "[s]"
+										}]
+								}, 
+								{
+									"key": "Event(Action-End, [s], Speak(*, [ns], Same, *), [t])",
+									"value": [
+										{
+											"PropertyName": "DialogueState([s])",
+											"NewValue": "[ns]",
+											"ObserverAgent": "[t]"
+										}, 
+										{
+											"PropertyName": "DialogueState([t])",
+											"NewValue": "[ns]",
+											"ObserverAgent": "[s]"
+										}, 
+										{
+											"PropertyName": "Has(Floor)",
+											"NewValue": "[s]",
+											"ObserverAgent": "*"
+										}]
+								}]
+						},
+					"Priorities":
+						{
+							"dictionary": [
+								{
+									"key": "Event(Action-End, [s], Speak(*, [ns], *, *), [t])",
+									"value": 1
+								}, 
+								{
+									"key": "Event(Action-End, [s], DuplicateSpeak(*, [ns], *, *), [t])",
+									"value": 1
+								}, 
+								{
+									"key": "Event(Action-End, [s], Speak(*, [ns], Same, *), [t])",
+									"value": 1
+								}]
+						}
+				}
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "IntegratedAuthoringTool.IntegratedAuthoringToolAsset, IntegratedAuthoringTool, Version=1.7.0.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}

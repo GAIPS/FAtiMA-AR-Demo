@@ -54,12 +54,12 @@ namespace Assets.Scripts
             if (uwr.result == UnityWebRequest.Result.ConnectionError)
             {
                 Debug.Log("Error While Sending: " + uwr.error);
-                manager.debugText.text += "Error : " + uwr.error;
+                if (manager.usingDebugger) manager.debugText.text += "Error : " + uwr.error;
             }
             else
             {
                 Debug.Log("Received: " + uwr.downloadHandler.text);
-                manager.debugText.text += "Received: " + uwr.downloadHandler.text + "\n";
+                if (manager.usingDebugger)  manager.debugText.text += "Received: " + uwr.downloadHandler.text + "\n";
                 getResult = uwr.downloadHandler.text;
                 callback.Invoke();
             }
@@ -100,13 +100,13 @@ namespace Assets.Scripts
             if (uwr.result == UnityWebRequest.Result.ConnectionError)
             {
                 Debug.Log("Error While Sending: " + uwr.error);
-                manager.debugText.text = "Error : " + uwr.error;
+                if (manager.usingDebugger) manager.debugText.text = "Error : " + uwr.error;
             }
             else
             {
-                Debug.Log("Received: " + uwr.downloadHandler.text);
-                manager.debugText.text += "Received: " + uwr.downloadHandler.text + "\n";
-                getResult = uwr.downloadHandler.text;
+                Debug.Log("Received reset confimartion");
+                //manager.debugText.text += "Received: " + uwr.downloadHandler.text + "\n";
+                //getResult = uwr.downloadHandler.text;
                 callback.Invoke();
             }
         }
@@ -137,8 +137,39 @@ namespace Assets.Scripts
 
             var characters = Regex.Matches(output, pattern).Cast<Match>().Select(m => m.Groups[1].Value).ToList();
 
+            var actualCharacters = characters.FindAll(x => x.Contains("Mood")).ToList();
 
-            return characters;
+            return actualCharacters;
+        }
+
+        List<string> CleanEmotionOutput(string output)
+        {
+            List<string> retList = new List<string>();
+
+            output = output.Replace("\"", "");
+
+            var pattern = @"\{(.*?)\}";
+
+            var characters = Regex.Matches(output, pattern).Cast<Match>().Select(m => m.Groups[1].Value).ToList();
+
+            var actualEmotions = characters.FindAll(x => x.Contains("Type")).ToList();
+
+            return actualEmotions;
+        }
+
+        List<string> CleanDecisionOutput(string output)
+        {
+            List<string> retList = new List<string>();
+
+            output = output.Replace("\"", "");
+
+            var pattern = @"\{(.*?)\}";
+
+            var characters = Regex.Matches(output, pattern).Cast<Match>().Select(m => m.Groups[1].Value).ToList();
+
+            var actuaDecisions = characters.FindAll(x => x.Contains("Action")).ToList();
+
+            return actuaDecisions;
         }
 
         public void GetScenarios()
@@ -207,7 +238,7 @@ namespace Assets.Scripts
 
         public void GotDecisions()
         {
-            manager.DecisionHandler(CleanCharacterOutput(getResult), currentCharacter);
+            manager.DecisionHandler(CleanDecisionOutput(getResult), currentCharacter);
         }
 
         public void GetEmotionalState(string scenarioName, string character)
@@ -226,20 +257,28 @@ namespace Assets.Scripts
 
         public void HandleEmotionalOutput()
         {
-            var internalState = CleanCharacterOutput(getResult)[0];
+            if (CleanEmotionOutput(getResult).Count() > 0)
+            {
+                var internalState = CleanEmotionOutput(getResult).Last();
 
-            var emotionInformation = manager.Between(internalState, "Emotions:", "");
+                var strongestEmotion = manager.Between(internalState, "Type:", ",Int");
 
-            var strongestEmotion = manager.Between(emotionInformation, "Type:", ",Int");
-
-            var intensityAux = manager.Between(emotionInformation, "Intensity:", ",Target:").Split('.')[0];
+                var intensityAux = manager.Between(internalState, "Intensity:", ",Target:").Split('.')[0];
 
 
-            int intensity = Int32.Parse(intensityAux);
+                int intensity = Int32.Parse(intensityAux);
 
-            manager.strongestEmotion = strongestEmotion;
-            manager.emotionIntensity = intensity;
+                manager.strongestEmotion = strongestEmotion;
+                manager.emotionIntensity = intensity;
+
+            }
+
+
+            manager.UpdatedEmotionalState();
+
         }
+
+
 
 
         public void PostConsequences()

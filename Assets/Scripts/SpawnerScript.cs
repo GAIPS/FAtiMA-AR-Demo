@@ -43,7 +43,7 @@ public class SpawnerScript : MonoBehaviour
             Destroy(spawnCharacterLocation.gameObject);
             var obj = Instantiate(characterPrefab);
             obj.transform.position = position;
-            obj.transform.Translate(new Vector3(0.0f, -0.1f, 0.0f));
+            obj.transform.Translate(new Vector3(0.0f, -0.08f, 0.0f));
             //obj.transform.rotation
             obj.transform.rotation = Quaternion.identity;
             var lookatPosition = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
@@ -55,6 +55,8 @@ public class SpawnerScript : MonoBehaviour
             obj.transform.rotation = properRotation;
             spawnedCharacter = true;
             this.characterTransform = obj.transform;
+            GameObject.Find("Canvas").GetComponent<RectTransform>().position = obj.transform.position;
+            GameObject.Find("Canvas").GetComponent<RectTransform>().Translate(0.0f, 0.77f, -0.1f);
             this.transform.GetComponent<FAtiMAWebServerScenarioManager>().SpawnedNPC();
         }
     }
@@ -86,14 +88,14 @@ public class SpawnerScript : MonoBehaviour
     {
         if (characterTransform != null)
         {
-            characterTransform.Rotate(0.0f, 4.0f, 0.0f);
+            characterTransform.Rotate(0.0f, 10.0f, 0.0f);
         }
     }
     public void RotateRight()
     {
         if (characterTransform != null)
         {
-            characterTransform.Rotate(0.0f, -4.0f, 0.0f);
+            characterTransform.Rotate(0.0f, -10.0f, 0.0f);
         }
     }
 
