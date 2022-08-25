@@ -1,0 +1,175 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"ScenarioName": "Example",
+			"Description": "A short conversation between the Player and a Character named Charlie. Charlie discovers that there is a major conspiracy within the company he works in. ",
+			"Dialogues": [
+				{
+					"CurrentState": "Leave",
+					"NextState": "End",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Alright, goodbye",
+					"UtteranceId": "TTS-CCF7877090E49659FB15B89D80C365A7"
+				}, 
+				{
+					"CurrentState": "Greeting",
+					"NextState": "Order",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "How do you do?",
+					"UtteranceId": "TTS-E191BADF9DAD8B0EDC942E4A6DFC8D64"
+				}, 
+				{
+					"CurrentState": "Start",
+					"NextState": "Greeting",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Whatup",
+					"UtteranceId": "TTS-7402D3E042CA6854CB3F8066F25C6507"
+				}, 
+				{
+					"CurrentState": "Order",
+					"NextState": "Greeting",
+					"Meaning": "Pizza",
+					"Style": "-",
+					"Utterance": "Yes, I would like a Pizza please",
+					"UtteranceId": "TTS-E2A8BDFAB9C5D5B8A5CD9A67F8C08155"
+				}],
+			"Characters": [
+				{
+					"KnowledgeBase":
+						{
+							"Perspective": "Charlie",
+							"Knowledge":
+								{
+									"SELF":
+										{
+											"Has(Floor)": "Charlie, 1",
+											"DialogueState(Player)": "Start, 1",
+											"AM(Charlie)": "True, 1",
+											"CloseFriends(Player)": "False, 1"
+										}
+								}
+						},
+					"BodyName": "Male",
+					"VoiceName": "Male",
+					"EmotionalState":
+						{
+							"Mood": 4,
+							"initialTick": 0,
+							"EmotionalPool": [],
+							"AppraisalConfiguration":
+								{
+									"HalfLifeDecayConstant": 0.5,
+									"EmotionInfluenceOnMoodFactor": 0.3,
+									"MoodInfluenceOnEmotionFactor": 0.3,
+									"MinimumMoodValueForInfluencingEmotions": 0.5,
+									"EmotionalHalfLifeDecayTime": 15,
+									"MoodHalfLifeDecayTime": 60
+								}
+						},
+					"AutobiographicMemory":
+						{
+							"Tick": 0,
+							"records": []
+						},
+					"OtherAgents":
+						{
+							"dictionary": []
+						},
+					"Goals": [
+						{
+							"Name": "Survive",
+							"Significance": 5,
+							"Likelihood": 0.5
+						}]
+				}, 
+				{
+					"KnowledgeBase":
+						{
+							"Perspective": "Player",
+							"Knowledge":
+								{
+									"SELF":
+										{
+											"Has(Floor)": "Charlie, 1",
+											"DialogueState(Charlie)": "Start, 1"
+										}
+								}
+						},
+					"BodyName": null,
+					"VoiceName": null,
+					"EmotionalState":
+						{
+							"Mood": -3,
+							"initialTick": 0,
+							"EmotionalPool": [],
+							"AppraisalConfiguration":
+								{
+									"HalfLifeDecayConstant": 0.5,
+									"EmotionInfluenceOnMoodFactor": 0.3,
+									"MoodInfluenceOnEmotionFactor": 0.3,
+									"MinimumMoodValueForInfluencingEmotions": 0.5,
+									"EmotionalHalfLifeDecayTime": 15,
+									"MoodHalfLifeDecayTime": 60
+								}
+						},
+					"AutobiographicMemory":
+						{
+							"Tick": 0,
+							"records": []
+						},
+					"OtherAgents":
+						{
+							"dictionary": []
+						},
+					"Goals": [
+						{
+							"Name": "Survive",
+							"Significance": 5,
+							"Likelihood": 0.2
+						}]
+				}],
+			"WorldModel":
+				{
+					"Effects":
+						{
+							"dictionary": [
+								{
+									"key": "Event(Action-End, [s], Speak(*, [ns], *, *), [t])",
+									"value": [
+										{
+											"PropertyName": "DialogueState([s])",
+											"NewValue": "[ns]",
+											"ObserverAgent": "[t]"
+										}, 
+										{
+											"PropertyName": "Has(Floor)",
+											"NewValue": "[t]",
+											"ObserverAgent": "*"
+										}, 
+										{
+											"PropertyName": "DialogueState([s])",
+											"NewValue": "[ns]",
+											"ObserverAgent": "Player"
+										}]
+								}]
+						},
+					"Priorities":
+						{
+							"dictionary": [
+								{
+									"key": "Event(Action-End, [s], Speak(*, [ns], *, *), [t])",
+									"value": 1
+								}]
+						}
+				}
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "IntegratedAuthoringTool.IntegratedAuthoringToolAsset, IntegratedAuthoringTool, Version=1.7.0.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}

@@ -1,0 +1,895 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 System.Void RolePlayCharacter.AgentEntry::set_Name(WellFormedNames.Name)
+extern void AgentEntry_set_Name_m2990BDFF2C5250D9311B4D254216BACAE608CE6C (void);
+// 0x00000002 System.Void RolePlayCharacter.AgentEntry::set_EmotionalState(EmotionalAppraisal.ConcreteEmotionalState)
+extern void AgentEntry_set_EmotionalState_mD93B7F24B802199C321EC87FD7F23F6545F7B706 (void);
+// 0x00000003 System.Void RolePlayCharacter.AgentEntry::.ctor(WellFormedNames.Name)
+extern void AgentEntry__ctor_m6EA056C5303F0ADB6903E3A9C5B2DED7573B5E87 (void);
+// 0x00000004 WellFormedNames.Name RolePlayCharacter.EventHelper::ActionEnd(WellFormedNames.Name,WellFormedNames.Name,WellFormedNames.Name)
+extern void EventHelper_ActionEnd_m1249AB3780153DDD2E1F7DEE1F20CC554F03F3CF (void);
+// 0x00000005 WellFormedNames.Name RolePlayCharacter.EventHelper::PropertyChange(WellFormedNames.Name,WellFormedNames.Name,WellFormedNames.Name)
+extern void EventHelper_PropertyChange_m781F6BCCC9D4BCA9AFE1FAB9DFA28709A1625ED8 (void);
+// 0x00000006 WellFormedNames.Name RolePlayCharacter.EventHelper::ActionEnd(System.String,System.String,System.String)
+extern void EventHelper_ActionEnd_m4550A04FE546A1A99D7E646280662AB9EE4CB6BE (void);
+// 0x00000007 System.Single RolePlayCharacter.Identity::get_Salience()
+extern void Identity_get_Salience_mEB8A8643073AB9A504F80EBA8219BB93684E4C4E (void);
+// 0x00000008 System.Void RolePlayCharacter.RolePlayCharacterAsset::.ctor()
+extern void RolePlayCharacterAsset__ctor_m8E8132702E199E2C12D64FF890ED7CE90B2F8171 (void);
+// 0x00000009 System.Void RolePlayCharacter.RolePlayCharacterAsset::set_BodyName(System.String)
+extern void RolePlayCharacterAsset_set_BodyName_m25D28620B57C5CC8C2502529CBC9BC147CA1E409 (void);
+// 0x0000000A WellFormedNames.Name RolePlayCharacter.RolePlayCharacterAsset::get_CharacterName()
+extern void RolePlayCharacterAsset_get_CharacterName_m1124071AC0BCC42016DB434223751EEC34AECDCE (void);
+// 0x0000000B System.Void RolePlayCharacter.RolePlayCharacterAsset::set_IsPlayer(System.Boolean)
+extern void RolePlayCharacterAsset_set_IsPlayer_m1847441E9B0CFD8787251E4E8C047A80E935740E (void);
+// 0x0000000C WellFormedNames.Name RolePlayCharacter.RolePlayCharacterAsset::get_CurrentActionName()
+extern void RolePlayCharacterAsset_get_CurrentActionName_m61C43C1D4495D4768771A405EC59D176B37AA4EF (void);
+// 0x0000000D System.Void RolePlayCharacter.RolePlayCharacterAsset::set_CurrentActionName(WellFormedNames.Name)
+extern void RolePlayCharacterAsset_set_CurrentActionName_m7B5094C964B944045717D48448D35D0EE6CC7CBE (void);
+// 0x0000000E WellFormedNames.Name RolePlayCharacter.RolePlayCharacterAsset::get_CurrentActionTarget()
+extern void RolePlayCharacterAsset_get_CurrentActionTarget_mD861E88C7677564FFA1EF69BCB0F6B4D3C173261 (void);
+// 0x0000000F System.Void RolePlayCharacter.RolePlayCharacterAsset::set_CurrentActionTarget(WellFormedNames.Name)
+extern void RolePlayCharacterAsset_set_CurrentActionTarget_mF73272ABA6D387EBE7044827A0D68C476E8B78C5 (void);
+// 0x00000010 KnowledgeBase.IDynamicPropertiesRegistry RolePlayCharacter.RolePlayCharacterAsset::get_DynamicPropertiesRegistry()
+extern void RolePlayCharacterAsset_get_DynamicPropertiesRegistry_m2CEFA7ADAC7E4B1E17CA27977BFF7A208581ECC6 (void);
+// 0x00000011 System.Collections.Generic.IEnumerable`1<AutobiographicMemory.DTOs.EventDTO> RolePlayCharacter.RolePlayCharacterAsset::get_EventRecords()
+extern void RolePlayCharacterAsset_get_EventRecords_mDD40E9E0DFD51809FCD23D05A10A1B5ACF44AFB2 (void);
+// 0x00000012 System.UInt64 RolePlayCharacter.RolePlayCharacterAsset::get_Tick()
+extern void RolePlayCharacterAsset_get_Tick_m7A53F3096BE1299F896458FF2CC614B4C7F3634D (void);
+// 0x00000013 System.Void RolePlayCharacter.RolePlayCharacterAsset::set_Tick(System.UInt64)
+extern void RolePlayCharacterAsset_set_Tick_mDE976D73F1F9D33352AD0525BD2B1594E82741DE (void);
+// 0x00000014 System.String RolePlayCharacter.RolePlayCharacterAsset::get_VoiceName()
+extern void RolePlayCharacterAsset_get_VoiceName_mAF2245EB1B7FA2FB4342B65F41480063B416201B (void);
+// 0x00000015 System.Collections.Generic.IEnumerable`1<ActionLibrary.IAction> RolePlayCharacter.RolePlayCharacterAsset::Decide()
+extern void RolePlayCharacterAsset_Decide_m37BFCCE229ACD9AE19E9709B04EF01529A20A773 (void);
+// 0x00000016 System.Collections.Generic.IEnumerable`1<ActionLibrary.IAction> RolePlayCharacter.RolePlayCharacterAsset::Decide(WellFormedNames.Name)
+extern void RolePlayCharacterAsset_Decide_m0B819116809252886FE601A3AC2ED3EF31B22935 (void);
+// 0x00000017 System.String RolePlayCharacter.RolePlayCharacterAsset::ProcessWithBeliefs(System.String)
+extern void RolePlayCharacterAsset_ProcessWithBeliefs_m17E213EB38B8771FAB0DCE2D34C6AC4CCE9D6031 (void);
+// 0x00000018 System.Collections.Generic.IEnumerable`1<EmotionalAppraisal.DTOs.EmotionDTO> RolePlayCharacter.RolePlayCharacterAsset::GetAllActiveEmotions()
+extern void RolePlayCharacterAsset_GetAllActiveEmotions_m5CA79F830881798806AE2825479989CAD28C7DD5 (void);
+// 0x00000019 System.Void RolePlayCharacter.RolePlayCharacterAsset::LoadAssociatedAssets(GAIPS.Rage.AssetStorage)
+extern void RolePlayCharacterAsset_LoadAssociatedAssets_m91FC334004573663E1052AF3715F00796ABA098A (void);
+// 0x0000001A System.Void RolePlayCharacter.RolePlayCharacterAsset::Perceive(WellFormedNames.Name)
+extern void RolePlayCharacterAsset_Perceive_m2F76C1245B209C11F02E2C593C7706D4FFF4292E (void);
+// 0x0000001B System.Void RolePlayCharacter.RolePlayCharacterAsset::Perceive(WellFormedNames.Name,WellFormedNames.Name)
+extern void RolePlayCharacterAsset_Perceive_mA8A07D374CA3965F03D2B7EDAFC6E1B752749784 (void);
+// 0x0000001C System.Void RolePlayCharacter.RolePlayCharacterAsset::Perceive(System.Collections.Generic.IEnumerable`1<WellFormedNames.Name>)
+extern void RolePlayCharacterAsset_Perceive_m5C71D21A4FC795551D2090E530E26D9732072F0C (void);
+// 0x0000001D System.Void RolePlayCharacter.RolePlayCharacterAsset::Perceive(System.Collections.Generic.IEnumerable`1<WellFormedNames.Name>,WellFormedNames.Name)
+extern void RolePlayCharacterAsset_Perceive_mECC5A0D2E1F6B5B7BDF1A0C2871FE09C9D0FF4BC (void);
+// 0x0000001E System.Void RolePlayCharacter.RolePlayCharacterAsset::Update()
+extern void RolePlayCharacterAsset_Update_mA20913D1EF582CA5158A9D5887E412A55AAA1CCF (void);
+// 0x0000001F System.String RolePlayCharacter.RolePlayCharacterAsset::ToString()
+extern void RolePlayCharacterAsset_ToString_m5455F3CDF361ACD5ACD9D3DFEA90AEB3565F977D (void);
+// 0x00000020 System.Void RolePlayCharacter.RolePlayCharacterAsset::AddKnownAgent(WellFormedNames.Name)
+extern void RolePlayCharacterAsset_AddKnownAgent_m94D4F1EFA3A47908AB06D70C78A252C0D9374894 (void);
+// 0x00000021 System.Void RolePlayCharacter.RolePlayCharacterAsset::BindToRegistry(KnowledgeBase.IDynamicPropertiesRegistry)
+extern void RolePlayCharacterAsset_BindToRegistry_m1C82B5BF1C6818A2F89CDC2B56583159D9F47E28 (void);
+// 0x00000022 System.Collections.Generic.IEnumerable`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset::EmotionIntensityPropertyCalculator(KnowledgeBase.IQueryContext,WellFormedNames.Name,WellFormedNames.Name)
+extern void RolePlayCharacterAsset_EmotionIntensityPropertyCalculator_m5CA606DF54E979471A0B39E909009F4448D8F085 (void);
+// 0x00000023 System.Collections.Generic.IEnumerable`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset::IsAgentPropertyCalculator(KnowledgeBase.IQueryContext,WellFormedNames.Name)
+extern void RolePlayCharacterAsset_IsAgentPropertyCalculator_m3D8EC1ABCCA7D6601E08FFB7CD13891E2E2C795C (void);
+// 0x00000024 System.Collections.Generic.IEnumerable`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset::MoodPropertyCalculator(KnowledgeBase.IQueryContext,WellFormedNames.Name)
+extern void RolePlayCharacterAsset_MoodPropertyCalculator_m546D2D5BC6CF9B6494804AE02C94DD9CAE013BEC (void);
+// 0x00000025 System.Collections.Generic.IEnumerable`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset::TickPropertyCalculator(KnowledgeBase.IQueryContext,WellFormedNames.Name)
+extern void RolePlayCharacterAsset_TickPropertyCalculator_mE76204D5A6612DF21990BCC1D7C36B71A28F0587 (void);
+// 0x00000026 System.Collections.Generic.IEnumerable`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset::IsSalientPropertyCalculator(KnowledgeBase.IQueryContext,WellFormedNames.Name)
+extern void RolePlayCharacterAsset_IsSalientPropertyCalculator_m9317AC14A6E765B173497F472B90643988EC0391 (void);
+// 0x00000027 System.Collections.Generic.IEnumerable`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset::RandomCalculator(KnowledgeBase.IQueryContext,WellFormedNames.Name,WellFormedNames.Name)
+extern void RolePlayCharacterAsset_RandomCalculator_mB8A8AFE0A0B349FC7282BC1BFD7BCF83FA6FA78A (void);
+// 0x00000028 System.Collections.Generic.IEnumerable`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset::RoundMethodCalculator(KnowledgeBase.IQueryContext,WellFormedNames.Name,WellFormedNames.Name)
+extern void RolePlayCharacterAsset_RoundMethodCalculator_m3A0A8B8076A07D536AD53EC96ADFA2AAC7F2642A (void);
+// 0x00000029 System.Collections.Generic.IEnumerable`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset::RoundtoTensMethodCalculator(KnowledgeBase.IQueryContext,WellFormedNames.Name,WellFormedNames.Name)
+extern void RolePlayCharacterAsset_RoundtoTensMethodCalculator_mF0DE96D52A4E2DEE65F4B9727372AD86AF72A569 (void);
+// 0x0000002A System.Collections.Generic.IEnumerable`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset::StrongestAttributionEmotionCalculator(KnowledgeBase.IQueryContext,WellFormedNames.Name)
+extern void RolePlayCharacterAsset_StrongestAttributionEmotionCalculator_m0D847B0022EDEF96B99118BE720A40B6DC315168 (void);
+// 0x0000002B System.Collections.Generic.IEnumerable`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset::StrongestCompoundEmotionCalculator(KnowledgeBase.IQueryContext,WellFormedNames.Name)
+extern void RolePlayCharacterAsset_StrongestCompoundEmotionCalculator_m3C4B3728C63710ADDB0D48EB8539F967D66352DF (void);
+// 0x0000002C System.Collections.Generic.IEnumerable`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset::StrongestEmotionCalculator(KnowledgeBase.IQueryContext,WellFormedNames.Name)
+extern void RolePlayCharacterAsset_StrongestEmotionCalculator_m71B267A3418480AE8077CCC77A38612173C02D91 (void);
+// 0x0000002D System.Collections.Generic.IEnumerable`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset::StrongestEmotionForEventCalculator(KnowledgeBase.IQueryContext,WellFormedNames.Name,WellFormedNames.Name)
+extern void RolePlayCharacterAsset_StrongestEmotionForEventCalculator_m19C67F9B3D87B2EA999A35F7A9FB0F15DAB00D63 (void);
+// 0x0000002E System.Collections.Generic.IEnumerable`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset::StrongestWellBeingEmotionCalculator(KnowledgeBase.IQueryContext,WellFormedNames.Name)
+extern void RolePlayCharacterAsset_StrongestWellBeingEmotionCalculator_mBF4C06D0BDAA7206896A2566D95F0E910845A9E1 (void);
+// 0x0000002F System.Void RolePlayCharacter.RolePlayCharacterAsset::.cctor()
+extern void RolePlayCharacterAsset__cctor_m60F4091FFC8C3E285B97BB713340572E8E57CB14 (void);
+// 0x00000030 EmotionalAppraisal.DTOs.EmotionDTO RolePlayCharacter.RolePlayCharacterAsset::<GetAllActiveEmotions>b__47_0(EmotionalAppraisal.IActiveEmotion)
+extern void RolePlayCharacterAsset_U3CGetAllActiveEmotionsU3Eb__47_0_m548C4AFEFE5E1A42EC3F2BCA4B3D42D547BBE0C2 (void);
+// 0x00000031 System.Void RolePlayCharacter.RolePlayCharacterAsset/<>c::.cctor()
+extern void U3CU3Ec__cctor_m85260B4E3EA55B1B58E458BBBD95A9CBB429EACB (void);
+// 0x00000032 System.Void RolePlayCharacter.RolePlayCharacterAsset/<>c::.ctor()
+extern void U3CU3Ec__ctor_m9458194AEB41FA6422035F1532A9CFF3FAD6E9BF (void);
+// 0x00000033 AutobiographicMemory.DTOs.EventDTO RolePlayCharacter.RolePlayCharacterAsset/<>c::<get_EventRecords>b__28_0(AutobiographicMemory.IBaseEvent)
+extern void U3CU3Ec_U3Cget_EventRecordsU3Eb__28_0_m3CE8C654E829779427C53518D1E1CCBA6931C4F3 (void);
+// 0x00000034 System.UInt32 RolePlayCharacter.RolePlayCharacterAsset/<>c::<EmotionIntensityPropertyCalculator>b__103_2(EmotionalAppraisal.DTOs.EmotionDTO)
+extern void U3CU3Ec_U3CEmotionIntensityPropertyCalculatorU3Eb__103_2_mCADDDA84B18ADF124064262471D0A8F4C3E4DF7C (void);
+// 0x00000035 System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<>c::<StrongestAttributionEmotionCalculator>b__112_0(EmotionalAppraisal.IActiveEmotion)
+extern void U3CU3Ec_U3CStrongestAttributionEmotionCalculatorU3Eb__112_0_mC22AF0523EB24B01E646F62BCA78222EB9BCFFB6 (void);
+// 0x00000036 System.Single RolePlayCharacter.RolePlayCharacterAsset/<>c::<StrongestAttributionEmotionCalculator>b__112_1(EmotionalAppraisal.IActiveEmotion)
+extern void U3CU3Ec_U3CStrongestAttributionEmotionCalculatorU3Eb__112_1_m163745BA5A46A7271919CE17C61BCC9E2D1B40A5 (void);
+// 0x00000037 System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<>c::<StrongestCompoundEmotionCalculator>b__113_0(EmotionalAppraisal.IActiveEmotion)
+extern void U3CU3Ec_U3CStrongestCompoundEmotionCalculatorU3Eb__113_0_m286498C6A8B5A166A5F4D601395497B4C65D5092 (void);
+// 0x00000038 System.Single RolePlayCharacter.RolePlayCharacterAsset/<>c::<StrongestCompoundEmotionCalculator>b__113_1(EmotionalAppraisal.IActiveEmotion)
+extern void U3CU3Ec_U3CStrongestCompoundEmotionCalculatorU3Eb__113_1_mA83E978AE96D7E3F184E8D3DC630D76BE45CB07E (void);
+// 0x00000039 System.Single RolePlayCharacter.RolePlayCharacterAsset/<>c::<StrongestEmotionForEventCalculator>b__115_1(EmotionalAppraisal.DTOs.EmotionDTO)
+extern void U3CU3Ec_U3CStrongestEmotionForEventCalculatorU3Eb__115_1_mB51151FB2DB27AB323461671838B39DFD04E7701 (void);
+// 0x0000003A System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<>c::<StrongestWellBeingEmotionCalculator>b__116_0(EmotionalAppraisal.IActiveEmotion)
+extern void U3CU3Ec_U3CStrongestWellBeingEmotionCalculatorU3Eb__116_0_m736B03D3BB71B4F57D886E29474C6AAF617C5A70 (void);
+// 0x0000003B System.Single RolePlayCharacter.RolePlayCharacterAsset/<>c::<StrongestWellBeingEmotionCalculator>b__116_1(EmotionalAppraisal.IActiveEmotion)
+extern void U3CU3Ec_U3CStrongestWellBeingEmotionCalculatorU3Eb__116_1_mC5BA09866C2AE3453919A8202AF9642E075DA766 (void);
+// 0x0000003C System.Void RolePlayCharacter.RolePlayCharacterAsset/<>c__DisplayClass44_0::.ctor()
+extern void U3CU3Ec__DisplayClass44_0__ctor_mBD9A7FF59290964989F06C56FCFB001A91A5F628 (void);
+// 0x0000003D System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<>c__DisplayClass44_0::<Decide>b__0(ActionLibrary.IAction)
+extern void U3CU3Ec__DisplayClass44_0_U3CDecideU3Eb__0_mAE6F4557B75799CD3F50F29ECC102456D03D5737 (void);
+// 0x0000003E System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<>c__DisplayClass44_0::<Decide>b__1(ActionLibrary.IAction)
+extern void U3CU3Ec__DisplayClass44_0_U3CDecideU3Eb__1_mDAE6933C85C244EA69F16E5E60BFAB6A5EAC4891 (void);
+// 0x0000003F System.Void RolePlayCharacter.RolePlayCharacterAsset/<>c__DisplayClass103_0::.ctor()
+extern void U3CU3Ec__DisplayClass103_0__ctor_mACBC9531EC4BE9BE1DD65A461F13B0D2D478D915 (void);
+// 0x00000040 System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<>c__DisplayClass103_0::<EmotionIntensityPropertyCalculator>b__0(EmotionalAppraisal.DTOs.EmotionDTO)
+extern void U3CU3Ec__DisplayClass103_0_U3CEmotionIntensityPropertyCalculatorU3Eb__0_mFF98B73CD4D07C678FFE1C443CE1FD58BB14175B (void);
+// 0x00000041 System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<>c__DisplayClass103_0::<EmotionIntensityPropertyCalculator>b__1(EmotionalAppraisal.DTOs.EmotionDTO)
+extern void U3CU3Ec__DisplayClass103_0_U3CEmotionIntensityPropertyCalculatorU3Eb__1_m337F2C5338329C5A0687EFC9806E6073FD64B81C (void);
+// 0x00000042 System.Void RolePlayCharacter.RolePlayCharacterAsset/<EmotionIntensityPropertyCalculator>d__103::.ctor(System.Int32)
+extern void U3CEmotionIntensityPropertyCalculatorU3Ed__103__ctor_m067BD6CDB9E1E8CCB1EA646D62995EF8A465C163 (void);
+// 0x00000043 System.Void RolePlayCharacter.RolePlayCharacterAsset/<EmotionIntensityPropertyCalculator>d__103::System.IDisposable.Dispose()
+extern void U3CEmotionIntensityPropertyCalculatorU3Ed__103_System_IDisposable_Dispose_mA88BD783E4C0AB734E7079603AE457FFAAA19398 (void);
+// 0x00000044 System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<EmotionIntensityPropertyCalculator>d__103::MoveNext()
+extern void U3CEmotionIntensityPropertyCalculatorU3Ed__103_MoveNext_mBB3AEB3288732ABF8804364D763787D58A610168 (void);
+// 0x00000045 System.Void RolePlayCharacter.RolePlayCharacterAsset/<EmotionIntensityPropertyCalculator>d__103::<>m__Finally1()
+extern void U3CEmotionIntensityPropertyCalculatorU3Ed__103_U3CU3Em__Finally1_m4418311C08A36C65904C43D8829865BC77BA257D (void);
+// 0x00000046 System.Void RolePlayCharacter.RolePlayCharacterAsset/<EmotionIntensityPropertyCalculator>d__103::<>m__Finally2()
+extern void U3CEmotionIntensityPropertyCalculatorU3Ed__103_U3CU3Em__Finally2_m25B1E1DF97F30D7E3816F7225A13313262073082 (void);
+// 0x00000047 System.Void RolePlayCharacter.RolePlayCharacterAsset/<EmotionIntensityPropertyCalculator>d__103::<>m__Finally3()
+extern void U3CEmotionIntensityPropertyCalculatorU3Ed__103_U3CU3Em__Finally3_m7884B7ADED7D7BCACD455D114E625A2C237FE9BA (void);
+// 0x00000048 System.Void RolePlayCharacter.RolePlayCharacterAsset/<EmotionIntensityPropertyCalculator>d__103::<>m__Finally4()
+extern void U3CEmotionIntensityPropertyCalculatorU3Ed__103_U3CU3Em__Finally4_m56ED7B1127EFF120BE09EE01015722453A393DEE (void);
+// 0x00000049 System.Void RolePlayCharacter.RolePlayCharacterAsset/<EmotionIntensityPropertyCalculator>d__103::<>m__Finally5()
+extern void U3CEmotionIntensityPropertyCalculatorU3Ed__103_U3CU3Em__Finally5_m2FD0A5C1DDD72CA5E1F65C97917A63DBB8C06F35 (void);
+// 0x0000004A System.Void RolePlayCharacter.RolePlayCharacterAsset/<EmotionIntensityPropertyCalculator>d__103::<>m__Finally6()
+extern void U3CEmotionIntensityPropertyCalculatorU3Ed__103_U3CU3Em__Finally6_mD906E9847F8CA4D95069F88892C70AB4714E07EC (void);
+// 0x0000004B System.Void RolePlayCharacter.RolePlayCharacterAsset/<EmotionIntensityPropertyCalculator>d__103::<>m__Finally7()
+extern void U3CEmotionIntensityPropertyCalculatorU3Ed__103_U3CU3Em__Finally7_m79446D671CE90A4367754F67584E5201E0F5DD8F (void);
+// 0x0000004C KnowledgeBase.DynamicPropertyResult RolePlayCharacter.RolePlayCharacterAsset/<EmotionIntensityPropertyCalculator>d__103::System.Collections.Generic.IEnumerator<KnowledgeBase.DynamicPropertyResult>.get_Current()
+extern void U3CEmotionIntensityPropertyCalculatorU3Ed__103_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_mE77F35DED7E6F8E2B4D373E3FFE8E7C3128F720C (void);
+// 0x0000004D System.Void RolePlayCharacter.RolePlayCharacterAsset/<EmotionIntensityPropertyCalculator>d__103::System.Collections.IEnumerator.Reset()
+extern void U3CEmotionIntensityPropertyCalculatorU3Ed__103_System_Collections_IEnumerator_Reset_m134AB1CC302DF15505CBA65356DC60E1DB9B610F (void);
+// 0x0000004E System.Object RolePlayCharacter.RolePlayCharacterAsset/<EmotionIntensityPropertyCalculator>d__103::System.Collections.IEnumerator.get_Current()
+extern void U3CEmotionIntensityPropertyCalculatorU3Ed__103_System_Collections_IEnumerator_get_Current_mEA8438A1E8D65F1A383C150361750781B95FF1AB (void);
+// 0x0000004F System.Collections.Generic.IEnumerator`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset/<EmotionIntensityPropertyCalculator>d__103::System.Collections.Generic.IEnumerable<KnowledgeBase.DynamicPropertyResult>.GetEnumerator()
+extern void U3CEmotionIntensityPropertyCalculatorU3Ed__103_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_m669B5E9DEEE6797A4A2BF09658670B603CFD5A26 (void);
+// 0x00000050 System.Collections.IEnumerator RolePlayCharacter.RolePlayCharacterAsset/<EmotionIntensityPropertyCalculator>d__103::System.Collections.IEnumerable.GetEnumerator()
+extern void U3CEmotionIntensityPropertyCalculatorU3Ed__103_System_Collections_IEnumerable_GetEnumerator_m98D3FD4CB515352484AF91F3465E612C04808136 (void);
+// 0x00000051 System.Void RolePlayCharacter.RolePlayCharacterAsset/<>c__DisplayClass105_0::.ctor()
+extern void U3CU3Ec__DisplayClass105_0__ctor_m9AEDD61497802C714483AC7A43B95EC1E73396A2 (void);
+// 0x00000052 WellFormedNames.Substitution RolePlayCharacter.RolePlayCharacterAsset/<>c__DisplayClass105_0::<IsAgentPropertyCalculator>b__0(WellFormedNames.Name)
+extern void U3CU3Ec__DisplayClass105_0_U3CIsAgentPropertyCalculatorU3Eb__0_m56D6E0C81094F75A5F54445B58D27C81CBB66ACC (void);
+// 0x00000053 System.Void RolePlayCharacter.RolePlayCharacterAsset/<IsAgentPropertyCalculator>d__105::.ctor(System.Int32)
+extern void U3CIsAgentPropertyCalculatorU3Ed__105__ctor_m6218F78BE2A44281B203487F27776AAAF56BF94C (void);
+// 0x00000054 System.Void RolePlayCharacter.RolePlayCharacterAsset/<IsAgentPropertyCalculator>d__105::System.IDisposable.Dispose()
+extern void U3CIsAgentPropertyCalculatorU3Ed__105_System_IDisposable_Dispose_mD6F69C58AC464700A90F0A6C7CB149564ACC39AE (void);
+// 0x00000055 System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<IsAgentPropertyCalculator>d__105::MoveNext()
+extern void U3CIsAgentPropertyCalculatorU3Ed__105_MoveNext_mDEF753236705D2D9C064935D60BD539414869B7E (void);
+// 0x00000056 System.Void RolePlayCharacter.RolePlayCharacterAsset/<IsAgentPropertyCalculator>d__105::<>m__Finally1()
+extern void U3CIsAgentPropertyCalculatorU3Ed__105_U3CU3Em__Finally1_m9EBDCFCA9DB5F3C8CF43A7E2A42158A60C789A50 (void);
+// 0x00000057 System.Void RolePlayCharacter.RolePlayCharacterAsset/<IsAgentPropertyCalculator>d__105::<>m__Finally2()
+extern void U3CIsAgentPropertyCalculatorU3Ed__105_U3CU3Em__Finally2_mDDC52C5A9E1EC7B7058A46BDF8A1FE296B959B1A (void);
+// 0x00000058 System.Void RolePlayCharacter.RolePlayCharacterAsset/<IsAgentPropertyCalculator>d__105::<>m__Finally3()
+extern void U3CIsAgentPropertyCalculatorU3Ed__105_U3CU3Em__Finally3_mEC9D6C2E2BD77CA3574A3A004AF851E2119AF79C (void);
+// 0x00000059 System.Void RolePlayCharacter.RolePlayCharacterAsset/<IsAgentPropertyCalculator>d__105::<>m__Finally4()
+extern void U3CIsAgentPropertyCalculatorU3Ed__105_U3CU3Em__Finally4_mD46A0FE216F3D3F2095493165A3199C812A3770E (void);
+// 0x0000005A KnowledgeBase.DynamicPropertyResult RolePlayCharacter.RolePlayCharacterAsset/<IsAgentPropertyCalculator>d__105::System.Collections.Generic.IEnumerator<KnowledgeBase.DynamicPropertyResult>.get_Current()
+extern void U3CIsAgentPropertyCalculatorU3Ed__105_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_mBE93F9984A2C754EB8014224160F4FA7CD772363 (void);
+// 0x0000005B System.Void RolePlayCharacter.RolePlayCharacterAsset/<IsAgentPropertyCalculator>d__105::System.Collections.IEnumerator.Reset()
+extern void U3CIsAgentPropertyCalculatorU3Ed__105_System_Collections_IEnumerator_Reset_m8BDA13EBBAA4842931A7BD6EB1568E226B02A319 (void);
+// 0x0000005C System.Object RolePlayCharacter.RolePlayCharacterAsset/<IsAgentPropertyCalculator>d__105::System.Collections.IEnumerator.get_Current()
+extern void U3CIsAgentPropertyCalculatorU3Ed__105_System_Collections_IEnumerator_get_Current_mA618A9696CBF98B0108002288D776382E6FBEBE2 (void);
+// 0x0000005D System.Collections.Generic.IEnumerator`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset/<IsAgentPropertyCalculator>d__105::System.Collections.Generic.IEnumerable<KnowledgeBase.DynamicPropertyResult>.GetEnumerator()
+extern void U3CIsAgentPropertyCalculatorU3Ed__105_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_m45857D738C37C60FDA5CED383C8718CF4356ABA9 (void);
+// 0x0000005E System.Collections.IEnumerator RolePlayCharacter.RolePlayCharacterAsset/<IsAgentPropertyCalculator>d__105::System.Collections.IEnumerable.GetEnumerator()
+extern void U3CIsAgentPropertyCalculatorU3Ed__105_System_Collections_IEnumerable_GetEnumerator_mA661B276D157C1CC8BD39419BE53A2387367E8B4 (void);
+// 0x0000005F System.Void RolePlayCharacter.RolePlayCharacterAsset/<MoodPropertyCalculator>d__106::.ctor(System.Int32)
+extern void U3CMoodPropertyCalculatorU3Ed__106__ctor_m8CE3D3F6B3A22B52D01A58DE6EB5C17D545A3E4F (void);
+// 0x00000060 System.Void RolePlayCharacter.RolePlayCharacterAsset/<MoodPropertyCalculator>d__106::System.IDisposable.Dispose()
+extern void U3CMoodPropertyCalculatorU3Ed__106_System_IDisposable_Dispose_m64F07FE21899D54ABA717B23EDE1B71F21EAD599 (void);
+// 0x00000061 System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<MoodPropertyCalculator>d__106::MoveNext()
+extern void U3CMoodPropertyCalculatorU3Ed__106_MoveNext_mCCA745592CE565ABBD2A2A1C7C77CE9252B1B6C5 (void);
+// 0x00000062 System.Void RolePlayCharacter.RolePlayCharacterAsset/<MoodPropertyCalculator>d__106::<>m__Finally1()
+extern void U3CMoodPropertyCalculatorU3Ed__106_U3CU3Em__Finally1_mE5837EBA96E00734AD68134C74E555FFEFCADC38 (void);
+// 0x00000063 System.Void RolePlayCharacter.RolePlayCharacterAsset/<MoodPropertyCalculator>d__106::<>m__Finally2()
+extern void U3CMoodPropertyCalculatorU3Ed__106_U3CU3Em__Finally2_m3A747E7DAB8E1CFF089A86D4BB4A72A4CE4F5CE0 (void);
+// 0x00000064 System.Void RolePlayCharacter.RolePlayCharacterAsset/<MoodPropertyCalculator>d__106::<>m__Finally3()
+extern void U3CMoodPropertyCalculatorU3Ed__106_U3CU3Em__Finally3_mFB88611CE9CBCE886891C9BD71D66A170C50C1D7 (void);
+// 0x00000065 KnowledgeBase.DynamicPropertyResult RolePlayCharacter.RolePlayCharacterAsset/<MoodPropertyCalculator>d__106::System.Collections.Generic.IEnumerator<KnowledgeBase.DynamicPropertyResult>.get_Current()
+extern void U3CMoodPropertyCalculatorU3Ed__106_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m1350F3C9C6E84E590E89A77C83CC146BCF06E3C5 (void);
+// 0x00000066 System.Void RolePlayCharacter.RolePlayCharacterAsset/<MoodPropertyCalculator>d__106::System.Collections.IEnumerator.Reset()
+extern void U3CMoodPropertyCalculatorU3Ed__106_System_Collections_IEnumerator_Reset_m8D9F5997D14EB0452993D11AC0680955D22FE9FC (void);
+// 0x00000067 System.Object RolePlayCharacter.RolePlayCharacterAsset/<MoodPropertyCalculator>d__106::System.Collections.IEnumerator.get_Current()
+extern void U3CMoodPropertyCalculatorU3Ed__106_System_Collections_IEnumerator_get_Current_m2C2A860D98D9CFEAF61074EE24865FCA86F119EA (void);
+// 0x00000068 System.Collections.Generic.IEnumerator`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset/<MoodPropertyCalculator>d__106::System.Collections.Generic.IEnumerable<KnowledgeBase.DynamicPropertyResult>.GetEnumerator()
+extern void U3CMoodPropertyCalculatorU3Ed__106_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_mC0CCD5864A538065B438ACE3A262E54A6497DF43 (void);
+// 0x00000069 System.Collections.IEnumerator RolePlayCharacter.RolePlayCharacterAsset/<MoodPropertyCalculator>d__106::System.Collections.IEnumerable.GetEnumerator()
+extern void U3CMoodPropertyCalculatorU3Ed__106_System_Collections_IEnumerable_GetEnumerator_m6E51F24ACF3C19299C416198E2A0EA964D2DDD85 (void);
+// 0x0000006A System.Void RolePlayCharacter.RolePlayCharacterAsset/<TickPropertyCalculator>d__107::.ctor(System.Int32)
+extern void U3CTickPropertyCalculatorU3Ed__107__ctor_m81C50170046A865530E2B2726775DE76948E02A7 (void);
+// 0x0000006B System.Void RolePlayCharacter.RolePlayCharacterAsset/<TickPropertyCalculator>d__107::System.IDisposable.Dispose()
+extern void U3CTickPropertyCalculatorU3Ed__107_System_IDisposable_Dispose_m6C8C8E7A8FF6DA18FBB7DDBA97C7C3B11344E431 (void);
+// 0x0000006C System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<TickPropertyCalculator>d__107::MoveNext()
+extern void U3CTickPropertyCalculatorU3Ed__107_MoveNext_m98CB06677926D427C5513F73730972187879C385 (void);
+// 0x0000006D System.Void RolePlayCharacter.RolePlayCharacterAsset/<TickPropertyCalculator>d__107::<>m__Finally1()
+extern void U3CTickPropertyCalculatorU3Ed__107_U3CU3Em__Finally1_m7651B6BD275798376EC59601BEAB5567F3AFC30D (void);
+// 0x0000006E System.Void RolePlayCharacter.RolePlayCharacterAsset/<TickPropertyCalculator>d__107::<>m__Finally2()
+extern void U3CTickPropertyCalculatorU3Ed__107_U3CU3Em__Finally2_m9C4619240E91EE177D2BDC1CE4B79AB0C26B5402 (void);
+// 0x0000006F System.Void RolePlayCharacter.RolePlayCharacterAsset/<TickPropertyCalculator>d__107::<>m__Finally3()
+extern void U3CTickPropertyCalculatorU3Ed__107_U3CU3Em__Finally3_mA5B79AC486DB0594CF26C34CD507633DE13E04CD (void);
+// 0x00000070 KnowledgeBase.DynamicPropertyResult RolePlayCharacter.RolePlayCharacterAsset/<TickPropertyCalculator>d__107::System.Collections.Generic.IEnumerator<KnowledgeBase.DynamicPropertyResult>.get_Current()
+extern void U3CTickPropertyCalculatorU3Ed__107_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m2DEF0F783EFEAFBA56AED4C987B86C3155CDB2C6 (void);
+// 0x00000071 System.Void RolePlayCharacter.RolePlayCharacterAsset/<TickPropertyCalculator>d__107::System.Collections.IEnumerator.Reset()
+extern void U3CTickPropertyCalculatorU3Ed__107_System_Collections_IEnumerator_Reset_m45ABB9C877ED6452DABB040D2E4B9D44BB28D1A2 (void);
+// 0x00000072 System.Object RolePlayCharacter.RolePlayCharacterAsset/<TickPropertyCalculator>d__107::System.Collections.IEnumerator.get_Current()
+extern void U3CTickPropertyCalculatorU3Ed__107_System_Collections_IEnumerator_get_Current_mE91425374189E8DDA25CAE14A5EBB4EB95A7D438 (void);
+// 0x00000073 System.Collections.Generic.IEnumerator`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset/<TickPropertyCalculator>d__107::System.Collections.Generic.IEnumerable<KnowledgeBase.DynamicPropertyResult>.GetEnumerator()
+extern void U3CTickPropertyCalculatorU3Ed__107_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_mF87B5E684A6DC57F790F9693D232DF5A34F64D39 (void);
+// 0x00000074 System.Collections.IEnumerator RolePlayCharacter.RolePlayCharacterAsset/<TickPropertyCalculator>d__107::System.Collections.IEnumerable.GetEnumerator()
+extern void U3CTickPropertyCalculatorU3Ed__107_System_Collections_IEnumerable_GetEnumerator_m232B94B80D15BC337D8B726C97E0660FD6494FB3 (void);
+// 0x00000075 System.Void RolePlayCharacter.RolePlayCharacterAsset/<IsSalientPropertyCalculator>d__108::.ctor(System.Int32)
+extern void U3CIsSalientPropertyCalculatorU3Ed__108__ctor_m48D4DB688F5BF2407440FAD4A1BF1D73633EC6A2 (void);
+// 0x00000076 System.Void RolePlayCharacter.RolePlayCharacterAsset/<IsSalientPropertyCalculator>d__108::System.IDisposable.Dispose()
+extern void U3CIsSalientPropertyCalculatorU3Ed__108_System_IDisposable_Dispose_mBF2D3C45A85DC591454824E3F3AD6E49C51DF0CB (void);
+// 0x00000077 System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<IsSalientPropertyCalculator>d__108::MoveNext()
+extern void U3CIsSalientPropertyCalculatorU3Ed__108_MoveNext_mF8D0240F7845D5B37F1AE61A4A33B7DAFA56E548 (void);
+// 0x00000078 System.Void RolePlayCharacter.RolePlayCharacterAsset/<IsSalientPropertyCalculator>d__108::<>m__Finally1()
+extern void U3CIsSalientPropertyCalculatorU3Ed__108_U3CU3Em__Finally1_m82FC7CE9D54571D2BAD4A34508A5D5D555927CDF (void);
+// 0x00000079 KnowledgeBase.DynamicPropertyResult RolePlayCharacter.RolePlayCharacterAsset/<IsSalientPropertyCalculator>d__108::System.Collections.Generic.IEnumerator<KnowledgeBase.DynamicPropertyResult>.get_Current()
+extern void U3CIsSalientPropertyCalculatorU3Ed__108_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_mAEC4419679F5272587DAA6AB41CC2E3085A4DBF5 (void);
+// 0x0000007A System.Void RolePlayCharacter.RolePlayCharacterAsset/<IsSalientPropertyCalculator>d__108::System.Collections.IEnumerator.Reset()
+extern void U3CIsSalientPropertyCalculatorU3Ed__108_System_Collections_IEnumerator_Reset_m0DE2AE9C5B04147B6E359DF366C363007812C9F7 (void);
+// 0x0000007B System.Object RolePlayCharacter.RolePlayCharacterAsset/<IsSalientPropertyCalculator>d__108::System.Collections.IEnumerator.get_Current()
+extern void U3CIsSalientPropertyCalculatorU3Ed__108_System_Collections_IEnumerator_get_Current_m6A50E571E1804F871B796A13F249C835F8C39C3E (void);
+// 0x0000007C System.Collections.Generic.IEnumerator`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset/<IsSalientPropertyCalculator>d__108::System.Collections.Generic.IEnumerable<KnowledgeBase.DynamicPropertyResult>.GetEnumerator()
+extern void U3CIsSalientPropertyCalculatorU3Ed__108_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_mB7F53AADD8FA000D47A2B6240E04EF400D910F75 (void);
+// 0x0000007D System.Collections.IEnumerator RolePlayCharacter.RolePlayCharacterAsset/<IsSalientPropertyCalculator>d__108::System.Collections.IEnumerable.GetEnumerator()
+extern void U3CIsSalientPropertyCalculatorU3Ed__108_System_Collections_IEnumerable_GetEnumerator_m68A27D144569B1FBDE342A2B65467C8E02FA40B7 (void);
+// 0x0000007E System.Void RolePlayCharacter.RolePlayCharacterAsset/<RandomCalculator>d__109::.ctor(System.Int32)
+extern void U3CRandomCalculatorU3Ed__109__ctor_mA8EAF9C0BCB83128C3728DD2F132033FC2AE05F7 (void);
+// 0x0000007F System.Void RolePlayCharacter.RolePlayCharacterAsset/<RandomCalculator>d__109::System.IDisposable.Dispose()
+extern void U3CRandomCalculatorU3Ed__109_System_IDisposable_Dispose_m5033409230C826D239D8D471014A26D21EC18BA1 (void);
+// 0x00000080 System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<RandomCalculator>d__109::MoveNext()
+extern void U3CRandomCalculatorU3Ed__109_MoveNext_mC1DB4FC263AE5E8064D5E93367B79D8EEC43CD1E (void);
+// 0x00000081 KnowledgeBase.DynamicPropertyResult RolePlayCharacter.RolePlayCharacterAsset/<RandomCalculator>d__109::System.Collections.Generic.IEnumerator<KnowledgeBase.DynamicPropertyResult>.get_Current()
+extern void U3CRandomCalculatorU3Ed__109_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m82947BF7A9B273507E2C2895F25165D576BEFC4D (void);
+// 0x00000082 System.Void RolePlayCharacter.RolePlayCharacterAsset/<RandomCalculator>d__109::System.Collections.IEnumerator.Reset()
+extern void U3CRandomCalculatorU3Ed__109_System_Collections_IEnumerator_Reset_m93E3AB0C5365210E63775CE5DD6EA461580185D9 (void);
+// 0x00000083 System.Object RolePlayCharacter.RolePlayCharacterAsset/<RandomCalculator>d__109::System.Collections.IEnumerator.get_Current()
+extern void U3CRandomCalculatorU3Ed__109_System_Collections_IEnumerator_get_Current_m8648D71787235B0C60DA8AE3623D283C0852BFB3 (void);
+// 0x00000084 System.Collections.Generic.IEnumerator`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset/<RandomCalculator>d__109::System.Collections.Generic.IEnumerable<KnowledgeBase.DynamicPropertyResult>.GetEnumerator()
+extern void U3CRandomCalculatorU3Ed__109_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_mAF6F2C7BE3C5031E4722490E65724184A674FC82 (void);
+// 0x00000085 System.Collections.IEnumerator RolePlayCharacter.RolePlayCharacterAsset/<RandomCalculator>d__109::System.Collections.IEnumerable.GetEnumerator()
+extern void U3CRandomCalculatorU3Ed__109_System_Collections_IEnumerable_GetEnumerator_m99CB42250C3B52B17C23762D54C811E4EB5CD8CA (void);
+// 0x00000086 System.Void RolePlayCharacter.RolePlayCharacterAsset/<RoundMethodCalculator>d__110::.ctor(System.Int32)
+extern void U3CRoundMethodCalculatorU3Ed__110__ctor_m55500959C69326F54082BF6D9976CE062886A553 (void);
+// 0x00000087 System.Void RolePlayCharacter.RolePlayCharacterAsset/<RoundMethodCalculator>d__110::System.IDisposable.Dispose()
+extern void U3CRoundMethodCalculatorU3Ed__110_System_IDisposable_Dispose_m1BEADDE7E12CB19317ECE3787E6D1D08A6E77590 (void);
+// 0x00000088 System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<RoundMethodCalculator>d__110::MoveNext()
+extern void U3CRoundMethodCalculatorU3Ed__110_MoveNext_mA8E28E7AD9EF36DF5277ABE8E7816C8AD119F4D6 (void);
+// 0x00000089 System.Void RolePlayCharacter.RolePlayCharacterAsset/<RoundMethodCalculator>d__110::<>m__Finally1()
+extern void U3CRoundMethodCalculatorU3Ed__110_U3CU3Em__Finally1_m6C9F6A26210D99F806FA67C9DCCFB5F83FD967A5 (void);
+// 0x0000008A System.Void RolePlayCharacter.RolePlayCharacterAsset/<RoundMethodCalculator>d__110::<>m__Finally2()
+extern void U3CRoundMethodCalculatorU3Ed__110_U3CU3Em__Finally2_m783D69C4D9BC0A123A487728C3FAD874E78D1C6B (void);
+// 0x0000008B KnowledgeBase.DynamicPropertyResult RolePlayCharacter.RolePlayCharacterAsset/<RoundMethodCalculator>d__110::System.Collections.Generic.IEnumerator<KnowledgeBase.DynamicPropertyResult>.get_Current()
+extern void U3CRoundMethodCalculatorU3Ed__110_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_mC0ECF8C072EE1F96526B93A20BCCBA166E2580E6 (void);
+// 0x0000008C System.Void RolePlayCharacter.RolePlayCharacterAsset/<RoundMethodCalculator>d__110::System.Collections.IEnumerator.Reset()
+extern void U3CRoundMethodCalculatorU3Ed__110_System_Collections_IEnumerator_Reset_mA35E71F226DAEBC344F4F3B055C4DE2FFF2300BC (void);
+// 0x0000008D System.Object RolePlayCharacter.RolePlayCharacterAsset/<RoundMethodCalculator>d__110::System.Collections.IEnumerator.get_Current()
+extern void U3CRoundMethodCalculatorU3Ed__110_System_Collections_IEnumerator_get_Current_m493F0F71A88C175A9442123B5E59C8C5E4431F3F (void);
+// 0x0000008E System.Collections.Generic.IEnumerator`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset/<RoundMethodCalculator>d__110::System.Collections.Generic.IEnumerable<KnowledgeBase.DynamicPropertyResult>.GetEnumerator()
+extern void U3CRoundMethodCalculatorU3Ed__110_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_mEB68172688540ED1CDF60E392D79820E8B6F118B (void);
+// 0x0000008F System.Collections.IEnumerator RolePlayCharacter.RolePlayCharacterAsset/<RoundMethodCalculator>d__110::System.Collections.IEnumerable.GetEnumerator()
+extern void U3CRoundMethodCalculatorU3Ed__110_System_Collections_IEnumerable_GetEnumerator_m99BA5E336732269480D73E4EA03B8834AFC6B644 (void);
+// 0x00000090 System.Void RolePlayCharacter.RolePlayCharacterAsset/<RoundtoTensMethodCalculator>d__111::.ctor(System.Int32)
+extern void U3CRoundtoTensMethodCalculatorU3Ed__111__ctor_mA9BE83ECF286370E49FF76CE61B635F750B03861 (void);
+// 0x00000091 System.Void RolePlayCharacter.RolePlayCharacterAsset/<RoundtoTensMethodCalculator>d__111::System.IDisposable.Dispose()
+extern void U3CRoundtoTensMethodCalculatorU3Ed__111_System_IDisposable_Dispose_mBDBD83F97FB1E3D467A74B3F3FCB68FC8DB6FDAE (void);
+// 0x00000092 System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<RoundtoTensMethodCalculator>d__111::MoveNext()
+extern void U3CRoundtoTensMethodCalculatorU3Ed__111_MoveNext_mF6015E5CF872EF79E7D01DE1DDE745FE761D0971 (void);
+// 0x00000093 System.Void RolePlayCharacter.RolePlayCharacterAsset/<RoundtoTensMethodCalculator>d__111::<>m__Finally1()
+extern void U3CRoundtoTensMethodCalculatorU3Ed__111_U3CU3Em__Finally1_m367184A49B3BCBA87F34934D6BE5F8417B2F5A75 (void);
+// 0x00000094 System.Void RolePlayCharacter.RolePlayCharacterAsset/<RoundtoTensMethodCalculator>d__111::<>m__Finally2()
+extern void U3CRoundtoTensMethodCalculatorU3Ed__111_U3CU3Em__Finally2_m92FE8A147D9B431791E20DA20B31AA8D2FDF9A70 (void);
+// 0x00000095 KnowledgeBase.DynamicPropertyResult RolePlayCharacter.RolePlayCharacterAsset/<RoundtoTensMethodCalculator>d__111::System.Collections.Generic.IEnumerator<KnowledgeBase.DynamicPropertyResult>.get_Current()
+extern void U3CRoundtoTensMethodCalculatorU3Ed__111_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m04C52FF82A75C9CC54CF90CCD8FD1F50BC9BAA27 (void);
+// 0x00000096 System.Void RolePlayCharacter.RolePlayCharacterAsset/<RoundtoTensMethodCalculator>d__111::System.Collections.IEnumerator.Reset()
+extern void U3CRoundtoTensMethodCalculatorU3Ed__111_System_Collections_IEnumerator_Reset_mECECD346F806F8B0577DD765D8DD43E1F71A6C89 (void);
+// 0x00000097 System.Object RolePlayCharacter.RolePlayCharacterAsset/<RoundtoTensMethodCalculator>d__111::System.Collections.IEnumerator.get_Current()
+extern void U3CRoundtoTensMethodCalculatorU3Ed__111_System_Collections_IEnumerator_get_Current_m36B1762AE5704073788D34C54F26844DC105D79D (void);
+// 0x00000098 System.Collections.Generic.IEnumerator`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset/<RoundtoTensMethodCalculator>d__111::System.Collections.Generic.IEnumerable<KnowledgeBase.DynamicPropertyResult>.GetEnumerator()
+extern void U3CRoundtoTensMethodCalculatorU3Ed__111_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_m109ED4D6FD59B3980D7AD106FD34D74CD6A7EBA9 (void);
+// 0x00000099 System.Collections.IEnumerator RolePlayCharacter.RolePlayCharacterAsset/<RoundtoTensMethodCalculator>d__111::System.Collections.IEnumerable.GetEnumerator()
+extern void U3CRoundtoTensMethodCalculatorU3Ed__111_System_Collections_IEnumerable_GetEnumerator_m71D0F9E84000F4FDCBC27871249D605498EC660F (void);
+// 0x0000009A System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestAttributionEmotionCalculator>d__112::.ctor(System.Int32)
+extern void U3CStrongestAttributionEmotionCalculatorU3Ed__112__ctor_m07E6713C5AECE2B0CD6006768A015B8CF31BF4D9 (void);
+// 0x0000009B System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestAttributionEmotionCalculator>d__112::System.IDisposable.Dispose()
+extern void U3CStrongestAttributionEmotionCalculatorU3Ed__112_System_IDisposable_Dispose_mF92B11E3302769C493B3074BC20E82F4CD2E0520 (void);
+// 0x0000009C System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<StrongestAttributionEmotionCalculator>d__112::MoveNext()
+extern void U3CStrongestAttributionEmotionCalculatorU3Ed__112_MoveNext_m024AD8317A7F127697AA8094DCF9814EA22FE0D5 (void);
+// 0x0000009D System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestAttributionEmotionCalculator>d__112::<>m__Finally1()
+extern void U3CStrongestAttributionEmotionCalculatorU3Ed__112_U3CU3Em__Finally1_m4CE9370ED03D9E8D0EDE8234ABC14DA49C0F94AC (void);
+// 0x0000009E System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestAttributionEmotionCalculator>d__112::<>m__Finally2()
+extern void U3CStrongestAttributionEmotionCalculatorU3Ed__112_U3CU3Em__Finally2_m1E0D11B56F7EF19B4592C676F4029AF3D1DBEB95 (void);
+// 0x0000009F KnowledgeBase.DynamicPropertyResult RolePlayCharacter.RolePlayCharacterAsset/<StrongestAttributionEmotionCalculator>d__112::System.Collections.Generic.IEnumerator<KnowledgeBase.DynamicPropertyResult>.get_Current()
+extern void U3CStrongestAttributionEmotionCalculatorU3Ed__112_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m82AD6A8F93839832C15CABF49B9C7DEAAE094342 (void);
+// 0x000000A0 System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestAttributionEmotionCalculator>d__112::System.Collections.IEnumerator.Reset()
+extern void U3CStrongestAttributionEmotionCalculatorU3Ed__112_System_Collections_IEnumerator_Reset_m932743E124DD871611E0769A6EA2D4E4BD92F23B (void);
+// 0x000000A1 System.Object RolePlayCharacter.RolePlayCharacterAsset/<StrongestAttributionEmotionCalculator>d__112::System.Collections.IEnumerator.get_Current()
+extern void U3CStrongestAttributionEmotionCalculatorU3Ed__112_System_Collections_IEnumerator_get_Current_m49333D969649C6E5D7470B046D3420D4FBE5B2FA (void);
+// 0x000000A2 System.Collections.Generic.IEnumerator`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset/<StrongestAttributionEmotionCalculator>d__112::System.Collections.Generic.IEnumerable<KnowledgeBase.DynamicPropertyResult>.GetEnumerator()
+extern void U3CStrongestAttributionEmotionCalculatorU3Ed__112_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_m29781CEC221BAFC5649BE8BF83A0B71F8D4D5625 (void);
+// 0x000000A3 System.Collections.IEnumerator RolePlayCharacter.RolePlayCharacterAsset/<StrongestAttributionEmotionCalculator>d__112::System.Collections.IEnumerable.GetEnumerator()
+extern void U3CStrongestAttributionEmotionCalculatorU3Ed__112_System_Collections_IEnumerable_GetEnumerator_mE807FA3A15F6E42FF38FB4136F604474B5551D28 (void);
+// 0x000000A4 System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestCompoundEmotionCalculator>d__113::.ctor(System.Int32)
+extern void U3CStrongestCompoundEmotionCalculatorU3Ed__113__ctor_m281A5B324878999FAE56571272BE758215C442F6 (void);
+// 0x000000A5 System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestCompoundEmotionCalculator>d__113::System.IDisposable.Dispose()
+extern void U3CStrongestCompoundEmotionCalculatorU3Ed__113_System_IDisposable_Dispose_m87B8DC0EE536CD286B92EF2A006B2766E4771418 (void);
+// 0x000000A6 System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<StrongestCompoundEmotionCalculator>d__113::MoveNext()
+extern void U3CStrongestCompoundEmotionCalculatorU3Ed__113_MoveNext_mA34B759431399F0C8A665F78061AF7959A25F65B (void);
+// 0x000000A7 System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestCompoundEmotionCalculator>d__113::<>m__Finally1()
+extern void U3CStrongestCompoundEmotionCalculatorU3Ed__113_U3CU3Em__Finally1_m32A3882D5CF96EA2C3896BBAF1AA5589213A7588 (void);
+// 0x000000A8 System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestCompoundEmotionCalculator>d__113::<>m__Finally2()
+extern void U3CStrongestCompoundEmotionCalculatorU3Ed__113_U3CU3Em__Finally2_m101809AC33E846FCDFA927C9F5EFC540CEE6A336 (void);
+// 0x000000A9 KnowledgeBase.DynamicPropertyResult RolePlayCharacter.RolePlayCharacterAsset/<StrongestCompoundEmotionCalculator>d__113::System.Collections.Generic.IEnumerator<KnowledgeBase.DynamicPropertyResult>.get_Current()
+extern void U3CStrongestCompoundEmotionCalculatorU3Ed__113_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_mA69136C8D32FFEEDFAEAA7068A7D4B6A986AA2A0 (void);
+// 0x000000AA System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestCompoundEmotionCalculator>d__113::System.Collections.IEnumerator.Reset()
+extern void U3CStrongestCompoundEmotionCalculatorU3Ed__113_System_Collections_IEnumerator_Reset_mD7B569267694AFD80B929A4DCD794689E9FC7BE2 (void);
+// 0x000000AB System.Object RolePlayCharacter.RolePlayCharacterAsset/<StrongestCompoundEmotionCalculator>d__113::System.Collections.IEnumerator.get_Current()
+extern void U3CStrongestCompoundEmotionCalculatorU3Ed__113_System_Collections_IEnumerator_get_Current_mB3A272CC13612F4776F992D507DF527475AD7AC8 (void);
+// 0x000000AC System.Collections.Generic.IEnumerator`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset/<StrongestCompoundEmotionCalculator>d__113::System.Collections.Generic.IEnumerable<KnowledgeBase.DynamicPropertyResult>.GetEnumerator()
+extern void U3CStrongestCompoundEmotionCalculatorU3Ed__113_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_m2E64C1FEA618B5D14E721CC51A3A024421680B07 (void);
+// 0x000000AD System.Collections.IEnumerator RolePlayCharacter.RolePlayCharacterAsset/<StrongestCompoundEmotionCalculator>d__113::System.Collections.IEnumerable.GetEnumerator()
+extern void U3CStrongestCompoundEmotionCalculatorU3Ed__113_System_Collections_IEnumerable_GetEnumerator_m256788C175D329A2F7F8430CE05E2959F11991D4 (void);
+// 0x000000AE System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionCalculator>d__114::.ctor(System.Int32)
+extern void U3CStrongestEmotionCalculatorU3Ed__114__ctor_m7100F682465D1C1B6C09BAABF484982B293126CB (void);
+// 0x000000AF System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionCalculator>d__114::System.IDisposable.Dispose()
+extern void U3CStrongestEmotionCalculatorU3Ed__114_System_IDisposable_Dispose_m4720391C10BA51EB4068FC7BDC5CE4D1323534E1 (void);
+// 0x000000B0 System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionCalculator>d__114::MoveNext()
+extern void U3CStrongestEmotionCalculatorU3Ed__114_MoveNext_m6BA1CB2B569276EB53FB02242DD93C6B5C933081 (void);
+// 0x000000B1 System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionCalculator>d__114::<>m__Finally1()
+extern void U3CStrongestEmotionCalculatorU3Ed__114_U3CU3Em__Finally1_mDBA410483D1CF42DA0E5D0E689541AF2657DA54B (void);
+// 0x000000B2 System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionCalculator>d__114::<>m__Finally2()
+extern void U3CStrongestEmotionCalculatorU3Ed__114_U3CU3Em__Finally2_mB5248EC463AF26CA6490D97F0E8462C65887580B (void);
+// 0x000000B3 KnowledgeBase.DynamicPropertyResult RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionCalculator>d__114::System.Collections.Generic.IEnumerator<KnowledgeBase.DynamicPropertyResult>.get_Current()
+extern void U3CStrongestEmotionCalculatorU3Ed__114_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m4259C1F60091199E47D48D1C52DDE7647F1FA767 (void);
+// 0x000000B4 System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionCalculator>d__114::System.Collections.IEnumerator.Reset()
+extern void U3CStrongestEmotionCalculatorU3Ed__114_System_Collections_IEnumerator_Reset_mF9651ADCC8C2C37ECDE7DE5437D3E2F54343298F (void);
+// 0x000000B5 System.Object RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionCalculator>d__114::System.Collections.IEnumerator.get_Current()
+extern void U3CStrongestEmotionCalculatorU3Ed__114_System_Collections_IEnumerator_get_Current_m2D1781560E8B9CA85FDAA8D6BC4782CA25B7D277 (void);
+// 0x000000B6 System.Collections.Generic.IEnumerator`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionCalculator>d__114::System.Collections.Generic.IEnumerable<KnowledgeBase.DynamicPropertyResult>.GetEnumerator()
+extern void U3CStrongestEmotionCalculatorU3Ed__114_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_mCAF93FC713A1210CD0842B527A9137A726FC2F86 (void);
+// 0x000000B7 System.Collections.IEnumerator RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionCalculator>d__114::System.Collections.IEnumerable.GetEnumerator()
+extern void U3CStrongestEmotionCalculatorU3Ed__114_System_Collections_IEnumerable_GetEnumerator_mE0752CA0E3FDF5B989F74C5AACDA7A3DC49F4CE2 (void);
+// 0x000000B8 System.Void RolePlayCharacter.RolePlayCharacterAsset/<>c__DisplayClass115_0::.ctor()
+extern void U3CU3Ec__DisplayClass115_0__ctor_m9F46890BB04727048AD6947F6FB4DDE109D5F28F (void);
+// 0x000000B9 System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<>c__DisplayClass115_0::<StrongestEmotionForEventCalculator>b__0(EmotionalAppraisal.DTOs.EmotionDTO)
+extern void U3CU3Ec__DisplayClass115_0_U3CStrongestEmotionForEventCalculatorU3Eb__0_m6B3436D320E4C8260A1FF76D6965118750BC2631 (void);
+// 0x000000BA System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionForEventCalculator>d__115::.ctor(System.Int32)
+extern void U3CStrongestEmotionForEventCalculatorU3Ed__115__ctor_m39DF163EFB79F2449E7B30858FB1584AA5FD034B (void);
+// 0x000000BB System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionForEventCalculator>d__115::System.IDisposable.Dispose()
+extern void U3CStrongestEmotionForEventCalculatorU3Ed__115_System_IDisposable_Dispose_m30F0BEDD9025E55993195FDD1C74AF09FC49B5C5 (void);
+// 0x000000BC System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionForEventCalculator>d__115::MoveNext()
+extern void U3CStrongestEmotionForEventCalculatorU3Ed__115_MoveNext_m7C5EBC0953EFD573524850EA851B438665152D97 (void);
+// 0x000000BD System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionForEventCalculator>d__115::<>m__Finally1()
+extern void U3CStrongestEmotionForEventCalculatorU3Ed__115_U3CU3Em__Finally1_m06ABC557D6011DE3BE2AAD7A688CA080B075EFB9 (void);
+// 0x000000BE System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionForEventCalculator>d__115::<>m__Finally2()
+extern void U3CStrongestEmotionForEventCalculatorU3Ed__115_U3CU3Em__Finally2_mEC1FBC4FA4B9579047F1D03FC7D7E7772DD1AC76 (void);
+// 0x000000BF System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionForEventCalculator>d__115::<>m__Finally3()
+extern void U3CStrongestEmotionForEventCalculatorU3Ed__115_U3CU3Em__Finally3_mCB65907107385C914F9C966748DBF8A1801A2EDE (void);
+// 0x000000C0 System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionForEventCalculator>d__115::<>m__Finally4()
+extern void U3CStrongestEmotionForEventCalculatorU3Ed__115_U3CU3Em__Finally4_m468E83DB1B9A77885D3BCA78C0D0B576435364A4 (void);
+// 0x000000C1 System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionForEventCalculator>d__115::<>m__Finally5()
+extern void U3CStrongestEmotionForEventCalculatorU3Ed__115_U3CU3Em__Finally5_m9E4BDFF5F25E14EEDA0832C48AC96377498AEFCB (void);
+// 0x000000C2 System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionForEventCalculator>d__115::<>m__Finally6()
+extern void U3CStrongestEmotionForEventCalculatorU3Ed__115_U3CU3Em__Finally6_m58A83D1C82B8AE6CD31C0F10B6741532C4C0DCB4 (void);
+// 0x000000C3 System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionForEventCalculator>d__115::<>m__Finally7()
+extern void U3CStrongestEmotionForEventCalculatorU3Ed__115_U3CU3Em__Finally7_mE04AEF26DE034CFE75FFC01368F049ED74636955 (void);
+// 0x000000C4 System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionForEventCalculator>d__115::<>m__Finally8()
+extern void U3CStrongestEmotionForEventCalculatorU3Ed__115_U3CU3Em__Finally8_m432CC83554D56B787097AFB4C8E8246C77A980C9 (void);
+// 0x000000C5 System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionForEventCalculator>d__115::<>m__Finally9()
+extern void U3CStrongestEmotionForEventCalculatorU3Ed__115_U3CU3Em__Finally9_m6D7A0C77F77B9487A2658BF48EC8363B343D9288 (void);
+// 0x000000C6 KnowledgeBase.DynamicPropertyResult RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionForEventCalculator>d__115::System.Collections.Generic.IEnumerator<KnowledgeBase.DynamicPropertyResult>.get_Current()
+extern void U3CStrongestEmotionForEventCalculatorU3Ed__115_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m7BC747343847472E4324FECF458161C32AE82495 (void);
+// 0x000000C7 System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionForEventCalculator>d__115::System.Collections.IEnumerator.Reset()
+extern void U3CStrongestEmotionForEventCalculatorU3Ed__115_System_Collections_IEnumerator_Reset_m8376F82CF19ABD549BDBB082C853229F07B8BB7B (void);
+// 0x000000C8 System.Object RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionForEventCalculator>d__115::System.Collections.IEnumerator.get_Current()
+extern void U3CStrongestEmotionForEventCalculatorU3Ed__115_System_Collections_IEnumerator_get_Current_mDC760B1A774F68B0BEFA1259572EE62B5FC64FCB (void);
+// 0x000000C9 System.Collections.Generic.IEnumerator`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionForEventCalculator>d__115::System.Collections.Generic.IEnumerable<KnowledgeBase.DynamicPropertyResult>.GetEnumerator()
+extern void U3CStrongestEmotionForEventCalculatorU3Ed__115_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_m6D1B4D0A118B33B8A80F75C03B82BBA0C38F2C43 (void);
+// 0x000000CA System.Collections.IEnumerator RolePlayCharacter.RolePlayCharacterAsset/<StrongestEmotionForEventCalculator>d__115::System.Collections.IEnumerable.GetEnumerator()
+extern void U3CStrongestEmotionForEventCalculatorU3Ed__115_System_Collections_IEnumerable_GetEnumerator_m9F89DBDB166F56D490FE789EF1E357186C8C1F4C (void);
+// 0x000000CB System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestWellBeingEmotionCalculator>d__116::.ctor(System.Int32)
+extern void U3CStrongestWellBeingEmotionCalculatorU3Ed__116__ctor_mCE1813ACF2EB1F58B0BB506D3D518098F03E05A0 (void);
+// 0x000000CC System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestWellBeingEmotionCalculator>d__116::System.IDisposable.Dispose()
+extern void U3CStrongestWellBeingEmotionCalculatorU3Ed__116_System_IDisposable_Dispose_mC4312D10AEB9A02E86DC2DB702D768B157844546 (void);
+// 0x000000CD System.Boolean RolePlayCharacter.RolePlayCharacterAsset/<StrongestWellBeingEmotionCalculator>d__116::MoveNext()
+extern void U3CStrongestWellBeingEmotionCalculatorU3Ed__116_MoveNext_m8C1655F30D67A58AAC725BD2DA4F7D71B92F42AC (void);
+// 0x000000CE System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestWellBeingEmotionCalculator>d__116::<>m__Finally1()
+extern void U3CStrongestWellBeingEmotionCalculatorU3Ed__116_U3CU3Em__Finally1_m029F8E4221465F471EDE478E7526FE65CC24B1EA (void);
+// 0x000000CF System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestWellBeingEmotionCalculator>d__116::<>m__Finally2()
+extern void U3CStrongestWellBeingEmotionCalculatorU3Ed__116_U3CU3Em__Finally2_m81C3E7DACABB5687412DE643B7F9B492C9C06FA2 (void);
+// 0x000000D0 KnowledgeBase.DynamicPropertyResult RolePlayCharacter.RolePlayCharacterAsset/<StrongestWellBeingEmotionCalculator>d__116::System.Collections.Generic.IEnumerator<KnowledgeBase.DynamicPropertyResult>.get_Current()
+extern void U3CStrongestWellBeingEmotionCalculatorU3Ed__116_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m50CA3CAB27F94C422D66DF3EE9775BB40401B063 (void);
+// 0x000000D1 System.Void RolePlayCharacter.RolePlayCharacterAsset/<StrongestWellBeingEmotionCalculator>d__116::System.Collections.IEnumerator.Reset()
+extern void U3CStrongestWellBeingEmotionCalculatorU3Ed__116_System_Collections_IEnumerator_Reset_m06D268C5F8805AB781D836FD78CC7A1943ABE54A (void);
+// 0x000000D2 System.Object RolePlayCharacter.RolePlayCharacterAsset/<StrongestWellBeingEmotionCalculator>d__116::System.Collections.IEnumerator.get_Current()
+extern void U3CStrongestWellBeingEmotionCalculatorU3Ed__116_System_Collections_IEnumerator_get_Current_m9FC2022AAE5989BC8A67721AA3A271366C7EDE99 (void);
+// 0x000000D3 System.Collections.Generic.IEnumerator`1<KnowledgeBase.DynamicPropertyResult> RolePlayCharacter.RolePlayCharacterAsset/<StrongestWellBeingEmotionCalculator>d__116::System.Collections.Generic.IEnumerable<KnowledgeBase.DynamicPropertyResult>.GetEnumerator()
+extern void U3CStrongestWellBeingEmotionCalculatorU3Ed__116_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_mE1B49E93546528F73205187E8CCF3F097A17DCB0 (void);
+// 0x000000D4 System.Collections.IEnumerator RolePlayCharacter.RolePlayCharacterAsset/<StrongestWellBeingEmotionCalculator>d__116::System.Collections.IEnumerable.GetEnumerator()
+extern void U3CStrongestWellBeingEmotionCalculatorU3Ed__116_System_Collections_IEnumerable_GetEnumerator_mABBDFB841B44A43E3063FAB11EA8A459D5732D6F (void);
+// 0x000000D5 System.Void RolePlayCharacter.RPCConsts::.cctor()
+extern void RPCConsts__cctor_m7D0B17D8D788A370B949E7E506ACA6DC9099A7DB (void);
+static Il2CppMethodPointer s_methodPointers[213] = 
+{
+	AgentEntry_set_Name_m2990BDFF2C5250D9311B4D254216BACAE608CE6C,
+	AgentEntry_set_EmotionalState_mD93B7F24B802199C321EC87FD7F23F6545F7B706,
+	AgentEntry__ctor_m6EA056C5303F0ADB6903E3A9C5B2DED7573B5E87,
+	EventHelper_ActionEnd_m1249AB3780153DDD2E1F7DEE1F20CC554F03F3CF,
+	EventHelper_PropertyChange_m781F6BCCC9D4BCA9AFE1FAB9DFA28709A1625ED8,
+	EventHelper_ActionEnd_m4550A04FE546A1A99D7E646280662AB9EE4CB6BE,
+	Identity_get_Salience_mEB8A8643073AB9A504F80EBA8219BB93684E4C4E,
+	RolePlayCharacterAsset__ctor_m8E8132702E199E2C12D64FF890ED7CE90B2F8171,
+	RolePlayCharacterAsset_set_BodyName_m25D28620B57C5CC8C2502529CBC9BC147CA1E409,
+	RolePlayCharacterAsset_get_CharacterName_m1124071AC0BCC42016DB434223751EEC34AECDCE,
+	RolePlayCharacterAsset_set_IsPlayer_m1847441E9B0CFD8787251E4E8C047A80E935740E,
+	RolePlayCharacterAsset_get_CurrentActionName_m61C43C1D4495D4768771A405EC59D176B37AA4EF,
+	RolePlayCharacterAsset_set_CurrentActionName_m7B5094C964B944045717D48448D35D0EE6CC7CBE,
+	RolePlayCharacterAsset_get_CurrentActionTarget_mD861E88C7677564FFA1EF69BCB0F6B4D3C173261,
+	RolePlayCharacterAsset_set_CurrentActionTarget_mF73272ABA6D387EBE7044827A0D68C476E8B78C5,
+	RolePlayCharacterAsset_get_DynamicPropertiesRegistry_m2CEFA7ADAC7E4B1E17CA27977BFF7A208581ECC6,
+	RolePlayCharacterAsset_get_EventRecords_mDD40E9E0DFD51809FCD23D05A10A1B5ACF44AFB2,
+	RolePlayCharacterAsset_get_Tick_m7A53F3096BE1299F896458FF2CC614B4C7F3634D,
+	RolePlayCharacterAsset_set_Tick_mDE976D73F1F9D33352AD0525BD2B1594E82741DE,
+	RolePlayCharacterAsset_get_VoiceName_mAF2245EB1B7FA2FB4342B65F41480063B416201B,
+	RolePlayCharacterAsset_Decide_m37BFCCE229ACD9AE19E9709B04EF01529A20A773,
+	RolePlayCharacterAsset_Decide_m0B819116809252886FE601A3AC2ED3EF31B22935,
+	RolePlayCharacterAsset_ProcessWithBeliefs_m17E213EB38B8771FAB0DCE2D34C6AC4CCE9D6031,
+	RolePlayCharacterAsset_GetAllActiveEmotions_m5CA79F830881798806AE2825479989CAD28C7DD5,
+	RolePlayCharacterAsset_LoadAssociatedAssets_m91FC334004573663E1052AF3715F00796ABA098A,
+	RolePlayCharacterAsset_Perceive_m2F76C1245B209C11F02E2C593C7706D4FFF4292E,
+	RolePlayCharacterAsset_Perceive_mA8A07D374CA3965F03D2B7EDAFC6E1B752749784,
+	RolePlayCharacterAsset_Perceive_m5C71D21A4FC795551D2090E530E26D9732072F0C,
+	RolePlayCharacterAsset_Perceive_mECC5A0D2E1F6B5B7BDF1A0C2871FE09C9D0FF4BC,
+	RolePlayCharacterAsset_Update_mA20913D1EF582CA5158A9D5887E412A55AAA1CCF,
+	RolePlayCharacterAsset_ToString_m5455F3CDF361ACD5ACD9D3DFEA90AEB3565F977D,
+	RolePlayCharacterAsset_AddKnownAgent_m94D4F1EFA3A47908AB06D70C78A252C0D9374894,
+	RolePlayCharacterAsset_BindToRegistry_m1C82B5BF1C6818A2F89CDC2B56583159D9F47E28,
+	RolePlayCharacterAsset_EmotionIntensityPropertyCalculator_m5CA606DF54E979471A0B39E909009F4448D8F085,
+	RolePlayCharacterAsset_IsAgentPropertyCalculator_m3D8EC1ABCCA7D6601E08FFB7CD13891E2E2C795C,
+	RolePlayCharacterAsset_MoodPropertyCalculator_m546D2D5BC6CF9B6494804AE02C94DD9CAE013BEC,
+	RolePlayCharacterAsset_TickPropertyCalculator_mE76204D5A6612DF21990BCC1D7C36B71A28F0587,
+	RolePlayCharacterAsset_IsSalientPropertyCalculator_m9317AC14A6E765B173497F472B90643988EC0391,
+	RolePlayCharacterAsset_RandomCalculator_mB8A8AFE0A0B349FC7282BC1BFD7BCF83FA6FA78A,
+	RolePlayCharacterAsset_RoundMethodCalculator_m3A0A8B8076A07D536AD53EC96ADFA2AAC7F2642A,
+	RolePlayCharacterAsset_RoundtoTensMethodCalculator_mF0DE96D52A4E2DEE65F4B9727372AD86AF72A569,
+	RolePlayCharacterAsset_StrongestAttributionEmotionCalculator_m0D847B0022EDEF96B99118BE720A40B6DC315168,
+	RolePlayCharacterAsset_StrongestCompoundEmotionCalculator_m3C4B3728C63710ADDB0D48EB8539F967D66352DF,
+	RolePlayCharacterAsset_StrongestEmotionCalculator_m71B267A3418480AE8077CCC77A38612173C02D91,
+	RolePlayCharacterAsset_StrongestEmotionForEventCalculator_m19C67F9B3D87B2EA999A35F7A9FB0F15DAB00D63,
+	RolePlayCharacterAsset_StrongestWellBeingEmotionCalculator_mBF4C06D0BDAA7206896A2566D95F0E910845A9E1,
+	RolePlayCharacterAsset__cctor_m60F4091FFC8C3E285B97BB713340572E8E57CB14,
+	RolePlayCharacterAsset_U3CGetAllActiveEmotionsU3Eb__47_0_m548C4AFEFE5E1A42EC3F2BCA4B3D42D547BBE0C2,
+	U3CU3Ec__cctor_m85260B4E3EA55B1B58E458BBBD95A9CBB429EACB,
+	U3CU3Ec__ctor_m9458194AEB41FA6422035F1532A9CFF3FAD6E9BF,
+	U3CU3Ec_U3Cget_EventRecordsU3Eb__28_0_m3CE8C654E829779427C53518D1E1CCBA6931C4F3,
+	U3CU3Ec_U3CEmotionIntensityPropertyCalculatorU3Eb__103_2_mCADDDA84B18ADF124064262471D0A8F4C3E4DF7C,
+	U3CU3Ec_U3CStrongestAttributionEmotionCalculatorU3Eb__112_0_mC22AF0523EB24B01E646F62BCA78222EB9BCFFB6,
+	U3CU3Ec_U3CStrongestAttributionEmotionCalculatorU3Eb__112_1_m163745BA5A46A7271919CE17C61BCC9E2D1B40A5,
+	U3CU3Ec_U3CStrongestCompoundEmotionCalculatorU3Eb__113_0_m286498C6A8B5A166A5F4D601395497B4C65D5092,
+	U3CU3Ec_U3CStrongestCompoundEmotionCalculatorU3Eb__113_1_mA83E978AE96D7E3F184E8D3DC630D76BE45CB07E,
+	U3CU3Ec_U3CStrongestEmotionForEventCalculatorU3Eb__115_1_mB51151FB2DB27AB323461671838B39DFD04E7701,
+	U3CU3Ec_U3CStrongestWellBeingEmotionCalculatorU3Eb__116_0_m736B03D3BB71B4F57D886E29474C6AAF617C5A70,
+	U3CU3Ec_U3CStrongestWellBeingEmotionCalculatorU3Eb__116_1_mC5BA09866C2AE3453919A8202AF9642E075DA766,
+	U3CU3Ec__DisplayClass44_0__ctor_mBD9A7FF59290964989F06C56FCFB001A91A5F628,
+	U3CU3Ec__DisplayClass44_0_U3CDecideU3Eb__0_mAE6F4557B75799CD3F50F29ECC102456D03D5737,
+	U3CU3Ec__DisplayClass44_0_U3CDecideU3Eb__1_mDAE6933C85C244EA69F16E5E60BFAB6A5EAC4891,
+	U3CU3Ec__DisplayClass103_0__ctor_mACBC9531EC4BE9BE1DD65A461F13B0D2D478D915,
+	U3CU3Ec__DisplayClass103_0_U3CEmotionIntensityPropertyCalculatorU3Eb__0_mFF98B73CD4D07C678FFE1C443CE1FD58BB14175B,
+	U3CU3Ec__DisplayClass103_0_U3CEmotionIntensityPropertyCalculatorU3Eb__1_m337F2C5338329C5A0687EFC9806E6073FD64B81C,
+	U3CEmotionIntensityPropertyCalculatorU3Ed__103__ctor_m067BD6CDB9E1E8CCB1EA646D62995EF8A465C163,
+	U3CEmotionIntensityPropertyCalculatorU3Ed__103_System_IDisposable_Dispose_mA88BD783E4C0AB734E7079603AE457FFAAA19398,
+	U3CEmotionIntensityPropertyCalculatorU3Ed__103_MoveNext_mBB3AEB3288732ABF8804364D763787D58A610168,
+	U3CEmotionIntensityPropertyCalculatorU3Ed__103_U3CU3Em__Finally1_m4418311C08A36C65904C43D8829865BC77BA257D,
+	U3CEmotionIntensityPropertyCalculatorU3Ed__103_U3CU3Em__Finally2_m25B1E1DF97F30D7E3816F7225A13313262073082,
+	U3CEmotionIntensityPropertyCalculatorU3Ed__103_U3CU3Em__Finally3_m7884B7ADED7D7BCACD455D114E625A2C237FE9BA,
+	U3CEmotionIntensityPropertyCalculatorU3Ed__103_U3CU3Em__Finally4_m56ED7B1127EFF120BE09EE01015722453A393DEE,
+	U3CEmotionIntensityPropertyCalculatorU3Ed__103_U3CU3Em__Finally5_m2FD0A5C1DDD72CA5E1F65C97917A63DBB8C06F35,
+	U3CEmotionIntensityPropertyCalculatorU3Ed__103_U3CU3Em__Finally6_mD906E9847F8CA4D95069F88892C70AB4714E07EC,
+	U3CEmotionIntensityPropertyCalculatorU3Ed__103_U3CU3Em__Finally7_m79446D671CE90A4367754F67584E5201E0F5DD8F,
+	U3CEmotionIntensityPropertyCalculatorU3Ed__103_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_mE77F35DED7E6F8E2B4D373E3FFE8E7C3128F720C,
+	U3CEmotionIntensityPropertyCalculatorU3Ed__103_System_Collections_IEnumerator_Reset_m134AB1CC302DF15505CBA65356DC60E1DB9B610F,
+	U3CEmotionIntensityPropertyCalculatorU3Ed__103_System_Collections_IEnumerator_get_Current_mEA8438A1E8D65F1A383C150361750781B95FF1AB,
+	U3CEmotionIntensityPropertyCalculatorU3Ed__103_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_m669B5E9DEEE6797A4A2BF09658670B603CFD5A26,
+	U3CEmotionIntensityPropertyCalculatorU3Ed__103_System_Collections_IEnumerable_GetEnumerator_m98D3FD4CB515352484AF91F3465E612C04808136,
+	U3CU3Ec__DisplayClass105_0__ctor_m9AEDD61497802C714483AC7A43B95EC1E73396A2,
+	U3CU3Ec__DisplayClass105_0_U3CIsAgentPropertyCalculatorU3Eb__0_m56D6E0C81094F75A5F54445B58D27C81CBB66ACC,
+	U3CIsAgentPropertyCalculatorU3Ed__105__ctor_m6218F78BE2A44281B203487F27776AAAF56BF94C,
+	U3CIsAgentPropertyCalculatorU3Ed__105_System_IDisposable_Dispose_mD6F69C58AC464700A90F0A6C7CB149564ACC39AE,
+	U3CIsAgentPropertyCalculatorU3Ed__105_MoveNext_mDEF753236705D2D9C064935D60BD539414869B7E,
+	U3CIsAgentPropertyCalculatorU3Ed__105_U3CU3Em__Finally1_m9EBDCFCA9DB5F3C8CF43A7E2A42158A60C789A50,
+	U3CIsAgentPropertyCalculatorU3Ed__105_U3CU3Em__Finally2_mDDC52C5A9E1EC7B7058A46BDF8A1FE296B959B1A,
+	U3CIsAgentPropertyCalculatorU3Ed__105_U3CU3Em__Finally3_mEC9D6C2E2BD77CA3574A3A004AF851E2119AF79C,
+	U3CIsAgentPropertyCalculatorU3Ed__105_U3CU3Em__Finally4_mD46A0FE216F3D3F2095493165A3199C812A3770E,
+	U3CIsAgentPropertyCalculatorU3Ed__105_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_mBE93F9984A2C754EB8014224160F4FA7CD772363,
+	U3CIsAgentPropertyCalculatorU3Ed__105_System_Collections_IEnumerator_Reset_m8BDA13EBBAA4842931A7BD6EB1568E226B02A319,
+	U3CIsAgentPropertyCalculatorU3Ed__105_System_Collections_IEnumerator_get_Current_mA618A9696CBF98B0108002288D776382E6FBEBE2,
+	U3CIsAgentPropertyCalculatorU3Ed__105_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_m45857D738C37C60FDA5CED383C8718CF4356ABA9,
+	U3CIsAgentPropertyCalculatorU3Ed__105_System_Collections_IEnumerable_GetEnumerator_mA661B276D157C1CC8BD39419BE53A2387367E8B4,
+	U3CMoodPropertyCalculatorU3Ed__106__ctor_m8CE3D3F6B3A22B52D01A58DE6EB5C17D545A3E4F,
+	U3CMoodPropertyCalculatorU3Ed__106_System_IDisposable_Dispose_m64F07FE21899D54ABA717B23EDE1B71F21EAD599,
+	U3CMoodPropertyCalculatorU3Ed__106_MoveNext_mCCA745592CE565ABBD2A2A1C7C77CE9252B1B6C5,
+	U3CMoodPropertyCalculatorU3Ed__106_U3CU3Em__Finally1_mE5837EBA96E00734AD68134C74E555FFEFCADC38,
+	U3CMoodPropertyCalculatorU3Ed__106_U3CU3Em__Finally2_m3A747E7DAB8E1CFF089A86D4BB4A72A4CE4F5CE0,
+	U3CMoodPropertyCalculatorU3Ed__106_U3CU3Em__Finally3_mFB88611CE9CBCE886891C9BD71D66A170C50C1D7,
+	U3CMoodPropertyCalculatorU3Ed__106_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m1350F3C9C6E84E590E89A77C83CC146BCF06E3C5,
+	U3CMoodPropertyCalculatorU3Ed__106_System_Collections_IEnumerator_Reset_m8D9F5997D14EB0452993D11AC0680955D22FE9FC,
+	U3CMoodPropertyCalculatorU3Ed__106_System_Collections_IEnumerator_get_Current_m2C2A860D98D9CFEAF61074EE24865FCA86F119EA,
+	U3CMoodPropertyCalculatorU3Ed__106_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_mC0CCD5864A538065B438ACE3A262E54A6497DF43,
+	U3CMoodPropertyCalculatorU3Ed__106_System_Collections_IEnumerable_GetEnumerator_m6E51F24ACF3C19299C416198E2A0EA964D2DDD85,
+	U3CTickPropertyCalculatorU3Ed__107__ctor_m81C50170046A865530E2B2726775DE76948E02A7,
+	U3CTickPropertyCalculatorU3Ed__107_System_IDisposable_Dispose_m6C8C8E7A8FF6DA18FBB7DDBA97C7C3B11344E431,
+	U3CTickPropertyCalculatorU3Ed__107_MoveNext_m98CB06677926D427C5513F73730972187879C385,
+	U3CTickPropertyCalculatorU3Ed__107_U3CU3Em__Finally1_m7651B6BD275798376EC59601BEAB5567F3AFC30D,
+	U3CTickPropertyCalculatorU3Ed__107_U3CU3Em__Finally2_m9C4619240E91EE177D2BDC1CE4B79AB0C26B5402,
+	U3CTickPropertyCalculatorU3Ed__107_U3CU3Em__Finally3_mA5B79AC486DB0594CF26C34CD507633DE13E04CD,
+	U3CTickPropertyCalculatorU3Ed__107_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m2DEF0F783EFEAFBA56AED4C987B86C3155CDB2C6,
+	U3CTickPropertyCalculatorU3Ed__107_System_Collections_IEnumerator_Reset_m45ABB9C877ED6452DABB040D2E4B9D44BB28D1A2,
+	U3CTickPropertyCalculatorU3Ed__107_System_Collections_IEnumerator_get_Current_mE91425374189E8DDA25CAE14A5EBB4EB95A7D438,
+	U3CTickPropertyCalculatorU3Ed__107_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_mF87B5E684A6DC57F790F9693D232DF5A34F64D39,
+	U3CTickPropertyCalculatorU3Ed__107_System_Collections_IEnumerable_GetEnumerator_m232B94B80D15BC337D8B726C97E0660FD6494FB3,
+	U3CIsSalientPropertyCalculatorU3Ed__108__ctor_m48D4DB688F5BF2407440FAD4A1BF1D73633EC6A2,
+	U3CIsSalientPropertyCalculatorU3Ed__108_System_IDisposable_Dispose_mBF2D3C45A85DC591454824E3F3AD6E49C51DF0CB,
+	U3CIsSalientPropertyCalculatorU3Ed__108_MoveNext_mF8D0240F7845D5B37F1AE61A4A33B7DAFA56E548,
+	U3CIsSalientPropertyCalculatorU3Ed__108_U3CU3Em__Finally1_m82FC7CE9D54571D2BAD4A34508A5D5D555927CDF,
+	U3CIsSalientPropertyCalculatorU3Ed__108_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_mAEC4419679F5272587DAA6AB41CC2E3085A4DBF5,
+	U3CIsSalientPropertyCalculatorU3Ed__108_System_Collections_IEnumerator_Reset_m0DE2AE9C5B04147B6E359DF366C363007812C9F7,
+	U3CIsSalientPropertyCalculatorU3Ed__108_System_Collections_IEnumerator_get_Current_m6A50E571E1804F871B796A13F249C835F8C39C3E,
+	U3CIsSalientPropertyCalculatorU3Ed__108_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_mB7F53AADD8FA000D47A2B6240E04EF400D910F75,
+	U3CIsSalientPropertyCalculatorU3Ed__108_System_Collections_IEnumerable_GetEnumerator_m68A27D144569B1FBDE342A2B65467C8E02FA40B7,
+	U3CRandomCalculatorU3Ed__109__ctor_mA8EAF9C0BCB83128C3728DD2F132033FC2AE05F7,
+	U3CRandomCalculatorU3Ed__109_System_IDisposable_Dispose_m5033409230C826D239D8D471014A26D21EC18BA1,
+	U3CRandomCalculatorU3Ed__109_MoveNext_mC1DB4FC263AE5E8064D5E93367B79D8EEC43CD1E,
+	U3CRandomCalculatorU3Ed__109_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m82947BF7A9B273507E2C2895F25165D576BEFC4D,
+	U3CRandomCalculatorU3Ed__109_System_Collections_IEnumerator_Reset_m93E3AB0C5365210E63775CE5DD6EA461580185D9,
+	U3CRandomCalculatorU3Ed__109_System_Collections_IEnumerator_get_Current_m8648D71787235B0C60DA8AE3623D283C0852BFB3,
+	U3CRandomCalculatorU3Ed__109_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_mAF6F2C7BE3C5031E4722490E65724184A674FC82,
+	U3CRandomCalculatorU3Ed__109_System_Collections_IEnumerable_GetEnumerator_m99CB42250C3B52B17C23762D54C811E4EB5CD8CA,
+	U3CRoundMethodCalculatorU3Ed__110__ctor_m55500959C69326F54082BF6D9976CE062886A553,
+	U3CRoundMethodCalculatorU3Ed__110_System_IDisposable_Dispose_m1BEADDE7E12CB19317ECE3787E6D1D08A6E77590,
+	U3CRoundMethodCalculatorU3Ed__110_MoveNext_mA8E28E7AD9EF36DF5277ABE8E7816C8AD119F4D6,
+	U3CRoundMethodCalculatorU3Ed__110_U3CU3Em__Finally1_m6C9F6A26210D99F806FA67C9DCCFB5F83FD967A5,
+	U3CRoundMethodCalculatorU3Ed__110_U3CU3Em__Finally2_m783D69C4D9BC0A123A487728C3FAD874E78D1C6B,
+	U3CRoundMethodCalculatorU3Ed__110_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_mC0ECF8C072EE1F96526B93A20BCCBA166E2580E6,
+	U3CRoundMethodCalculatorU3Ed__110_System_Collections_IEnumerator_Reset_mA35E71F226DAEBC344F4F3B055C4DE2FFF2300BC,
+	U3CRoundMethodCalculatorU3Ed__110_System_Collections_IEnumerator_get_Current_m493F0F71A88C175A9442123B5E59C8C5E4431F3F,
+	U3CRoundMethodCalculatorU3Ed__110_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_mEB68172688540ED1CDF60E392D79820E8B6F118B,
+	U3CRoundMethodCalculatorU3Ed__110_System_Collections_IEnumerable_GetEnumerator_m99BA5E336732269480D73E4EA03B8834AFC6B644,
+	U3CRoundtoTensMethodCalculatorU3Ed__111__ctor_mA9BE83ECF286370E49FF76CE61B635F750B03861,
+	U3CRoundtoTensMethodCalculatorU3Ed__111_System_IDisposable_Dispose_mBDBD83F97FB1E3D467A74B3F3FCB68FC8DB6FDAE,
+	U3CRoundtoTensMethodCalculatorU3Ed__111_MoveNext_mF6015E5CF872EF79E7D01DE1DDE745FE761D0971,
+	U3CRoundtoTensMethodCalculatorU3Ed__111_U3CU3Em__Finally1_m367184A49B3BCBA87F34934D6BE5F8417B2F5A75,
+	U3CRoundtoTensMethodCalculatorU3Ed__111_U3CU3Em__Finally2_m92FE8A147D9B431791E20DA20B31AA8D2FDF9A70,
+	U3CRoundtoTensMethodCalculatorU3Ed__111_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m04C52FF82A75C9CC54CF90CCD8FD1F50BC9BAA27,
+	U3CRoundtoTensMethodCalculatorU3Ed__111_System_Collections_IEnumerator_Reset_mECECD346F806F8B0577DD765D8DD43E1F71A6C89,
+	U3CRoundtoTensMethodCalculatorU3Ed__111_System_Collections_IEnumerator_get_Current_m36B1762AE5704073788D34C54F26844DC105D79D,
+	U3CRoundtoTensMethodCalculatorU3Ed__111_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_m109ED4D6FD59B3980D7AD106FD34D74CD6A7EBA9,
+	U3CRoundtoTensMethodCalculatorU3Ed__111_System_Collections_IEnumerable_GetEnumerator_m71D0F9E84000F4FDCBC27871249D605498EC660F,
+	U3CStrongestAttributionEmotionCalculatorU3Ed__112__ctor_m07E6713C5AECE2B0CD6006768A015B8CF31BF4D9,
+	U3CStrongestAttributionEmotionCalculatorU3Ed__112_System_IDisposable_Dispose_mF92B11E3302769C493B3074BC20E82F4CD2E0520,
+	U3CStrongestAttributionEmotionCalculatorU3Ed__112_MoveNext_m024AD8317A7F127697AA8094DCF9814EA22FE0D5,
+	U3CStrongestAttributionEmotionCalculatorU3Ed__112_U3CU3Em__Finally1_m4CE9370ED03D9E8D0EDE8234ABC14DA49C0F94AC,
+	U3CStrongestAttributionEmotionCalculatorU3Ed__112_U3CU3Em__Finally2_m1E0D11B56F7EF19B4592C676F4029AF3D1DBEB95,
+	U3CStrongestAttributionEmotionCalculatorU3Ed__112_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m82AD6A8F93839832C15CABF49B9C7DEAAE094342,
+	U3CStrongestAttributionEmotionCalculatorU3Ed__112_System_Collections_IEnumerator_Reset_m932743E124DD871611E0769A6EA2D4E4BD92F23B,
+	U3CStrongestAttributionEmotionCalculatorU3Ed__112_System_Collections_IEnumerator_get_Current_m49333D969649C6E5D7470B046D3420D4FBE5B2FA,
+	U3CStrongestAttributionEmotionCalculatorU3Ed__112_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_m29781CEC221BAFC5649BE8BF83A0B71F8D4D5625,
+	U3CStrongestAttributionEmotionCalculatorU3Ed__112_System_Collections_IEnumerable_GetEnumerator_mE807FA3A15F6E42FF38FB4136F604474B5551D28,
+	U3CStrongestCompoundEmotionCalculatorU3Ed__113__ctor_m281A5B324878999FAE56571272BE758215C442F6,
+	U3CStrongestCompoundEmotionCalculatorU3Ed__113_System_IDisposable_Dispose_m87B8DC0EE536CD286B92EF2A006B2766E4771418,
+	U3CStrongestCompoundEmotionCalculatorU3Ed__113_MoveNext_mA34B759431399F0C8A665F78061AF7959A25F65B,
+	U3CStrongestCompoundEmotionCalculatorU3Ed__113_U3CU3Em__Finally1_m32A3882D5CF96EA2C3896BBAF1AA5589213A7588,
+	U3CStrongestCompoundEmotionCalculatorU3Ed__113_U3CU3Em__Finally2_m101809AC33E846FCDFA927C9F5EFC540CEE6A336,
+	U3CStrongestCompoundEmotionCalculatorU3Ed__113_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_mA69136C8D32FFEEDFAEAA7068A7D4B6A986AA2A0,
+	U3CStrongestCompoundEmotionCalculatorU3Ed__113_System_Collections_IEnumerator_Reset_mD7B569267694AFD80B929A4DCD794689E9FC7BE2,
+	U3CStrongestCompoundEmotionCalculatorU3Ed__113_System_Collections_IEnumerator_get_Current_mB3A272CC13612F4776F992D507DF527475AD7AC8,
+	U3CStrongestCompoundEmotionCalculatorU3Ed__113_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_m2E64C1FEA618B5D14E721CC51A3A024421680B07,
+	U3CStrongestCompoundEmotionCalculatorU3Ed__113_System_Collections_IEnumerable_GetEnumerator_m256788C175D329A2F7F8430CE05E2959F11991D4,
+	U3CStrongestEmotionCalculatorU3Ed__114__ctor_m7100F682465D1C1B6C09BAABF484982B293126CB,
+	U3CStrongestEmotionCalculatorU3Ed__114_System_IDisposable_Dispose_m4720391C10BA51EB4068FC7BDC5CE4D1323534E1,
+	U3CStrongestEmotionCalculatorU3Ed__114_MoveNext_m6BA1CB2B569276EB53FB02242DD93C6B5C933081,
+	U3CStrongestEmotionCalculatorU3Ed__114_U3CU3Em__Finally1_mDBA410483D1CF42DA0E5D0E689541AF2657DA54B,
+	U3CStrongestEmotionCalculatorU3Ed__114_U3CU3Em__Finally2_mB5248EC463AF26CA6490D97F0E8462C65887580B,
+	U3CStrongestEmotionCalculatorU3Ed__114_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m4259C1F60091199E47D48D1C52DDE7647F1FA767,
+	U3CStrongestEmotionCalculatorU3Ed__114_System_Collections_IEnumerator_Reset_mF9651ADCC8C2C37ECDE7DE5437D3E2F54343298F,
+	U3CStrongestEmotionCalculatorU3Ed__114_System_Collections_IEnumerator_get_Current_m2D1781560E8B9CA85FDAA8D6BC4782CA25B7D277,
+	U3CStrongestEmotionCalculatorU3Ed__114_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_mCAF93FC713A1210CD0842B527A9137A726FC2F86,
+	U3CStrongestEmotionCalculatorU3Ed__114_System_Collections_IEnumerable_GetEnumerator_mE0752CA0E3FDF5B989F74C5AACDA7A3DC49F4CE2,
+	U3CU3Ec__DisplayClass115_0__ctor_m9F46890BB04727048AD6947F6FB4DDE109D5F28F,
+	U3CU3Ec__DisplayClass115_0_U3CStrongestEmotionForEventCalculatorU3Eb__0_m6B3436D320E4C8260A1FF76D6965118750BC2631,
+	U3CStrongestEmotionForEventCalculatorU3Ed__115__ctor_m39DF163EFB79F2449E7B30858FB1584AA5FD034B,
+	U3CStrongestEmotionForEventCalculatorU3Ed__115_System_IDisposable_Dispose_m30F0BEDD9025E55993195FDD1C74AF09FC49B5C5,
+	U3CStrongestEmotionForEventCalculatorU3Ed__115_MoveNext_m7C5EBC0953EFD573524850EA851B438665152D97,
+	U3CStrongestEmotionForEventCalculatorU3Ed__115_U3CU3Em__Finally1_m06ABC557D6011DE3BE2AAD7A688CA080B075EFB9,
+	U3CStrongestEmotionForEventCalculatorU3Ed__115_U3CU3Em__Finally2_mEC1FBC4FA4B9579047F1D03FC7D7E7772DD1AC76,
+	U3CStrongestEmotionForEventCalculatorU3Ed__115_U3CU3Em__Finally3_mCB65907107385C914F9C966748DBF8A1801A2EDE,
+	U3CStrongestEmotionForEventCalculatorU3Ed__115_U3CU3Em__Finally4_m468E83DB1B9A77885D3BCA78C0D0B576435364A4,
+	U3CStrongestEmotionForEventCalculatorU3Ed__115_U3CU3Em__Finally5_m9E4BDFF5F25E14EEDA0832C48AC96377498AEFCB,
+	U3CStrongestEmotionForEventCalculatorU3Ed__115_U3CU3Em__Finally6_m58A83D1C82B8AE6CD31C0F10B6741532C4C0DCB4,
+	U3CStrongestEmotionForEventCalculatorU3Ed__115_U3CU3Em__Finally7_mE04AEF26DE034CFE75FFC01368F049ED74636955,
+	U3CStrongestEmotionForEventCalculatorU3Ed__115_U3CU3Em__Finally8_m432CC83554D56B787097AFB4C8E8246C77A980C9,
+	U3CStrongestEmotionForEventCalculatorU3Ed__115_U3CU3Em__Finally9_m6D7A0C77F77B9487A2658BF48EC8363B343D9288,
+	U3CStrongestEmotionForEventCalculatorU3Ed__115_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m7BC747343847472E4324FECF458161C32AE82495,
+	U3CStrongestEmotionForEventCalculatorU3Ed__115_System_Collections_IEnumerator_Reset_m8376F82CF19ABD549BDBB082C853229F07B8BB7B,
+	U3CStrongestEmotionForEventCalculatorU3Ed__115_System_Collections_IEnumerator_get_Current_mDC760B1A774F68B0BEFA1259572EE62B5FC64FCB,
+	U3CStrongestEmotionForEventCalculatorU3Ed__115_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_m6D1B4D0A118B33B8A80F75C03B82BBA0C38F2C43,
+	U3CStrongestEmotionForEventCalculatorU3Ed__115_System_Collections_IEnumerable_GetEnumerator_m9F89DBDB166F56D490FE789EF1E357186C8C1F4C,
+	U3CStrongestWellBeingEmotionCalculatorU3Ed__116__ctor_mCE1813ACF2EB1F58B0BB506D3D518098F03E05A0,
+	U3CStrongestWellBeingEmotionCalculatorU3Ed__116_System_IDisposable_Dispose_mC4312D10AEB9A02E86DC2DB702D768B157844546,
+	U3CStrongestWellBeingEmotionCalculatorU3Ed__116_MoveNext_m8C1655F30D67A58AAC725BD2DA4F7D71B92F42AC,
+	U3CStrongestWellBeingEmotionCalculatorU3Ed__116_U3CU3Em__Finally1_m029F8E4221465F471EDE478E7526FE65CC24B1EA,
+	U3CStrongestWellBeingEmotionCalculatorU3Ed__116_U3CU3Em__Finally2_m81C3E7DACABB5687412DE643B7F9B492C9C06FA2,
+	U3CStrongestWellBeingEmotionCalculatorU3Ed__116_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m50CA3CAB27F94C422D66DF3EE9775BB40401B063,
+	U3CStrongestWellBeingEmotionCalculatorU3Ed__116_System_Collections_IEnumerator_Reset_m06D268C5F8805AB781D836FD78CC7A1943ABE54A,
+	U3CStrongestWellBeingEmotionCalculatorU3Ed__116_System_Collections_IEnumerator_get_Current_m9FC2022AAE5989BC8A67721AA3A271366C7EDE99,
+	U3CStrongestWellBeingEmotionCalculatorU3Ed__116_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_mE1B49E93546528F73205187E8CCF3F097A17DCB0,
+	U3CStrongestWellBeingEmotionCalculatorU3Ed__116_System_Collections_IEnumerable_GetEnumerator_mABBDFB841B44A43E3063FAB11EA8A459D5732D6F,
+	RPCConsts__cctor_m7D0B17D8D788A370B949E7E506ACA6DC9099A7DB,
+};
+static const int32_t s_InvokerIndices[213] = 
+{
+	4686,
+	4686,
+	4686,
+	6912,
+	6912,
+	6912,
+	5692,
+	5748,
+	4686,
+	5647,
+	4723,
+	5647,
+	4686,
+	5647,
+	4686,
+	5647,
+	5647,
+	5609,
+	4648,
+	5647,
+	5647,
+	3656,
+	3656,
+	5647,
+	4686,
+	4686,
+	2719,
+	4686,
+	2719,
+	5748,
+	5647,
+	4686,
+	4686,
+	1256,
+	1913,
+	1913,
+	1913,
+	1913,
+	1256,
+	1256,
+	1256,
+	1913,
+	1913,
+	1913,
+	1256,
+	1913,
+	8351,
+	3656,
+	8351,
+	5748,
+	3656,
+	3369,
+	4057,
+	4274,
+	4057,
+	4274,
+	4274,
+	4057,
+	4274,
+	5748,
+	4057,
+	4057,
+	5748,
+	4057,
+	4057,
+	4647,
+	5748,
+	5685,
+	5748,
+	5748,
+	5748,
+	5748,
+	5748,
+	5748,
+	5748,
+	5551,
+	5748,
+	5647,
+	5647,
+	5647,
+	5748,
+	3656,
+	4647,
+	5748,
+	5685,
+	5748,
+	5748,
+	5748,
+	5748,
+	5551,
+	5748,
+	5647,
+	5647,
+	5647,
+	4647,
+	5748,
+	5685,
+	5748,
+	5748,
+	5748,
+	5551,
+	5748,
+	5647,
+	5647,
+	5647,
+	4647,
+	5748,
+	5685,
+	5748,
+	5748,
+	5748,
+	5551,
+	5748,
+	5647,
+	5647,
+	5647,
+	4647,
+	5748,
+	5685,
+	5748,
+	5551,
+	5748,
+	5647,
+	5647,
+	5647,
+	4647,
+	5748,
+	5685,
+	5551,
+	5748,
+	5647,
+	5647,
+	5647,
+	4647,
+	5748,
+	5685,
+	5748,
+	5748,
+	5551,
+	5748,
+	5647,
+	5647,
+	5647,
+	4647,
+	5748,
+	5685,
+	5748,
+	5748,
+	5551,
+	5748,
+	5647,
+	5647,
+	5647,
+	4647,
+	5748,
+	5685,
+	5748,
+	5748,
+	5551,
+	5748,
+	5647,
+	5647,
+	5647,
+	4647,
+	5748,
+	5685,
+	5748,
+	5748,
+	5551,
+	5748,
+	5647,
+	5647,
+	5647,
+	4647,
+	5748,
+	5685,
+	5748,
+	5748,
+	5551,
+	5748,
+	5647,
+	5647,
+	5647,
+	5748,
+	4057,
+	4647,
+	5748,
+	5685,
+	5748,
+	5748,
+	5748,
+	5748,
+	5748,
+	5748,
+	5748,
+	5748,
+	5748,
+	5551,
+	5748,
+	5647,
+	5647,
+	5647,
+	4647,
+	5748,
+	5685,
+	5748,
+	5748,
+	5551,
+	5748,
+	5647,
+	5647,
+	5647,
+	8351,
+};
+extern const CustomAttributesCacheGenerator g_RolePlayCharacter_AttributeGenerators[];
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_RolePlayCharacter_CodeGenModule;
+const Il2CppCodeGenModule g_RolePlayCharacter_CodeGenModule = 
+{
+	"RolePlayCharacter.dll",
+	213,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	g_RolePlayCharacter_AttributeGenerators,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};

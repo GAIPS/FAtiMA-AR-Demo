@@ -1,0 +1,427 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 System.UInt64 AutobiographicMemory.AM::get_Tick()
+extern void AM_get_Tick_m2CE8483ED25AB4E4FB6D2DA025372BA9B606DA68 (void);
+// 0x00000002 System.Void AutobiographicMemory.AM::set_Tick(System.UInt64)
+extern void AM_set_Tick_mDC19CF0BDAC55805F461AC26463C64B31201EBD4 (void);
+// 0x00000003 System.Void AutobiographicMemory.AM::BindToRegistry(KnowledgeBase.IDynamicPropertiesRegistry)
+extern void AM_BindToRegistry_m02D9E529CC0FBFF9E809DF2C1613C3E35BA1E09A (void);
+// 0x00000004 AutobiographicMemory.IBaseEvent AutobiographicMemory.AM::RecordEvent(WellFormedNames.Name,System.UInt64)
+extern void AM_RecordEvent_mAF97541E745684A43974B5D1761B4DC7D1B89F2A (void);
+// 0x00000005 AutobiographicMemory.AM/BaseEvent AutobiographicMemory.AM::SaveEventHelper(System.UInt32,WellFormedNames.Name,System.UInt64)
+extern void AM_SaveEventHelper_mE9167CB3AE140AD792671515CF3D1ACB47CB2D74 (void);
+// 0x00000006 AutobiographicMemory.IBaseEvent AutobiographicMemory.AM::RecallEvent(System.UInt32)
+extern void AM_RecallEvent_m076138A05EA1009F22FBB1EE0B7AF6C89F39D2BA (void);
+// 0x00000007 System.Collections.Generic.IEnumerable`1<AutobiographicMemory.IBaseEvent> AutobiographicMemory.AM::RecallAllEvents()
+extern void AM_RecallAllEvents_m4B9CEB411F4B482EC04BEDFC2B04B7496884EA0C (void);
+// 0x00000008 System.Void AutobiographicMemory.AM::AddRecord(AutobiographicMemory.AM/BaseEvent)
+extern void AM_AddRecord_m1F4BBC56E9561BD6DACC5C067F24902394EFF8BF (void);
+// 0x00000009 System.Void AutobiographicMemory.AM::AssertEventNameValidity(WellFormedNames.Name)
+extern void AM_AssertEventNameValidity_m06D12FEA966A7A3F5D3B2737EC0624D51F3274F5 (void);
+// 0x0000000A System.Collections.Generic.IEnumerable`1<KnowledgeBase.DynamicPropertyResult> AutobiographicMemory.AM::EventIdPropertyCalculator(KnowledgeBase.IQueryContext,WellFormedNames.Name,WellFormedNames.Name,WellFormedNames.Name,WellFormedNames.Name)
+extern void AM_EventIdPropertyCalculator_m19A5F71AEC19657DA50894047A66DE2AF92EC8C1 (void);
+// 0x0000000B System.Collections.Generic.IEnumerable`1<KnowledgeBase.DynamicPropertyResult> AutobiographicMemory.AM::EventAgePropertyCalculator(KnowledgeBase.IQueryContext,WellFormedNames.Name)
+extern void AM_EventAgePropertyCalculator_m55AAB02F87FDF345DAC1ED46C61FB0C9747A3B0C (void);
+// 0x0000000C System.Collections.Generic.IEnumerable`1<KnowledgeBase.DynamicPropertyResult> AutobiographicMemory.AM::LastEventIdPropertyCalculator(KnowledgeBase.IQueryContext,WellFormedNames.Name,WellFormedNames.Name,WellFormedNames.Name,WellFormedNames.Name)
+extern void AM_LastEventIdPropertyCalculator_m200CA62332C8C27EF6431060135B33F1E753447A (void);
+// 0x0000000D System.Void AutobiographicMemory.AM::.ctor()
+extern void AM__ctor_mD2FB006E14283D6D9EF778779EEB6850C731C23F (void);
+// 0x0000000E System.Void AutobiographicMemory.AM::.cctor()
+extern void AM__cctor_mFFC7BCCE033CD34D18B19D09F07DB0F2504DA197 (void);
+// 0x0000000F AutobiographicMemory.AM/BaseEvent AutobiographicMemory.AM::<RecallAllEvents>b__15_0(System.UInt32)
+extern void AM_U3CRecallAllEventsU3Eb__15_0_m757EE952D7C88655A6A1A7009BDE871C8321A665 (void);
+// 0x00000010 System.Boolean AutobiographicMemory.AM/ActionEvent::IsActionEvent(WellFormedNames.Name)
+extern void ActionEvent_IsActionEvent_m1C300F39A990EA06E2CD3271A0305B8E99B1F01B (void);
+// 0x00000011 WellFormedNames.Name AutobiographicMemory.AM/ActionEvent::get_Action()
+extern void ActionEvent_get_Action_m59DA34FE7D700BE14A3CD8956CDB00706DF6921A (void);
+// 0x00000012 System.Void AutobiographicMemory.AM/ActionEvent::set_Action(WellFormedNames.Name)
+extern void ActionEvent_set_Action_mAFA8349423EB60EA8502C3A07ED345578427B12B (void);
+// 0x00000013 WellFormedNames.Name AutobiographicMemory.AM/ActionEvent::get_Target()
+extern void ActionEvent_get_Target_mBB68F93B86CF9EB4FD855A22319A86AE17EB6AC3 (void);
+// 0x00000014 System.Void AutobiographicMemory.AM/ActionEvent::set_Target(WellFormedNames.Name)
+extern void ActionEvent_set_Target_m4BA1A0C0729B0C3E1593CFBC5EA3D48180F5AC21 (void);
+// 0x00000015 System.Void AutobiographicMemory.AM/ActionEvent::.ctor(System.UInt32,WellFormedNames.Name,System.UInt64)
+extern void ActionEvent__ctor_m1123B71987E84219A8210FA43D523E94BC52450C (void);
+// 0x00000016 AutobiographicMemory.DTOs.EventDTO AutobiographicMemory.AM/ActionEvent::ToDTO()
+extern void ActionEvent_ToDTO_m4EB4E4F58916A424294E1AF47B9392677BAD7850 (void);
+// 0x00000017 System.UInt32 AutobiographicMemory.AM/BaseEvent::get_Id()
+extern void BaseEvent_get_Id_m4EFCE33A8F87E1B914504EC125BA189A7DFC9879 (void);
+// 0x00000018 System.Void AutobiographicMemory.AM/BaseEvent::set_Id(System.UInt32)
+extern void BaseEvent_set_Id_m84794D1986114B9188EA9A7A5D248E8EF66F9879 (void);
+// 0x00000019 System.Void AutobiographicMemory.AM/BaseEvent::set_Type(WellFormedNames.Name)
+extern void BaseEvent_set_Type_m018D81590A4FC0A4306A955C90D67B195A0478F9 (void);
+// 0x0000001A WellFormedNames.Name AutobiographicMemory.AM/BaseEvent::get_Subject()
+extern void BaseEvent_get_Subject_m1160EDB3A41F1A0F11E1EA24D158A172201873DF (void);
+// 0x0000001B System.Void AutobiographicMemory.AM/BaseEvent::set_Subject(WellFormedNames.Name)
+extern void BaseEvent_set_Subject_m4E918B65034B531287CA2E362086A58B2D176AA3 (void);
+// 0x0000001C System.UInt64 AutobiographicMemory.AM/BaseEvent::get_Timestamp()
+extern void BaseEvent_get_Timestamp_mC1A978358FDC94837046CAABDA32876B47C215FD (void);
+// 0x0000001D System.Void AutobiographicMemory.AM/BaseEvent::set_Timestamp(System.UInt64)
+extern void BaseEvent_set_Timestamp_m63B4F64E1414EB1BFA7D4F73A8DF6F144E927004 (void);
+// 0x0000001E WellFormedNames.Name AutobiographicMemory.AM/BaseEvent::get_EventName()
+extern void BaseEvent_get_EventName_mEDFB5887D45915D3C5103981BA9EA3E00B5A594E (void);
+// 0x0000001F System.Void AutobiographicMemory.AM/BaseEvent::set_EventName(WellFormedNames.Name)
+extern void BaseEvent_set_EventName_m256449708D2111BAAD8DE861D2B70354552BAF75 (void);
+// 0x00000020 System.Void AutobiographicMemory.AM/BaseEvent::.ctor(System.UInt32,WellFormedNames.Name,System.UInt64)
+extern void BaseEvent__ctor_m41C6034C8822D10BDCE7DAF29C3FA4BD372F0516 (void);
+// 0x00000021 System.Void AutobiographicMemory.AM/BaseEvent::LinkEmotion(System.String)
+extern void BaseEvent_LinkEmotion_m564D0CAF64AFDB0EFB1B268D846C7D5E71A9C1E2 (void);
+// 0x00000022 AutobiographicMemory.DTOs.EventDTO AutobiographicMemory.AM/BaseEvent::ToDTO()
+// 0x00000023 System.Boolean AutobiographicMemory.AM/PropertyChangeEvent::IsPropertyChangeEvent(WellFormedNames.Name)
+extern void PropertyChangeEvent_IsPropertyChangeEvent_m31C66CBD0C626529D4EC6F2BC11B3F36E4C097D3 (void);
+// 0x00000024 WellFormedNames.Name AutobiographicMemory.AM/PropertyChangeEvent::get_Property()
+extern void PropertyChangeEvent_get_Property_mECD3E41E4DDE427C6CEF4B87CDE0C3582F883B54 (void);
+// 0x00000025 System.Void AutobiographicMemory.AM/PropertyChangeEvent::set_Property(WellFormedNames.Name)
+extern void PropertyChangeEvent_set_Property_m29E1A43118A4B793EBC3919B957F4D0D8FC9B70E (void);
+// 0x00000026 WellFormedNames.Name AutobiographicMemory.AM/PropertyChangeEvent::get_NewValue()
+extern void PropertyChangeEvent_get_NewValue_m879C4341E535DEBE930656E9DE221623581BB4A9 (void);
+// 0x00000027 System.Void AutobiographicMemory.AM/PropertyChangeEvent::set_NewValue(WellFormedNames.Name)
+extern void PropertyChangeEvent_set_NewValue_m10ACD5C46E9307A88F27843EE3311571CD7AB0B1 (void);
+// 0x00000028 System.Void AutobiographicMemory.AM/PropertyChangeEvent::.ctor(System.UInt32,WellFormedNames.Name,System.UInt64)
+extern void PropertyChangeEvent__ctor_m0CE2E58558F3EFF481C097DC2FA4BDEA794CB09E (void);
+// 0x00000029 AutobiographicMemory.DTOs.EventDTO AutobiographicMemory.AM/PropertyChangeEvent::ToDTO()
+extern void PropertyChangeEvent_ToDTO_m2E476F45FF759B93DA773D02806BA0BDB1193954 (void);
+// 0x0000002A System.Void AutobiographicMemory.AM/<EventIdPropertyCalculator>d__21::.ctor(System.Int32)
+extern void U3CEventIdPropertyCalculatorU3Ed__21__ctor_m2DEA456BE68DB5C5BCB54BD243123DB086300D5B (void);
+// 0x0000002B System.Void AutobiographicMemory.AM/<EventIdPropertyCalculator>d__21::System.IDisposable.Dispose()
+extern void U3CEventIdPropertyCalculatorU3Ed__21_System_IDisposable_Dispose_m69EA2B30A8CB12230D923512CB63490FD45E3E7F (void);
+// 0x0000002C System.Boolean AutobiographicMemory.AM/<EventIdPropertyCalculator>d__21::MoveNext()
+extern void U3CEventIdPropertyCalculatorU3Ed__21_MoveNext_mBBC63556413C69F21BF4447876DAE9860BF33E31 (void);
+// 0x0000002D System.Void AutobiographicMemory.AM/<EventIdPropertyCalculator>d__21::<>m__Finally1()
+extern void U3CEventIdPropertyCalculatorU3Ed__21_U3CU3Em__Finally1_mEDB43D7EA1B644A556A7B7192BDF259BACFD97FB (void);
+// 0x0000002E System.Void AutobiographicMemory.AM/<EventIdPropertyCalculator>d__21::<>m__Finally2()
+extern void U3CEventIdPropertyCalculatorU3Ed__21_U3CU3Em__Finally2_mD4CA8BF8C3408A880036DBB184CC956F961D7ABB (void);
+// 0x0000002F System.Void AutobiographicMemory.AM/<EventIdPropertyCalculator>d__21::<>m__Finally3()
+extern void U3CEventIdPropertyCalculatorU3Ed__21_U3CU3Em__Finally3_mA89EFC652082A701BF0E198098FC949A5D2A2A67 (void);
+// 0x00000030 KnowledgeBase.DynamicPropertyResult AutobiographicMemory.AM/<EventIdPropertyCalculator>d__21::System.Collections.Generic.IEnumerator<KnowledgeBase.DynamicPropertyResult>.get_Current()
+extern void U3CEventIdPropertyCalculatorU3Ed__21_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_mAF49D40B4CB808A7E0761D410F5110AE9790DF15 (void);
+// 0x00000031 System.Void AutobiographicMemory.AM/<EventIdPropertyCalculator>d__21::System.Collections.IEnumerator.Reset()
+extern void U3CEventIdPropertyCalculatorU3Ed__21_System_Collections_IEnumerator_Reset_m2C002FFED6DC02E4403F1EF137613318976BD2F5 (void);
+// 0x00000032 System.Object AutobiographicMemory.AM/<EventIdPropertyCalculator>d__21::System.Collections.IEnumerator.get_Current()
+extern void U3CEventIdPropertyCalculatorU3Ed__21_System_Collections_IEnumerator_get_Current_mBE4E2A9256D4262259F274F1D4EF5732375F862E (void);
+// 0x00000033 System.Collections.Generic.IEnumerator`1<KnowledgeBase.DynamicPropertyResult> AutobiographicMemory.AM/<EventIdPropertyCalculator>d__21::System.Collections.Generic.IEnumerable<KnowledgeBase.DynamicPropertyResult>.GetEnumerator()
+extern void U3CEventIdPropertyCalculatorU3Ed__21_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_m1045ADE32C481F384F06531254B47FA7F50FC141 (void);
+// 0x00000034 System.Collections.IEnumerator AutobiographicMemory.AM/<EventIdPropertyCalculator>d__21::System.Collections.IEnumerable.GetEnumerator()
+extern void U3CEventIdPropertyCalculatorU3Ed__21_System_Collections_IEnumerable_GetEnumerator_mD8BAE8D17D1A3C902090F4B7B0F1830E4918AB9B (void);
+// 0x00000035 System.Void AutobiographicMemory.AM/<EventAgePropertyCalculator>d__23::.ctor(System.Int32)
+extern void U3CEventAgePropertyCalculatorU3Ed__23__ctor_m8A91CB75FE5D3648A49718F7D8F94EBB15665EEE (void);
+// 0x00000036 System.Void AutobiographicMemory.AM/<EventAgePropertyCalculator>d__23::System.IDisposable.Dispose()
+extern void U3CEventAgePropertyCalculatorU3Ed__23_System_IDisposable_Dispose_m89D4F717026A493B27C9947B5ACF2F82E523200C (void);
+// 0x00000037 System.Boolean AutobiographicMemory.AM/<EventAgePropertyCalculator>d__23::MoveNext()
+extern void U3CEventAgePropertyCalculatorU3Ed__23_MoveNext_mDC3D65F5A82CAC536FF2DFF8B077043D0F7AD520 (void);
+// 0x00000038 System.Void AutobiographicMemory.AM/<EventAgePropertyCalculator>d__23::<>m__Finally1()
+extern void U3CEventAgePropertyCalculatorU3Ed__23_U3CU3Em__Finally1_m7D9385CCD6CF496CAAD721DF55E1653A2E5B9313 (void);
+// 0x00000039 System.Void AutobiographicMemory.AM/<EventAgePropertyCalculator>d__23::<>m__Finally2()
+extern void U3CEventAgePropertyCalculatorU3Ed__23_U3CU3Em__Finally2_m90A1BCBCADBAA205D199C83F70B61D172A4BC02C (void);
+// 0x0000003A System.Void AutobiographicMemory.AM/<EventAgePropertyCalculator>d__23::<>m__Finally3()
+extern void U3CEventAgePropertyCalculatorU3Ed__23_U3CU3Em__Finally3_mC4AC7652F3F9FBBA2521BEBA9309834E97E8B463 (void);
+// 0x0000003B System.Void AutobiographicMemory.AM/<EventAgePropertyCalculator>d__23::<>m__Finally4()
+extern void U3CEventAgePropertyCalculatorU3Ed__23_U3CU3Em__Finally4_mB1A283E29CC4AA752AF5370D0DC9B0F0FD54BDCA (void);
+// 0x0000003C KnowledgeBase.DynamicPropertyResult AutobiographicMemory.AM/<EventAgePropertyCalculator>d__23::System.Collections.Generic.IEnumerator<KnowledgeBase.DynamicPropertyResult>.get_Current()
+extern void U3CEventAgePropertyCalculatorU3Ed__23_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m2A118C2EE0907421A9112DE47DB335A360A66172 (void);
+// 0x0000003D System.Void AutobiographicMemory.AM/<EventAgePropertyCalculator>d__23::System.Collections.IEnumerator.Reset()
+extern void U3CEventAgePropertyCalculatorU3Ed__23_System_Collections_IEnumerator_Reset_m61DC29D46602B53F8A0E387BFE7FE4B016AAAD46 (void);
+// 0x0000003E System.Object AutobiographicMemory.AM/<EventAgePropertyCalculator>d__23::System.Collections.IEnumerator.get_Current()
+extern void U3CEventAgePropertyCalculatorU3Ed__23_System_Collections_IEnumerator_get_Current_mDC3AC0FB80AC9A79446FA7E9A7D08D067AB24670 (void);
+// 0x0000003F System.Collections.Generic.IEnumerator`1<KnowledgeBase.DynamicPropertyResult> AutobiographicMemory.AM/<EventAgePropertyCalculator>d__23::System.Collections.Generic.IEnumerable<KnowledgeBase.DynamicPropertyResult>.GetEnumerator()
+extern void U3CEventAgePropertyCalculatorU3Ed__23_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_m07CA84FF6B66776D6CF30E5425377B3A33CF059B (void);
+// 0x00000040 System.Collections.IEnumerator AutobiographicMemory.AM/<EventAgePropertyCalculator>d__23::System.Collections.IEnumerable.GetEnumerator()
+extern void U3CEventAgePropertyCalculatorU3Ed__23_System_Collections_IEnumerable_GetEnumerator_mC3F4683A49636E361DD32289D80AD521085442E6 (void);
+// 0x00000041 System.Void AutobiographicMemory.AM/<>c__DisplayClass25_0::.ctor()
+extern void U3CU3Ec__DisplayClass25_0__ctor_m0F9442A45A7FF0F5216F7871E48E3F71B99402A2 (void);
+// 0x00000042 System.Boolean AutobiographicMemory.AM/<>c__DisplayClass25_0::<LastEventIdPropertyCalculator>b__0(System.Collections.Generic.KeyValuePair`2<System.UInt32,AutobiographicMemory.AM/BaseEvent>)
+extern void U3CU3Ec__DisplayClass25_0_U3CLastEventIdPropertyCalculatorU3Eb__0_mCB5109CD353C5E3FCD06E8D49384E69ADBD6F47C (void);
+// 0x00000043 System.Void AutobiographicMemory.AM/<LastEventIdPropertyCalculator>d__25::.ctor(System.Int32)
+extern void U3CLastEventIdPropertyCalculatorU3Ed__25__ctor_m87A3022A38721B3E40ADE8C76F1076E9E158E49B (void);
+// 0x00000044 System.Void AutobiographicMemory.AM/<LastEventIdPropertyCalculator>d__25::System.IDisposable.Dispose()
+extern void U3CLastEventIdPropertyCalculatorU3Ed__25_System_IDisposable_Dispose_mF66FB898B502BA904A580C41D976DB1DD896AF3F (void);
+// 0x00000045 System.Boolean AutobiographicMemory.AM/<LastEventIdPropertyCalculator>d__25::MoveNext()
+extern void U3CLastEventIdPropertyCalculatorU3Ed__25_MoveNext_m28A655CF209AF9F9A9BF329C85C48EF130CC12E4 (void);
+// 0x00000046 System.Void AutobiographicMemory.AM/<LastEventIdPropertyCalculator>d__25::<>m__Finally1()
+extern void U3CLastEventIdPropertyCalculatorU3Ed__25_U3CU3Em__Finally1_m37166A0B42DADC842EF5A9FDB674C956038A6011 (void);
+// 0x00000047 System.Void AutobiographicMemory.AM/<LastEventIdPropertyCalculator>d__25::<>m__Finally2()
+extern void U3CLastEventIdPropertyCalculatorU3Ed__25_U3CU3Em__Finally2_m268B5B6D1864BBE163B648DB9A2C38F242DFF138 (void);
+// 0x00000048 System.Void AutobiographicMemory.AM/<LastEventIdPropertyCalculator>d__25::<>m__Finally3()
+extern void U3CLastEventIdPropertyCalculatorU3Ed__25_U3CU3Em__Finally3_m69A31C4CA58A44782D16FF9F32E3A5431D5454DD (void);
+// 0x00000049 KnowledgeBase.DynamicPropertyResult AutobiographicMemory.AM/<LastEventIdPropertyCalculator>d__25::System.Collections.Generic.IEnumerator<KnowledgeBase.DynamicPropertyResult>.get_Current()
+extern void U3CLastEventIdPropertyCalculatorU3Ed__25_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m9350F7033DB7CE4E725FBCB4DF4B7C18E992FD26 (void);
+// 0x0000004A System.Void AutobiographicMemory.AM/<LastEventIdPropertyCalculator>d__25::System.Collections.IEnumerator.Reset()
+extern void U3CLastEventIdPropertyCalculatorU3Ed__25_System_Collections_IEnumerator_Reset_m36EFCB7C69DBBE6E4DBE87A306C4A18240FF5921 (void);
+// 0x0000004B System.Object AutobiographicMemory.AM/<LastEventIdPropertyCalculator>d__25::System.Collections.IEnumerator.get_Current()
+extern void U3CLastEventIdPropertyCalculatorU3Ed__25_System_Collections_IEnumerator_get_Current_m5FE3F06779B7F87CBE61008348709DBF197BB2CA (void);
+// 0x0000004C System.Collections.Generic.IEnumerator`1<KnowledgeBase.DynamicPropertyResult> AutobiographicMemory.AM/<LastEventIdPropertyCalculator>d__25::System.Collections.Generic.IEnumerable<KnowledgeBase.DynamicPropertyResult>.GetEnumerator()
+extern void U3CLastEventIdPropertyCalculatorU3Ed__25_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_mF32622754F8E62E3070B7031D1C5F748A8D5AE48 (void);
+// 0x0000004D System.Collections.IEnumerator AutobiographicMemory.AM/<LastEventIdPropertyCalculator>d__25::System.Collections.IEnumerable.GetEnumerator()
+extern void U3CLastEventIdPropertyCalculatorU3Ed__25_System_Collections_IEnumerable_GetEnumerator_mD739400FCF90C916432ECAED8AF0E377B986CA1A (void);
+// 0x0000004E System.Void AutobiographicMemory.AMConsts::.cctor()
+extern void AMConsts__cctor_m0B28401DAF563975A28A96CC2FDFCF641F44C62A (void);
+// 0x0000004F System.UInt32 AutobiographicMemory.IBaseEvent::get_Id()
+// 0x00000050 WellFormedNames.Name AutobiographicMemory.IBaseEvent::get_EventName()
+// 0x00000051 WellFormedNames.Name AutobiographicMemory.IBaseEvent::get_Subject()
+// 0x00000052 System.Void AutobiographicMemory.IBaseEvent::LinkEmotion(System.String)
+// 0x00000053 AutobiographicMemory.DTOs.EventDTO AutobiographicMemory.IBaseEvent::ToDTO()
+// 0x00000054 WellFormedNames.Name AutobiographicMemory.IPropertyChangedEvent::get_Property()
+// 0x00000055 WellFormedNames.Name AutobiographicMemory.IPropertyChangedEvent::get_NewValue()
+// 0x00000056 System.Void AutobiographicMemory.DTOs.ActionEventDTO::set_Action(System.String)
+extern void ActionEventDTO_set_Action_m8E3A3729D8224281251A04E8B94F6B1CAA32BFFA (void);
+// 0x00000057 System.Void AutobiographicMemory.DTOs.ActionEventDTO::set_Target(System.String)
+extern void ActionEventDTO_set_Target_mFF5C76B22DC2A9698D2EEAB9FEE4DD6999CBB5E9 (void);
+// 0x00000058 System.Void AutobiographicMemory.DTOs.ActionEventDTO::.ctor()
+extern void ActionEventDTO__ctor_mC2A65C141DC0B1771DA6DF9EDD79575D0FB14B5E (void);
+// 0x00000059 System.UInt32 AutobiographicMemory.DTOs.EventDTO::get_Id()
+extern void EventDTO_get_Id_m96392DC93FFAE9B513BD4534947A37F4342E25F6 (void);
+// 0x0000005A System.Void AutobiographicMemory.DTOs.EventDTO::set_Id(System.UInt32)
+extern void EventDTO_set_Id_m7B07B39F52BB71DF72E0139C0D8C8E8EF4324D15 (void);
+// 0x0000005B System.String AutobiographicMemory.DTOs.EventDTO::get_Event()
+extern void EventDTO_get_Event_mD507497AB9576C40EA4FC948A244FF9ABC78BFFC (void);
+// 0x0000005C System.Void AutobiographicMemory.DTOs.EventDTO::set_Event(System.String)
+extern void EventDTO_set_Event_m9EE05E001E721950E943B39C2126CEC71BFC9004 (void);
+// 0x0000005D System.Void AutobiographicMemory.DTOs.EventDTO::set_Subject(System.String)
+extern void EventDTO_set_Subject_m79517CEDCAE953E7B1F779601FCD66D7CD9CFEC5 (void);
+// 0x0000005E System.Void AutobiographicMemory.DTOs.EventDTO::set_Time(System.UInt64)
+extern void EventDTO_set_Time_m3C1A9BC138F5FA354E76450731FE2E9BD10542A7 (void);
+// 0x0000005F System.Void AutobiographicMemory.DTOs.EventDTO::.ctor()
+extern void EventDTO__ctor_m1688A4BD6E5B458CA6421343C0CF366B79FDAA21 (void);
+// 0x00000060 System.Void AutobiographicMemory.DTOs.PropertyChangeEventDTO::set_Property(System.String)
+extern void PropertyChangeEventDTO_set_Property_m95539FE32075CE3E4138B0F8D096D0BC3F5BE3B3 (void);
+// 0x00000061 System.Void AutobiographicMemory.DTOs.PropertyChangeEventDTO::set_NewValue(System.String)
+extern void PropertyChangeEventDTO_set_NewValue_mA5294390DEFF793E56E38A78ED9AF02560F04FC2 (void);
+// 0x00000062 System.Void AutobiographicMemory.DTOs.PropertyChangeEventDTO::.ctor()
+extern void PropertyChangeEventDTO__ctor_m490BD5F7D8B5954B421827F375F1C6079168DEBF (void);
+static Il2CppMethodPointer s_methodPointers[98] = 
+{
+	AM_get_Tick_m2CE8483ED25AB4E4FB6D2DA025372BA9B606DA68,
+	AM_set_Tick_mDC19CF0BDAC55805F461AC26463C64B31201EBD4,
+	AM_BindToRegistry_m02D9E529CC0FBFF9E809DF2C1613C3E35BA1E09A,
+	AM_RecordEvent_mAF97541E745684A43974B5D1761B4DC7D1B89F2A,
+	AM_SaveEventHelper_mE9167CB3AE140AD792671515CF3D1ACB47CB2D74,
+	AM_RecallEvent_m076138A05EA1009F22FBB1EE0B7AF6C89F39D2BA,
+	AM_RecallAllEvents_m4B9CEB411F4B482EC04BEDFC2B04B7496884EA0C,
+	AM_AddRecord_m1F4BBC56E9561BD6DACC5C067F24902394EFF8BF,
+	AM_AssertEventNameValidity_m06D12FEA966A7A3F5D3B2737EC0624D51F3274F5,
+	AM_EventIdPropertyCalculator_m19A5F71AEC19657DA50894047A66DE2AF92EC8C1,
+	AM_EventAgePropertyCalculator_m55AAB02F87FDF345DAC1ED46C61FB0C9747A3B0C,
+	AM_LastEventIdPropertyCalculator_m200CA62332C8C27EF6431060135B33F1E753447A,
+	AM__ctor_mD2FB006E14283D6D9EF778779EEB6850C731C23F,
+	AM__cctor_mFFC7BCCE033CD34D18B19D09F07DB0F2504DA197,
+	AM_U3CRecallAllEventsU3Eb__15_0_m757EE952D7C88655A6A1A7009BDE871C8321A665,
+	ActionEvent_IsActionEvent_m1C300F39A990EA06E2CD3271A0305B8E99B1F01B,
+	ActionEvent_get_Action_m59DA34FE7D700BE14A3CD8956CDB00706DF6921A,
+	ActionEvent_set_Action_mAFA8349423EB60EA8502C3A07ED345578427B12B,
+	ActionEvent_get_Target_mBB68F93B86CF9EB4FD855A22319A86AE17EB6AC3,
+	ActionEvent_set_Target_m4BA1A0C0729B0C3E1593CFBC5EA3D48180F5AC21,
+	ActionEvent__ctor_m1123B71987E84219A8210FA43D523E94BC52450C,
+	ActionEvent_ToDTO_m4EB4E4F58916A424294E1AF47B9392677BAD7850,
+	BaseEvent_get_Id_m4EFCE33A8F87E1B914504EC125BA189A7DFC9879,
+	BaseEvent_set_Id_m84794D1986114B9188EA9A7A5D248E8EF66F9879,
+	BaseEvent_set_Type_m018D81590A4FC0A4306A955C90D67B195A0478F9,
+	BaseEvent_get_Subject_m1160EDB3A41F1A0F11E1EA24D158A172201873DF,
+	BaseEvent_set_Subject_m4E918B65034B531287CA2E362086A58B2D176AA3,
+	BaseEvent_get_Timestamp_mC1A978358FDC94837046CAABDA32876B47C215FD,
+	BaseEvent_set_Timestamp_m63B4F64E1414EB1BFA7D4F73A8DF6F144E927004,
+	BaseEvent_get_EventName_mEDFB5887D45915D3C5103981BA9EA3E00B5A594E,
+	BaseEvent_set_EventName_m256449708D2111BAAD8DE861D2B70354552BAF75,
+	BaseEvent__ctor_m41C6034C8822D10BDCE7DAF29C3FA4BD372F0516,
+	BaseEvent_LinkEmotion_m564D0CAF64AFDB0EFB1B268D846C7D5E71A9C1E2,
+	NULL,
+	PropertyChangeEvent_IsPropertyChangeEvent_m31C66CBD0C626529D4EC6F2BC11B3F36E4C097D3,
+	PropertyChangeEvent_get_Property_mECD3E41E4DDE427C6CEF4B87CDE0C3582F883B54,
+	PropertyChangeEvent_set_Property_m29E1A43118A4B793EBC3919B957F4D0D8FC9B70E,
+	PropertyChangeEvent_get_NewValue_m879C4341E535DEBE930656E9DE221623581BB4A9,
+	PropertyChangeEvent_set_NewValue_m10ACD5C46E9307A88F27843EE3311571CD7AB0B1,
+	PropertyChangeEvent__ctor_m0CE2E58558F3EFF481C097DC2FA4BDEA794CB09E,
+	PropertyChangeEvent_ToDTO_m2E476F45FF759B93DA773D02806BA0BDB1193954,
+	U3CEventIdPropertyCalculatorU3Ed__21__ctor_m2DEA456BE68DB5C5BCB54BD243123DB086300D5B,
+	U3CEventIdPropertyCalculatorU3Ed__21_System_IDisposable_Dispose_m69EA2B30A8CB12230D923512CB63490FD45E3E7F,
+	U3CEventIdPropertyCalculatorU3Ed__21_MoveNext_mBBC63556413C69F21BF4447876DAE9860BF33E31,
+	U3CEventIdPropertyCalculatorU3Ed__21_U3CU3Em__Finally1_mEDB43D7EA1B644A556A7B7192BDF259BACFD97FB,
+	U3CEventIdPropertyCalculatorU3Ed__21_U3CU3Em__Finally2_mD4CA8BF8C3408A880036DBB184CC956F961D7ABB,
+	U3CEventIdPropertyCalculatorU3Ed__21_U3CU3Em__Finally3_mA89EFC652082A701BF0E198098FC949A5D2A2A67,
+	U3CEventIdPropertyCalculatorU3Ed__21_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_mAF49D40B4CB808A7E0761D410F5110AE9790DF15,
+	U3CEventIdPropertyCalculatorU3Ed__21_System_Collections_IEnumerator_Reset_m2C002FFED6DC02E4403F1EF137613318976BD2F5,
+	U3CEventIdPropertyCalculatorU3Ed__21_System_Collections_IEnumerator_get_Current_mBE4E2A9256D4262259F274F1D4EF5732375F862E,
+	U3CEventIdPropertyCalculatorU3Ed__21_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_m1045ADE32C481F384F06531254B47FA7F50FC141,
+	U3CEventIdPropertyCalculatorU3Ed__21_System_Collections_IEnumerable_GetEnumerator_mD8BAE8D17D1A3C902090F4B7B0F1830E4918AB9B,
+	U3CEventAgePropertyCalculatorU3Ed__23__ctor_m8A91CB75FE5D3648A49718F7D8F94EBB15665EEE,
+	U3CEventAgePropertyCalculatorU3Ed__23_System_IDisposable_Dispose_m89D4F717026A493B27C9947B5ACF2F82E523200C,
+	U3CEventAgePropertyCalculatorU3Ed__23_MoveNext_mDC3D65F5A82CAC536FF2DFF8B077043D0F7AD520,
+	U3CEventAgePropertyCalculatorU3Ed__23_U3CU3Em__Finally1_m7D9385CCD6CF496CAAD721DF55E1653A2E5B9313,
+	U3CEventAgePropertyCalculatorU3Ed__23_U3CU3Em__Finally2_m90A1BCBCADBAA205D199C83F70B61D172A4BC02C,
+	U3CEventAgePropertyCalculatorU3Ed__23_U3CU3Em__Finally3_mC4AC7652F3F9FBBA2521BEBA9309834E97E8B463,
+	U3CEventAgePropertyCalculatorU3Ed__23_U3CU3Em__Finally4_mB1A283E29CC4AA752AF5370D0DC9B0F0FD54BDCA,
+	U3CEventAgePropertyCalculatorU3Ed__23_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m2A118C2EE0907421A9112DE47DB335A360A66172,
+	U3CEventAgePropertyCalculatorU3Ed__23_System_Collections_IEnumerator_Reset_m61DC29D46602B53F8A0E387BFE7FE4B016AAAD46,
+	U3CEventAgePropertyCalculatorU3Ed__23_System_Collections_IEnumerator_get_Current_mDC3AC0FB80AC9A79446FA7E9A7D08D067AB24670,
+	U3CEventAgePropertyCalculatorU3Ed__23_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_m07CA84FF6B66776D6CF30E5425377B3A33CF059B,
+	U3CEventAgePropertyCalculatorU3Ed__23_System_Collections_IEnumerable_GetEnumerator_mC3F4683A49636E361DD32289D80AD521085442E6,
+	U3CU3Ec__DisplayClass25_0__ctor_m0F9442A45A7FF0F5216F7871E48E3F71B99402A2,
+	U3CU3Ec__DisplayClass25_0_U3CLastEventIdPropertyCalculatorU3Eb__0_mCB5109CD353C5E3FCD06E8D49384E69ADBD6F47C,
+	U3CLastEventIdPropertyCalculatorU3Ed__25__ctor_m87A3022A38721B3E40ADE8C76F1076E9E158E49B,
+	U3CLastEventIdPropertyCalculatorU3Ed__25_System_IDisposable_Dispose_mF66FB898B502BA904A580C41D976DB1DD896AF3F,
+	U3CLastEventIdPropertyCalculatorU3Ed__25_MoveNext_m28A655CF209AF9F9A9BF329C85C48EF130CC12E4,
+	U3CLastEventIdPropertyCalculatorU3Ed__25_U3CU3Em__Finally1_m37166A0B42DADC842EF5A9FDB674C956038A6011,
+	U3CLastEventIdPropertyCalculatorU3Ed__25_U3CU3Em__Finally2_m268B5B6D1864BBE163B648DB9A2C38F242DFF138,
+	U3CLastEventIdPropertyCalculatorU3Ed__25_U3CU3Em__Finally3_m69A31C4CA58A44782D16FF9F32E3A5431D5454DD,
+	U3CLastEventIdPropertyCalculatorU3Ed__25_System_Collections_Generic_IEnumeratorU3CKnowledgeBase_DynamicPropertyResultU3E_get_Current_m9350F7033DB7CE4E725FBCB4DF4B7C18E992FD26,
+	U3CLastEventIdPropertyCalculatorU3Ed__25_System_Collections_IEnumerator_Reset_m36EFCB7C69DBBE6E4DBE87A306C4A18240FF5921,
+	U3CLastEventIdPropertyCalculatorU3Ed__25_System_Collections_IEnumerator_get_Current_m5FE3F06779B7F87CBE61008348709DBF197BB2CA,
+	U3CLastEventIdPropertyCalculatorU3Ed__25_System_Collections_Generic_IEnumerableU3CKnowledgeBase_DynamicPropertyResultU3E_GetEnumerator_mF32622754F8E62E3070B7031D1C5F748A8D5AE48,
+	U3CLastEventIdPropertyCalculatorU3Ed__25_System_Collections_IEnumerable_GetEnumerator_mD739400FCF90C916432ECAED8AF0E377B986CA1A,
+	AMConsts__cctor_m0B28401DAF563975A28A96CC2FDFCF641F44C62A,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	ActionEventDTO_set_Action_m8E3A3729D8224281251A04E8B94F6B1CAA32BFFA,
+	ActionEventDTO_set_Target_mFF5C76B22DC2A9698D2EEAB9FEE4DD6999CBB5E9,
+	ActionEventDTO__ctor_mC2A65C141DC0B1771DA6DF9EDD79575D0FB14B5E,
+	EventDTO_get_Id_m96392DC93FFAE9B513BD4534947A37F4342E25F6,
+	EventDTO_set_Id_m7B07B39F52BB71DF72E0139C0D8C8E8EF4324D15,
+	EventDTO_get_Event_mD507497AB9576C40EA4FC948A244FF9ABC78BFFC,
+	EventDTO_set_Event_m9EE05E001E721950E943B39C2126CEC71BFC9004,
+	EventDTO_set_Subject_m79517CEDCAE953E7B1F779601FCD66D7CD9CFEC5,
+	EventDTO_set_Time_m3C1A9BC138F5FA354E76450731FE2E9BD10542A7,
+	EventDTO__ctor_m1688A4BD6E5B458CA6421343C0CF366B79FDAA21,
+	PropertyChangeEventDTO_set_Property_m95539FE32075CE3E4138B0F8D096D0BC3F5BE3B3,
+	PropertyChangeEventDTO_set_NewValue_mA5294390DEFF793E56E38A78ED9AF02560F04FC2,
+	PropertyChangeEventDTO__ctor_m490BD5F7D8B5954B421827F375F1C6079168DEBF,
+};
+static const int32_t s_InvokerIndices[98] = 
+{
+	5609,
+	4648,
+	4686,
+	1912,
+	1232,
+	3650,
+	5647,
+	4686,
+	8211,
+	337,
+	1913,
+	337,
+	5748,
+	8351,
+	3650,
+	8072,
+	5647,
+	4686,
+	5647,
+	4686,
+	1482,
+	5647,
+	5608,
+	4647,
+	4686,
+	5647,
+	4686,
+	5609,
+	4648,
+	5647,
+	4686,
+	1482,
+	4686,
+	5647,
+	8072,
+	5647,
+	4686,
+	5647,
+	4686,
+	1482,
+	5647,
+	4647,
+	5748,
+	5685,
+	5748,
+	5748,
+	5748,
+	5551,
+	5748,
+	5647,
+	5647,
+	5647,
+	4647,
+	5748,
+	5685,
+	5748,
+	5748,
+	5748,
+	5748,
+	5551,
+	5748,
+	5647,
+	5647,
+	5647,
+	5748,
+	3822,
+	4647,
+	5748,
+	5685,
+	5748,
+	5748,
+	5748,
+	5551,
+	5748,
+	5647,
+	5647,
+	5647,
+	8351,
+	5608,
+	5647,
+	5647,
+	4686,
+	5647,
+	5647,
+	5647,
+	4686,
+	4686,
+	5748,
+	5608,
+	4647,
+	5647,
+	4686,
+	4686,
+	4648,
+	5748,
+	4686,
+	4686,
+	5748,
+};
+extern const CustomAttributesCacheGenerator g_AutobiographicMemory_AttributeGenerators[];
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AutobiographicMemory_CodeGenModule;
+const Il2CppCodeGenModule g_AutobiographicMemory_CodeGenModule = 
+{
+	"AutobiographicMemory.dll",
+	98,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	g_AutobiographicMemory_AttributeGenerators,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};
