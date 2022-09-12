@@ -48,12 +48,16 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
     bool audioReady = false;
     bool xmlReady = false;
     bool audioNeeded = false;
+    bool backupTTSNeeded = false;
 
     //Time given to each character's dialogue in case there is no text to speech
     public float dialogueTimer;
 
     // If there is no text to speech leave at false
     public bool useTextToSpeech;
+
+    // If it is necessary to use Backup
+    public string currentDialog;
 
     // If agents need to get to know each other
     public bool introduceAgents;
@@ -63,8 +67,10 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
 
     private GameObject npc;
 
+    // Handlers
     private WebRequester WebRequester;
     private SpawnerScript Spawner;
+    private TTSHandler backupTTS;
 
     // Progression Booleans
     bool _scenarioLoaded = false;
@@ -77,6 +83,7 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
 
     private string actionInitiator;
     public bool usingDebugger;
+   
 
     void Awake()
     {
@@ -84,6 +91,8 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
         Spawner = this.GetComponent<SpawnerScript>();
         _characters = new List<string>();
         characterToDecisions = new Dictionary<string, List<DialogueStateActionDTO>>();
+        this.backupTTS = GameObject.Find("BackupTTS").GetComponent<TTSHandler>();
+        currentDialog = "";
     }
 
     public void StartScenario()
@@ -136,9 +145,17 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
         if (audioNeeded)
         {
 
-            if (audioReady && xmlReady)
+            if (backupTTSNeeded) {
+                backupTTS.Speak(currentDialog);
+                audioNeeded = false;
+                backupTTSNeeded = false;
+                Debug.Log("Using Backup");
+            }
+
+            else if (audioReady && xmlReady)
                 StartCoroutine(PlayAudio());
-            else return;
+
+
         }
 
         UpdateEmotionalState();
@@ -220,10 +237,17 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
 
         if (useTextToSpeech)
         {
-           this.StartCoroutine(Speak(dialog, initiator, target));
+
+            if (backupTTSNeeded)
+            {
+                Debug.Log("Playing Backup");
+                backupTTS.Speak(utterance);
+            } else
+                this.StartCoroutine(Speak(dialog, initiator, target));
         }
 
-        //Writing the dialog on the canvas
+
+//Writing the dialog on the canvas
         Debug.Log(
             initiator + " says:  '" + utterance + "' ->towards " + target);
         this.dialogueText.text = initiator + " says:  '" + utterance + "' ->towards " + target;
@@ -269,6 +293,7 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
             yield break;
 
 
+        currentDialog = dialog.Utterance;
         audioNeeded = true;
         xmlReady = false;
         audioReady = false;
@@ -484,14 +509,13 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
             {
                 if (usingDebugger) debugText.text += "Audio not found error: " + audio.error;
                 Debug.Log("Audio not found error: " + audio.error);
-                audioReady = true;
-                useTextToSpeech = false;
+                audioReady = false;
+                backupTTSNeeded = true;
                 yield return null;
             }
         }
         else
         {
-
             audioReady = true;
         }
 
@@ -510,8 +534,8 @@ public class FAtiMAWebServerScenarioManager : MonoBehaviour
             {
                 if (usingDebugger) debugText.text = "XML not found error " + www.error;
                 Debug.Log("XML not found error: " + www.error);
-                xmlReady = true;
-                useTextToSpeech = false;
+                xmlReady = false;
+                backupTTSNeeded = true;
                 yield return null;
             }
 

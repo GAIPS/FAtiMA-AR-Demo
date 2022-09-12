@@ -14,12 +14,12 @@
 					"UtteranceId": "TTS-6E20751E3EABF87A44FD4F700CD043AF"
 				}, 
 				{
-					"CurrentState": "TalkAbout",
-					"NextState": "TalkAboutResponse",
+					"CurrentState": "Start",
+					"NextState": "Greeting",
 					"Meaning": "-",
 					"Style": "-",
-					"Utterance": "Do you want to talk about it?",
-					"UtteranceId": "TTS-90C542901E4A800A760CEABF7A28B71E"
+					"Utterance": "Hello, my name is FAtiMA and welcome to IVA, how do you feel?",
+					"UtteranceId": "TTS-F120C846F3F05A60198156323FBEB0C6"
 				}, 
 				{
 					"CurrentState": "End",
@@ -30,12 +30,12 @@
 					"UtteranceId": "TTS-8101C6BDC49E2E8CD5F1FAF33F2595DF"
 				}, 
 				{
-					"CurrentState": "Choice",
-					"NextState": "Skills",
-					"Meaning": "Same",
-					"Style": "-",
-					"Utterance": "Nope!",
-					"UtteranceId": "TTS-F6B5DAB43273B84AB132FD307CA9F6F8"
+					"CurrentState": "TalkAboutResponse",
+					"NextState": "HateAgents",
+					"Meaning": "-",
+					"Style": "VeryRude",
+					"Utterance": "Nope, get lost",
+					"UtteranceId": "TTS-BC6D5A653AF6165718F54DD5F68A38C2"
 				}, 
 				{
 					"CurrentState": "Greeting",
@@ -62,20 +62,20 @@
 					"UtteranceId": "TTS-07452EA34EB64981ADC9D739C768A5A4"
 				}, 
 				{
-					"CurrentState": "TalkAboutResponse",
-					"NextState": "HateAgents",
+					"CurrentState": "TalkAbout",
+					"NextState": "TalkAboutResponse",
 					"Meaning": "-",
-					"Style": "Rude",
-					"Utterance": "Nope, get lost",
-					"UtteranceId": "TTS-BC6D5A653AF6165718F54DD5F68A38C2"
+					"Style": "Surprise",
+					"Utterance": "It there anything I can do to help you?",
+					"UtteranceId": "TTS-82A8ED93E4FE50E58F8905C1A398AC1F"
 				}, 
 				{
-					"CurrentState": "TalkAboutResponse",
-					"NextState": "It",
+					"CurrentState": "Ahead",
+					"NextState": "Skills",
 					"Meaning": "-",
 					"Style": "-",
-					"Utterance": "There's nothing to talk about, some days just aren't it",
-					"UtteranceId": "TTS-C6D5139A98C0062C57E1093ADA1D0DB0"
+					"Utterance": "Go ahead then...",
+					"UtteranceId": "TTS-185988B7E62BBBB532BD7EAC30D5A7AB"
 				}, 
 				{
 					"CurrentState": "PreSkills2",
@@ -97,17 +97,17 @@
 					"CurrentState": "HateAgents",
 					"NextState": "GuessWhat",
 					"Meaning": "-",
-					"Style": "-",
-					"Utterance": "Oh yeah? I don't even exist, what are you really upset about?",
-					"UtteranceId": "TTS-898CE240A9CCD6D94E7C80A4F055E56C"
+					"Style": "Sad",
+					"Utterance": "I really wish this was a Intelligent Physhical Agent conference...",
+					"UtteranceId": "TTS-2FB7297B7B76EA94B48D28E0D46E6D83"
 				}, 
 				{
-					"CurrentState": "Start",
-					"NextState": "Greeting",
+					"CurrentState": "GuessWhat",
+					"NextState": "Same",
 					"Meaning": "-",
 					"Style": "-",
-					"Utterance": "Hello, my name is FAtiMA and welcome to Dia do Técnico, how are you?",
-					"UtteranceId": "TTS-49E5A09B595D7936941839CA5C8B43B9"
+					"Utterance": "Whatever, so what are you supposed to do?",
+					"UtteranceId": "TTS-3252CE39A9008B20AA6A3656A0C74EAA"
 				}, 
 				{
 					"CurrentState": "Next",
@@ -148,14 +148,6 @@
 					"Style": "-",
 					"Utterance": "Same",
 					"UtteranceId": "TTS-51037A4A37730F52C8732586D3AAA316"
-				}, 
-				{
-					"CurrentState": "Greeting",
-					"NextState": "Happy",
-					"Meaning": "-",
-					"Style": "Happy",
-					"Utterance": "I'm pretty great actually",
-					"UtteranceId": "TTS-3EDC2501A367DE6ED8CF0775AA4CC139"
 				}, 
 				{
 					"CurrentState": "CapabilitesResponse",
@@ -276,6 +268,126 @@
 					"Style": "-",
 					"Utterance": "I am an intelligent virtual agent created using FAtiMA-Toolkit",
 					"UtteranceId": "TTS-63B1C93765E6926F3299093A1793B469"
+				}, 
+				{
+					"CurrentState": "TalkAboutResponse",
+					"NextState": "It",
+					"Meaning": "-",
+					"Style": "Surprise",
+					"Utterance": "There's nothing to talk about, some days just aren't it",
+					"UtteranceId": "TTS-C6D5139A98C0062C57E1093ADA1D0DB0"
+				}, 
+				{
+					"CurrentState": "Choice",
+					"NextState": "Ahead",
+					"Meaning": "-",
+					"Style": "Happy",
+					"Utterance": "Nope!",
+					"UtteranceId": "TTS-F6B5DAB43273B84AB132FD307CA9F6F8"
+				}, 
+				{
+					"CurrentState": "Ahead",
+					"NextState": "Skills",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Here we go...",
+					"UtteranceId": "TTS-1294EA2760F8E37D95B47B1854F43D54"
+				}, 
+				{
+					"CurrentState": "Joke",
+					"NextState": "JokeResponse",
+					"Meaning": "-",
+					"Style": "Happy",
+					"Utterance": "What is a robot’s favorite dance?  The Roomba  Hahahaha",
+					"UtteranceId": "TTS-17690ADABCA897958D2E92D57A8EF245"
+				}, 
+				{
+					"CurrentState": "Angry",
+					"NextState": "WhyAngry",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "Sorry about that...can I ask why are you upset?",
+					"UtteranceId": "TTS-012543CA6A5AED99E9C3399F4DE5B107"
+				}, 
+				{
+					"CurrentState": "Start",
+					"NextState": "Greeting",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "How do you do? My name is FAtiMA and welcome to IVA 2022 Conference",
+					"UtteranceId": "TTS-97F4688D032A7B99595171D448746B6A"
+				}, 
+				{
+					"CurrentState": "HateAgents",
+					"NextState": "GuessWhat",
+					"Meaning": "-",
+					"Style": "Rude",
+					"Utterance": "I don't even exist, now what are you really upset about?",
+					"UtteranceId": "TTS-3B6EF9A1FDFD1E331E4BE22E9C0748FF"
+				}, 
+				{
+					"CurrentState": "GuessWhat",
+					"NextState": "Same",
+					"Meaning": "-",
+					"Style": "-",
+					"Utterance": "It doesnt matter, so what can you do?",
+					"UtteranceId": "TTS-FB3575823B94259FEBBCA4C5ECD22374"
+				}, 
+				{
+					"CurrentState": "TalkAboutResponse",
+					"NextState": "Joke",
+					"Meaning": "-",
+					"Style": "Surprise",
+					"Utterance": "Tell me a joke",
+					"UtteranceId": "TTS-CD20CB0C6261C9546612AEF1249CEC90"
+				}, 
+				{
+					"CurrentState": "Joke",
+					"NextState": "JokeResponse",
+					"Meaning": "-",
+					"Style": "Happy",
+					"Utterance": "What do you call a robot who always runs into the wall? Wall-E Hehehehe",
+					"UtteranceId": "TTS-8FAD4F2A2A2F9A1061E55D95C9B586EF"
+				}, 
+				{
+					"CurrentState": "JokeResponse",
+					"NextState": "Same",
+					"Meaning": "-",
+					"Style": "Happy",
+					"Utterance": "That was great, what else do you do?",
+					"UtteranceId": "TTS-DB69D31CBF0E506FAA344B4C89DD516C"
+				}, 
+				{
+					"CurrentState": "JokeResponse",
+					"NextState": "Same",
+					"Meaning": "-",
+					"Style": "Rude",
+					"Utterance": "That was so lame, what else do you do?",
+					"UtteranceId": "TTS-B65130B1FE1C84460A3DD4C2BC1330CB"
+				}, 
+				{
+					"CurrentState": "Greeting",
+					"NextState": "Happy",
+					"Meaning": "-",
+					"Style": "Happy",
+					"Utterance": "I'm feel great",
+					"UtteranceId": "TTS-61C1B172D94EEE4049E944E32D55C095"
+				}, 
+				{
+					"CurrentState": "JokeResponse",
+					"NextState": "Same",
+					"Meaning": "-",
+					"Style": "Suprise",
+					"Utterance": "That was awful, give me another joke",
+					"UtteranceId": "TTS-127F659E687E972CD66CE9A7C9899412"
+				}, 
+				{
+					"CurrentState": "Joke",
+					"NextState": "JokeResponse",
+					"Meaning": "-",
+					"Style": "Happy",
+					"Utterance": "What is a baby robot’s first word?  DATA  Hihihihi",
+					"UtteranceId": "TTS-2EE02BD42A065A858B245BC05709CEFF"
 				}],
 			"Characters": [
 				{

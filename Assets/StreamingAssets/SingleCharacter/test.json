@@ -17,21 +17,53 @@
 					"CurrentState": "Greeting",
 					"NextState": "Order",
 					"Meaning": "-",
-					"Style": "-",
+					"Style": "Polite",
 					"Utterance": "How do you do?",
 					"UtteranceId": "TTS-E191BADF9DAD8B0EDC942E4A6DFC8D64"
+				}, 
+				{
+					"CurrentState": "Greeting",
+					"NextState": "Leave",
+					"Meaning": "-",
+					"Style": "VeryRude",
+					"Utterance": "Not you again",
+					"UtteranceId": "TTS-4DDAA9A4B302A0E4E9DEE292CDB9481D"
+				}, 
+				{
+					"CurrentState": "Order",
+					"NextState": "OrderResponse",
+					"Meaning": "Hamburger",
+					"Style": "-",
+					"Utterance": "Yes, I would like a burger please",
+					"UtteranceId": "TTS-6D501E2FE494013994B75A7225E5FA29"
+				}, 
+				{
+					"CurrentState": "Greeting",
+					"NextState": "Order",
+					"Meaning": "-",
+					"Style": "Polite",
+					"Utterance": "How can I help you?",
+					"UtteranceId": "TTS-C425F01490F94A3080B9922108A78C33"
 				}, 
 				{
 					"CurrentState": "Start",
 					"NextState": "Greeting",
 					"Meaning": "-",
-					"Style": "-",
-					"Utterance": "Whatup",
-					"UtteranceId": "TTS-7402D3E042CA6854CB3F8066F25C6507"
+					"Style": "Rude",
+					"Utterance": "Hey",
+					"UtteranceId": "TTS-6057F13C496ECF7FD777CEB9E79AE285"
+				}, 
+				{
+					"CurrentState": "Start",
+					"NextState": "Greeting",
+					"Meaning": "-",
+					"Style": "Polite",
+					"Utterance": "Good Afternoon",
+					"UtteranceId": "TTS-91145E15F72DF3A48A9E83CAE7E3BED7"
 				}, 
 				{
 					"CurrentState": "Order",
-					"NextState": "Greeting",
+					"NextState": "OrderResponse",
 					"Meaning": "Pizza",
 					"Style": "-",
 					"Utterance": "Yes, I would like a Pizza please",
@@ -146,13 +178,13 @@
 											"ObserverAgent": "[t]"
 										}, 
 										{
-											"PropertyName": "Has(Floor)",
-											"NewValue": "[t]",
-											"ObserverAgent": "*"
-										}, 
-										{
 											"PropertyName": "DialogueState([s])",
 											"NewValue": "[ns]",
+											"ObserverAgent": "Player"
+										}, 
+										{
+											"PropertyName": "Has(Floor)",
+											"NewValue": "[t]",
 											"ObserverAgent": "Player"
 										}]
 								}]

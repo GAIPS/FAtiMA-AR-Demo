@@ -20,4 +20,12 @@ public class TTSHandler : MonoBehaviour
         var msg = string.Format(speakText, tts.Voice.ToString());
         tts.StartSpeaking(msg);
     }
+
+    public void Speak(string s)
+    {
+        var speakText = s;
+
+        var msg = string.Format(speakText, tts.Voice.ToString());
+        tts.StartSpeaking(msg);
+    }
 }

@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\SpawnerScript.cs" />
     <Compile Include="Assets\Samples\Mixed Reality Toolkit Examples\2.7.0\Demos - SpatialAwareness\Scripts\ClearSpatialObservations.cs" />
     <Compile Include="Assets\Samples\Mixed Reality Toolkit Examples\2.7.0\Demos - UX\Dwell\InstantDwellSample.cs" />
+    <Compile Include="Assets\Scripts\Audio\TTSHandler.cs" />
     <Compile Include="Assets\Scripts\Head Look Controller\Scripts\HelpText.cs" />
     <Compile Include="Assets\Samples\Mixed Reality Toolkit Examples\2.7.0\Demos - Solvers\Scripts\SolverExampleManager.cs" />
     <Compile Include="Assets\Samples\Mixed Reality Toolkit Examples\2.7.0\Demos - UX\ProgressIndicator\Scripts\ProgressIndicatorDemo.cs" />
@@ -90,9 +91,9 @@
     <Compile Include="Assets\Scripts\Animation\LipSyncBehaviour.cs" />
     <Compile Include="Assets\Scripts\Animation\Face2DController.cs" />
     <Compile Include="Assets\MRTK.Tutorials.GettingStarted\Scripts\DirectionalIndicatorController.cs" />
-    <Compile Include="Assets\Scripts\Audio\TTSHandler.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-DB69D31CBF0E506FAA344B4C89DD516C.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-1C42E973C68334AB489B40BF5DA0DA48.xml" />
     <None Include="Assets\FAtiMA\Plugins\Conditions.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -110,8 +111,10 @@
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-13C713DAA29EB27B9B5EA6AEE0830F00.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-ADCDA23661BA0B29D756F284E4CEC558.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-61C1ED7C7CF56C4626C71077F05C4194.xml" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-A6F3324060F22CA62FEA75D611FA8314.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-5FEEE9578D4DF6C91B8D720F45E05E3C.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-BA13ECC9DC0395980F8740901D00789F.xml" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-2EE02BD42A065A858B245BC05709CEFF.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-40B6806C97D573A0665E1AC9A5BACD3B.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-898CE240A9CCD6D94E7C80A4F055E56C.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-81941846E6C7DFA994BE91A9A515F00F.xml" />
@@ -125,12 +128,17 @@
     <None Include="Assets\FAtiMA\Plugins\EmotionalDecisionMaking.dll" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-E28D088E2C6A637C358FDAD1E0E3C75D.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-47D7BB97D5E096B56EF6030564511E64.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-5324F102965E2DA50E6B4E2B9EFA30C5.xml" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-97F4688D032A7B99595171D448746B6A.xml" />
     <None Include="Assets\3rdParty\Quirky Series\Pets\Dog\Demo\_Shader\SoftSurface.shader" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-CD20CB0C6261C9546612AEF1249CEC90.xml" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-B65130B1FE1C84460A3DD4C2BC1330CB.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-BB847AFBB518569C12A3DCE9C8BB5D37.xml" />
     <None Include="Assets\MRTK\Shaders\ChannelPacker.shader" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-718F49CEDCF55C886625AB94C17537AA.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-8163C38B4BF2289F0A3E977C5D74A0C9.xml" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-10778EB9F9731F5247D6A9CA9E39D353.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-C4B1B585F8B6C1E028B05EE66352170E.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-0E171F5AB845CAECA7C7EA42AB78F672.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-4BB621AF672EE20E57DB8A9A601C0C04.xml" />
@@ -173,6 +181,7 @@
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-823312E587D1C17BEE7276EE61BF78C6.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-5EAC31E4E8E056AE4869DFF570892265.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-E804C043162941E9B06D064C23C06AA2.xml" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-012543CA6A5AED99E9C3399F4DE5B107.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-09AD23D8726C08E8E175AB3E7B2D6308.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-75004E4A704741E8A7D685CAB7A9C616.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-B92222503F7FFF84583D227C4E738CEC.xml" />
@@ -234,6 +243,7 @@
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-FEF767D4216DC5C7780C265C827C849F.xml" />
     <None Include="Assets\FAtiMA\Plugins\RolePlayCharacter.dll" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-97540825C0B5348A2510BB43133A7101.xml" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-1294EA2760F8E37D95B47B1854F43D54.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-BA9C975F345F0153E301170F51AB8131.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-ADC839EFDFA55E57201DA41DAA644E54.xml" />
@@ -241,6 +251,7 @@
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-36D75BA8B70B17BDFD50522299F1519A.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-17C890381F2AF9B24E5C97F136798713.xml" />
     <None Include="Assets\FAtiMA\Plugins\ActionLibrary.dll" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-82A8ED93E4FE50E58F8905C1A398AC1F.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-C425F01490F94A3080B9922108A78C33.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-7C23F761E3AAC8412B3EA281352B5E09.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-91145E15F72DF3A48A9E83CAE7E3BED7.xml" />
@@ -251,12 +262,15 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-2FA66F63224DE40B43DB4B905A2C651C.xml" />
     <None Include="Assets\MRTK.Tutorials.GettingStarted\Version.txt" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-F120C846F3F05A60198156323FBEB0C6.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-C10A8AE78B91678307B487ECBDAA927A.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-49E5A09B595D7936941839CA5C8B43B9.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-E75762C2A86231F382B1AA7B4E3889BB.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-63B1C93765E6926F3299093A1793B469.xml" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-FB3575823B94259FEBBCA4C5ECD22374.xml" />
     <None Include="Assets\FAtiMA\Plugins\WorldModel.dll" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-127F659E687E972CD66CE9A7C9899412.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-2DCF3603E40D2F9C7D9EB50F722975CD.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-8A7EF1C3E82395341B7000B79C239EB4.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-5A096671E1C3E9031B39DE7068C93412.xml" />
@@ -279,6 +293,7 @@
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-76C4D5A5BD46391C6DDCAA6D074285F9.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-34A07B346270A5E3954B92291F915D3D.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-17EC7F6950A4C660AB90632936D39FAE.xml" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-2FB7297B7B76EA94B48D28E0D46E6D83.xml" />
     <None Include="Assets\MRTK\Shaders\MixedRealityStandard.shader" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-76EFB34FC9BA7F43F2CFAD94BCEAB637.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-C4F960E06A27281EF111E8E6B9589E43.xml" />
@@ -315,8 +330,10 @@
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-4A3C6750B87850D96AEE92A84A5D2ADE.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-219A6D0CD342D347B77F95601C6A1B42.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-928097741528540149DE4ED4723FDF20.xml" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-8FAD4F2A2A2F9A1061E55D95C9B586EF.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-FE29E29A0DDCBF8C00849FF03A8E7514.xml" />
     <None Include="Assets\FAtiMA\Plugins\IntegratedAuthoringTool.dll" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-3B6EF9A1FDFD1E331E4BE22E9C0748FF.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-09BCCCFC8CEDCF91813254DD4D4ACA5A.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-B686890DBC9C99C0D759ADB5FD552F05.xml" />
     <None Include="Assets\FAtiMA\Plugins\CommeillFaut.dll" />
@@ -336,6 +353,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-AD57C3EAD8B43167F70360841FCBC3F3.xml" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-185988B7E62BBBB532BD7EAC30D5A7AB.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-D72E9E6F19CC3955E867F993A693FE08.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-43B7404C7CA42F20DBB916FF7C7ED563.xml" />
     <None Include="Assets\MRTK\Shaders\DepthBufferPostProcess.shader" />
@@ -346,6 +364,7 @@
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-A0CCB268AB3EEE9C73BB21E9DD89C33D.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-E191BADF9DAD8B0EDC942E4A6DFC8D64.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-EC289B8F55F7A8915B279EBB7F874742.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-DF22E211F559D4CD84350099451E5CCD.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-E39D6666C07A9D0E1F19701733C50799.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-C2783233565989F53F5E3BC9019BDC92.xml" />
@@ -354,7 +373,9 @@
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-092F7BE9A7448A2A756603103951ABFE.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-372269CB9698F23DD0E8009D1ADFB5BB.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-269C59E13EE8EE52E668027A009DC62A.xml" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-3252CE39A9008B20AA6A3656A0C74EAA.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-0EBF31C683C551F7EE2F4B16252DB084.xml" />
+    <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-17690ADABCA897958D2E92D57A8EF245.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-BD4ADEA9DB8F7621E4A8519C615C3480.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-F6B5DAB43273B84AB132FD307CA9F6F8.xml" />
     <None Include="Assets\StreamingAssets\SingleCharacter\TTS\Female\TTS-EF9533944457B3BECC20606B0B2A395B.xml" />

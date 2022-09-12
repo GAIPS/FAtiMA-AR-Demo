@@ -69,6 +69,7 @@ public class FAtiMAScenarioManager : MonoBehaviour
 
     // If there is no text to speech leave at false
     public bool useTextToSpeech;
+    public bool useBackupTextToSpeech;
 
     // If agents need to get to know each other
     public bool introduceAgents;
@@ -84,6 +85,9 @@ public class FAtiMAScenarioManager : MonoBehaviour
 
     public bool loadThroughString;
     public bool loadThroughFiles;
+
+    public TTSHandler backupTTS;
+
 
     public void UpdateNPC()
     {
@@ -360,6 +364,8 @@ public class FAtiMAScenarioManager : MonoBehaviour
         //Saving the World Model
         _worldModel = _iat.WorldModel;
 
+       
+
         Debug.Log("Loading has finished");
         debugText.text = "Loaded Scenario ";
          LoadGame();
@@ -508,6 +514,10 @@ public class FAtiMAScenarioManager : MonoBehaviour
         if (useTextToSpeech)
         {
             this.StartCoroutine(Speak(id, initiator, target));
+       
+        } else if (useBackupTextToSpeech)
+        {
+            backupTTS.Speak(utterance);
         }
 
 
@@ -572,12 +582,13 @@ public class FAtiMAScenarioManager : MonoBehaviour
                 Debug.Log("Audio not found error: " + audio.error);
                 audioReady = true;
                 useTextToSpeech = false;
+                useBackupTextToSpeech = true;
                 yield return null;
             }
         }
         else
         {
-
+            useBackupTextToSpeech = false;
             audioReady = true;
         }
 
@@ -643,9 +654,6 @@ public class FAtiMAScenarioManager : MonoBehaviour
 
         StartCoroutine(GetXML(xmlUrl));
         StartCoroutine(GetAudioURL(audioUrl));
-
-        Debug.Log("Tried to speak");
-        debugText.text = "Tried to Speak ";
 
     }
 

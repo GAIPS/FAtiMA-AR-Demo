@@ -36,14 +36,14 @@
 							"EventName": "Event(Action-End, *, Speak(*, *, *, Rude), SELF)",
 							"Conditions":
 								{
-									"Set": ["is(Fatima) = True"]
+									"Set": []
 								},
 							"AppraisalVariables":
 								{
 									"AppraisalVariables": [
 										{
 											"Name": "Desirability",
-											"Value": -7,
+											"Value": -3,
 											"Target": "-"
 										}]
 								}
@@ -52,14 +52,51 @@
 							"EventName": "Event(Action-End, *, Speak(*, *, *, Happy), SELF)",
 							"Conditions":
 								{
-									"Set": ["Bel([x]) = True"]
+									"Set": []
 								},
 							"AppraisalVariables":
 								{
 									"AppraisalVariables": [
 										{
 											"Name": "Desirability",
-											"Value": 8,
+											"Value": 3,
+											"Target": "-"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, *, Speak(*, *, *, Surprise), SELF)",
+							"Conditions":
+								{
+									"Set": []
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Praiseworthiness",
+											"Value": 5,
+											"Target": "Player"
+										}]
+								}
+						}, 
+						{
+							"EventName": "Event(Action-End, *, Speak(*, *, *, VeryRude), SELF)",
+							"Conditions":
+								{
+									"Set": []
+								},
+							"AppraisalVariables":
+								{
+									"AppraisalVariables": [
+										{
+											"Name": "Praiseworthiness",
+											"Value": -3,
+											"Target": "Player"
+										}, 
+										{
+											"Name": "Desirability",
+											"Value": -3,
 											"Target": "-"
 										}]
 								}

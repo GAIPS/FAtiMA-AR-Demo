@@ -57,7 +57,7 @@ static const Il2CppRGCTXDefinition s_rgctxValues[6] =
 	{ (Il2CppRGCTXDataType)2, 756 },
 	{ (Il2CppRGCTXDataType)3, 3665 },
 	{ (Il2CppRGCTXDataType)2, 2454 },
-	{ (Il2CppRGCTXDataType)3, 63842 },
+	{ (Il2CppRGCTXDataType)3, 63844 },
 };
 extern const CustomAttributesCacheGenerator g_GAIPS_Rage_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_GAIPS_Rage_CodeGenModule;

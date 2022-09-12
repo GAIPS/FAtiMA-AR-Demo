@@ -12,6 +12,7 @@ public class SpawnerScript : MonoBehaviour
 
     public GameObject Notebook;
     public Transform notebookSpawner;
+    public Transform piano;
     private bool spawnedNotebook;
     private bool spawnedCharacter;
     private Transform spawnedBook;
@@ -67,6 +68,10 @@ public class SpawnerScript : MonoBehaviour
         spawnedBook.transform.position = notebookSpawner.position + new Vector3(0.0f, 0.03f, 0.0f);
     }
 
+    public void TurnOnPiano()
+    {
+        piano.gameObject.SetActive(!piano.gameObject.activeSelf);
+    }
 
     public void IncreaseNPCHeight()
     {
