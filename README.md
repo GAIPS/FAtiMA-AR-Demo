@@ -1,7 +1,7 @@
 # FAtiMA-AR-Demo
 
 
-This application was developed to work with Unity, Mixed Reality Toolkit and FAtiMA-Toolkit.
+This application was developed to work with Unity, Hololens 2 (Mixed Reality Toolkit) and FAtiMA-Toolkit.
 
 The game is was developed in Unity which then connects to a server that is deployed by FAtiMA-Toolkit. 
 
