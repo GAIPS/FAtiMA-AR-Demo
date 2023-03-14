@@ -159,9 +159,9 @@
 						},
 					"Goals": [
 						{
-							"Name": "Survive",
-							"Significance": 5,
-							"Likelihood": 0.2
+							"Name": "Die",
+							"Significance": 2,
+							"Likelihood": 0.7
 						}]
 				}],
 			"WorldModel":
@@ -178,13 +178,13 @@
 											"ObserverAgent": "[t]"
 										}, 
 										{
-											"PropertyName": "DialogueState([s])",
-											"NewValue": "[ns]",
-											"ObserverAgent": "Player"
-										}, 
-										{
 											"PropertyName": "Has(Floor)",
 											"NewValue": "[t]",
+											"ObserverAgent": "*"
+										}, 
+										{
+											"PropertyName": "DialogueState([s])",
+											"NewValue": "[ns]",
 											"ObserverAgent": "Player"
 										}]
 								}]

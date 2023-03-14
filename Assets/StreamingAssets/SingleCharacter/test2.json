@@ -10,7 +10,7 @@
 					"AppraisalWeight": 1,
 					"Rules": [
 						{
-							"EventName": "Event(Action-End, SELF, Speak([cs], [ns], *, *), John)",
+							"EventName": "Event(Action-End, *, EAAT, SELF)",
 							"Conditions":
 								{
 									"Set": []
@@ -20,13 +20,18 @@
 									"AppraisalVariables": [
 										{
 											"Name": "Praiseworthiness",
-											"Value": -5,
+											"Value": 5,
 											"Target": "SELF"
+										}, 
+										{
+											"Name": "Desirability",
+											"Value": 5,
+											"Target": "-"
 										}]
 								}
 						}, 
 						{
-							"EventName": "Event(Action-End, SELF, Speak([cs], [ns], *, *), Charlie)",
+							"EventName": "Event(Action-End, SELF, EAAT, *)",
 							"Conditions":
 								{
 									"Set": []
@@ -35,57 +40,9 @@
 								{
 									"AppraisalVariables": [
 										{
-											"Name": "Praiseworthiness",
-											"Value": -5,
-											"Target": "SELF"
-										}]
-								}
-						}, 
-						{
-							"EventName": "Event(Action-End, SELF, Do, John)",
-							"Conditions":
-								{
-									"Set": []
-								},
-							"AppraisalVariables":
-								{
-									"AppraisalVariables": [
-										{
-											"Name": "Praiseworthiness",
-											"Value": -5,
-											"Target": "John"
-										}]
-								}
-						}, 
-						{
-							"EventName": "Event(Action-End, SELF, Do, Charlie)",
-							"Conditions":
-								{
-									"Set": []
-								},
-							"AppraisalVariables":
-								{
-									"AppraisalVariables": [
-										{
-											"Name": "Praiseworthiness",
-											"Value": -6,
-											"Target": "Chalie"
-										}]
-								}
-						}, 
-						{
-							"EventName": "Event(Property-Change, SELF, Hello(World), [t])",
-							"Conditions":
-								{
-									"Set": []
-								},
-							"AppraisalVariables":
-								{
-									"AppraisalVariables": [
-										{
-											"Name": "Praiseworthiness",
-											"Value": 6,
-											"Target": "[t]"
+											"Name": "Goal Success Probablity",
+											"Value": 0,
+											"Target": "GoodGoalName"
 										}]
 								}
 						}]
@@ -104,12 +61,12 @@
 			"classId": 0,
 			"ActionTendencies": [
 				{
-					"Action": "Speak([cs], [ns], [mean], [style])",
-					"Target": "[t]",
+					"Action": "A",
+					"Target": "-",
 					"Layer": "-",
 					"Conditions":
 						{
-							"Set": ["DialogueState([t]) = [cs]", "Has(Floor) = SELF", "ValidDialogue([cs], [ns], [mean], [style]) = True", "EventId([type], [subject], Speak([cs], [ns], [mean], [style]), [target]) = -1"]
+							"Set": ["GoalLikelihood(Survive) > 0"]
 						},
 					"Priority": 1
 				}]
