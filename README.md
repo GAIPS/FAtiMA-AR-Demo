@@ -9,3 +9,4 @@ An example of this application is available here: https://drive.google.com/file/
 
 FAtiMA-Toolkit is available in https://fatima-toolkit.eu/
 
+This repository also contains a wiki, if you are interested in learning more
